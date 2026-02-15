@@ -1,0 +1,21 @@
+{
+  "character": {
+    "id": "longinus",
+    "name": "Gaius Cassius Longinus",
+    "alternative_names": ["The Hidden Witness", "The Blind Centurion"],
+    "role": "protagonist",
+    "symbolic_representation": "Hidden Witness",
+    "image": "/images/characters/main-characters/protagonist/Character_Card_Portrait_Longinus.png",
+    "brief_description": "A Roman centurion whose failing vision masks a deeper spiritual blindness that will be healed through grace.",
+    "full_description": "Longinus is a skilled centurion in Brutus's cohort, haunted by progressively failing eyesight that he desperately hides. Rising from Rome's gutters through wit and skill, he has built his identity around Brutus's approval and his role as a soldier. His physical deterioration parallels his psychological fragmentation under the Death Squad's systematic torture. Yet through the prisoner's mercy, his sight is miraculously restored alongside his spiritual awakening.",
+    "origin": "Rome",
+    "occupation": "Centurion",
+    "introduction_chapter": 1,
+    "key_chapters": [1, 2, 4, 5, 6, 9, 10, 11, 12],
+    "opening_state": "Respected centurion hiding vision failure; worships Brutus; isolated",
+    "key_transformation": "Mercy breaks mechanical numbness; divine light restores sight; grace displaces dread",
+    "closing_state": "Transformed believer; hunted by Rome; spiritually healed; spear-bearer of manifestation",
+    "arc_preview": "From isolated victim dependent on false mentor, through systematic psychological torture, to spiritual transformation through mercy and grace",
+    "key_themes": ["Grace", "Mercy", "Transformation", "Hidden Witness", "Spiritual Blindness"]
+  }
+}

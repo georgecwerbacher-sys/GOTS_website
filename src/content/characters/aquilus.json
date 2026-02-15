@@ -1,0 +1,21 @@
+{
+  "character": {
+    "id": "aquilus",
+    "name": "Caius Tullius Aquilus",
+    "alternative_names": ["Verax", "Truth-Speaker"],
+    "role": "protagonist",
+    "symbolic_representation": "The Honorable Witness; collision between Roman duty and supernatural truth",
+    "image": "/images/characters/romans/other/Character_Card_Portrait_Aquilus.png",
+    "brief_description": "A reliable soldier whose identity as 'Truth-Speaker' is shattered when he must choose between truthfulness and loyalty after witnessing the resurrection.",
+    "full_description": "Aquilus is a soldier known throughout the garrison as 'Truth-Speaker'—a man whose word is absolutely reliable and whose integrity is unquestionable. He has built his entire identity on never lying, on reporting events exactly as witnessed. When he witnesses the resurrection at the empty tomb, he faces an impossible choice: speak truthfully about the miracle and see his fellow soldiers executed, or accept a bribe and participate in a lie that violates everything he believes about himself. His decision to choose loyalty over truthfulness creates a moral crisis that illustrates the real-world consequences of resurrection for ordinary people.",
+    "origin": "Italia (Italian peninsula); from modest but respectable family background",
+    "occupation": "Soldier/Guard under Longinus's command; later assigned to tomb guard duty",
+    "introduction_chapter": 1,
+    "key_chapters": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "opening_state": "Confident, reliable soldier; maintaining exemplary reputation; assumes truth and loyalty will never conflict",
+    "key_transformation": "Witnesses resurrection; faces impossible choice; accepts bribe; participates in lie; identity shattered",
+    "closing_state": "Spiritually awakened; morally tormented; identity fragmented; haunted by witnessed truth and conscious decision to deny it",
+    "arc_preview": "From reliable soldier maintaining perfect integrity, through resurrection witness and impossible moral choice, to spiritually awakened but morally compromised man questioning identity",
+    "key_themes": ["Integrity vs. Compromise", "Loyalty vs. Truthfulness", "Witnessing and Faith", "Cost of Spiritual Awakening", "Redemption and Guilt"]
+  }
+}

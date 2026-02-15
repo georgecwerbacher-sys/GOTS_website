@@ -1,0 +1,21 @@
+{
+  "character": {
+    "id": "salome",
+    "name": "Salome of Samaria",
+    "alternative_names": ["Salome", "The Invisible", "The Keeper", "First Shadow Mother"],
+    "role": "supporting",
+    "symbolic_representation": "The Invisible, Network Builder, Spear Keeper",
+    "image": "/images/characters/followers/shadows/Character_Card_Portrait_Salome.png",
+    "brief_description": "A Samaritan woman whose strategic invisibility and acute observation make her an essential network builder and spear keeper, protecting testimony through being overlooked.",
+    "full_description": "Salome bat Yochanan is a Samaritan merchant's daughter who became a committed follower after witnessing evidence of divine power. Her remarkable ability to be overlooked by authorities becomes her greatest strength as she builds networks of women followers, gathers intelligence, and protects the sacred spear. Working alongside Malchus as spiritual peer and partner, she teaches women to use their invisibility as power, coordinates safe houses and intelligence gathering, and serves as keeper of the spear through strategic movement. Her faith comes from direct encounter rather than doctrine, making her certain and unafraid despite escalating persecution. She embodies the paradox that those society overlooks hold the greatest strategic power.",
+    "origin": "Shechem region, Samaria (merchant's daughter)",
+    "occupation": "Network Builder, Spear Keeper, Women's Leader, Invisible Strategist",
+    "introduction_chapter": 1,
+    "key_chapters": [1, 2, 3, 4, 5, 6, 7],
+    "opening_state": "Recently committed follower; newly befriended Malchus; beginning to organize women; understanding her role",
+    "key_transformation": "From curious skeptic evaluating claims, through witnessing evidence of divine power, to committed follower and network builder",
+    "closing_state": "Established strategist and network leader; spear keeper; either martyr preserving testimony or survivor leader of women's community",
+    "arc_preview": "From Samaritan merchant's daughter evaluating spiritual claims, through direct encounter with divine power and commitment to follower community, to invisible network leader protecting testimony and spear through strategic invisibility",
+    "key_themes": ["Strategic Invisibility", "Spiritual Clarity", "Network Building", "Women's Leadership", "Protective Fierceness", "Direct Encounter"]
+  }
+}

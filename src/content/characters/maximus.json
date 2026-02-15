@@ -1,0 +1,21 @@
+{
+  "character": {
+    "id": "maximus",
+    "name": "Gaius Ursus Maximus",
+    "alternative_names": ["Max", "Varro", "The Bruiser"],
+    "role": "antagonist",
+    "symbolic_representation": "The Red Horse (War, Bloodshed, Violence)",
+    "image": "/images/characters/main-characters/antagonist/the-four/Character_Card_Portrait_Maximus.png",
+    "brief_description": "An aggressive military officer whose physical dominance and action-focused nature lead him into a curse that transforms him into an instrument of endless violence.",
+    "full_description": "Maximus is a military officer known for exceptional physical strength and combat mastery. He leads through presence and dominance, preferring direct action over strategic planning. During the crucifixion, he commands the execution detail with brutal efficiency, categorizing weakness with contempt. However, his participation in Christ's death triggers a supernatural curse that freezes him at age 30 and transforms him into an instrument of endless violence. His restlessness becomes compulsive, his aggression becomes autonomous, and he becomes trapped in a cycle of violence that serves purposes beyond his understanding.",
+    "origin": "Rome (born in Rome, Italy proper)",
+    "occupation": "Military officer, leader of a unit under Corvus",
+    "introduction_chapter": 1,
+    "key_chapters": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "opening_state": "Confident young officer; physically at peak; respected for strength; ambitious for advancement",
+    "key_transformation": "Cursed during crucifixion; frozen at age 30; transformed into instrument of endless violence",
+    "closing_state": "Trapped in curse; compulsive violence; autonomous aggression; serves purposes beyond understanding",
+    "arc_preview": "From confident officer commanding execution detail, through supernatural curse triggered by participation in crucifixion, to trapped instrument of endless violence serving purposes beyond his control",
+    "key_themes": ["Violence", "Curse", "Physical Dominance", "The Red Horse", "Compulsive Aggression"]
+  }
+}

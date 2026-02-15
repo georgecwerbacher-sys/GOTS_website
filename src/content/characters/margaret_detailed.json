@@ -1,0 +1,142 @@
+{
+  "character": {
+    "id": "margaret",
+    "image": "/images/characters/followers/shadows/Character_Card_Portrait_Margaret.png",
+    
+    "identification": {
+      "full_name": "Margaret of Samaria",
+      "alternative_names": ["Margaret the Keeper", "The Archive", "The First Shadow", "The Mother"],
+      "role": "Network Founder & Architect; Archive Keeper; Acting/Spiritual Mother to Hannah Menahem (age 4 at rescue) and Judah Menahem (age 3 at rescue); Spear Custodian; Network Visionary",
+      "category": "Followers / Shadows",
+      "story_status": "Active throughout Parts 1-6; transitioning in early Part 7; legacy carries forward through Hannah's leadership and archives",
+      "primary_narrative_function": "Network founder and spiritual mother who demonstrates how grace operates through human protection"
+    },
+    
+    "physical_description": {
+      "age": "~63 years old in Part 7 (born ~5 CE, age ~30 at Mount Gerizim rescue in 36 CE)",
+      "build": "Average build; practical appearance; unremarkable by design to move invisibly",
+      "distinctive_features": {
+        "eyes": "Observant; assessing; maternal warmth mixed with operational awareness",
+        "bearing": "Practical and unassuming; designed not to stand out; can shift to command presence when needed",
+        "appearance": "Well-maintained but not ostentatious; reflects merchant background and practical wisdom"
+      },
+      "visual_signature": "Practical appearance; maternal presence; operational awareness; archive keeper's careful attention to detail"
+    },
+    
+    "personality": {
+      "primary_traits": [
+        {
+          "trait": "Protective Maternal Instinct",
+          "description": "Fierce love for Hannah and Menahem; extended to entire network; protection is core identity"
+        },
+        {
+          "trait": "Organizational Genius",
+          "description": "Built systematic protection network; created archives; developed protocols; trained operatives"
+        },
+        {
+          "trait": "Spiritual Depth",
+          "description": "Experience of divine intervention at Mount Gerizim became foundation of faith; understands grace as lived experience"
+        },
+        {
+          "trait": "Archive Keeper's Mind",
+          "description": "Preserves witness and memory; refuses to let death be forgotten; documentation as sacred act"
+        },
+        {
+          "trait": "Practical Wisdom",
+          "description": "Merchant background; languages; accounting; household management; observation of community dynamics"
+        }
+      ],
+      
+      "strengths": [
+        {
+          "strength": "Protective Love",
+          "shows_in": "Rescued children from massacre; raised them as her own; protects network members like family"
+        },
+        {
+          "strength": "Network Building",
+          "shows_in": "Created systematic protection systems; trained operatives; built relationships across communities"
+        },
+        {
+          "strength": "Archive Keeping",
+          "shows_in": "Preserves witness and memory; documentation systems; prevents loss of truth"
+        },
+        {
+          "strength": "Spiritual Partnership",
+          "shows_in": "Equal partner with Malchus; shared commitment to spear's preservation; sacred collaboration"
+        }
+      ],
+      
+      "flaws_and_vulnerabilities": [
+        {
+          "flaw": "Maternal Anguish",
+          "manifestation": "Heartbreak over Menahem's choice of violence; saved both children equally but they diverged into opposite paths"
+        },
+        {
+          "flaw": "Inability to Save Menahem from Himself",
+          "manifestation": "Saved his physical life at age 3 but could not save him from choosing violence; grace cannot force acceptance"
+        },
+        {
+          "flaw": "Grief Over Losses",
+          "manifestation": "Lost David and brother at Mount Gerizim; carries trauma of massacre; uncertainty about brother's fate"
+        },
+        {
+          "flaw": "Transitional Vulnerability",
+          "manifestation": "Aware that her time of primary leadership is ending; must release control to Hannah"
+        }
+      ],
+      
+      "core_motivations": [
+        "Sacred obligation to protect Hannah and Menahem, whom she saved",
+        "Preserve witness and prevent loss of memory",
+        "Protection of network members as extension of maternal love",
+        "Transform Mount Gerizim loss into protection for others",
+        "Ensure children understand why they were saved"
+      ]
+    },
+    
+    "relationships": [
+      {
+        "character_id": "hannah",
+        "character_name": "Hannah Menahem",
+        "relationship_type": "Adoptive Daughter/Successor/Spiritual Heir",
+        "dynamic": "Rescued at Mount Gerizim at age 4; Margaret threw herself between Hannah and soldiers; divine flash saved them; raised as beloved daughter for 32 years; Margaret transitioning authority to Hannah; Hannah taking primary leadership"
+      },
+      {
+        "character_id": "menahem",
+        "character_name": "Judah Menahem",
+        "relationship_type": "Adoptive Son/Complication/Source of Maternal Anguish",
+        "dynamic": "Rescued at Mount Gerizim at age 3; Margaret saved his life but he chose violence over grace; maternal love complicated by profound disagreement; heartbreak and continued love coexisting"
+      },
+      {
+        "character_id": "malchus",
+        "character_name": "Malchus",
+        "relationship_type": "Spiritual Partner/Collaborator/Peer",
+        "dynamic": "Partnership of equals; met after Mount Gerizim; worked together 32 years building network; Malchus recognized her gift and drew her into sacred work; equal standing in sanctuary leadership"
+      }
+    ],
+    
+    "story_arc": {
+      "opening_state": "Network founder and archive keeper; spiritual mother to Hannah and Menahem; equal partner with Malchus in sanctuary leadership",
+      "transformation": "Rescued two orphaned children at Mount Gerizim; divine intervention saved them; transformed from grief-stricken widow into woman on sacred mission",
+      "closing_state": "Transitioning authority to Hannah; watching with heartbreak as Menahem chose violence; completing legacy of protection and preservation"
+    },
+    
+    "thematic_significance": [
+      "Protection as sacred calling",
+      "Motherhood extended to community",
+      "Archive keeping as preservation of witness",
+      "Divine intervention through human action",
+      "Grace and free will: does grace determine response or do those saved remain free to reject salvation?"
+    ],
+    
+    "why_readers_care": "Margaret represents the power of protective love and the cost of that protection. Her character demonstrates how one moment of divine intervention—throwing herself between children and soldiers—transformed her entire life into a mission of protection. Readers watch her raise two children she saved, one choosing grace (Hannah) and one choosing violence (Menahem), embodying the ultimate theological question: does grace determine response, or do those saved remain free to reject salvation? Through Margaret, readers see how loss can be transformed into protection, how maternal love extends to community, and how archives preserve witness that would otherwise be lost.",
+    
+    "character_questions_for_readers": [
+      "Does grace determine response, or do those saved remain free to reject salvation?",
+      "Can protective love save someone who chooses violence?",
+      "How does loss transform into protection?",
+      "What is the cost of being the one who saves others?",
+      "How do we preserve witness when systems seek to erase it?"
+    ]
+  }
+}

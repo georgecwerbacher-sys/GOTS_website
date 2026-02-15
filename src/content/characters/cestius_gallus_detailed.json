@@ -1,0 +1,132 @@
+{
+  "character": {
+    "id": "cestius_gallus",
+    "image": "/images/characters/romans/other/Character_Card_Portrait_Gallus.png",
+    
+    "identification": {
+      "full_name": "Cestius Gallus",
+      "alternative_names": ["Gaius Cestius Gallus"],
+      "role": "Roman military commander of Prefect and temple Guards; ill-fated general; instrument of manipulation",
+      "category": "Romans / Prefects",
+      "story_status": "Part 10a - The Battle of Horon (final appearance)",
+      "primary_narrative_function": "Tragic commander whose hubris leads to catastrophic defeat"
+    },
+    
+    "physical_description": {
+      "age": "Late 50s to early 60s",
+      "build": "Heavyset with broad shoulders; physique suggests strength that was once formidable but is now fading—muscle turning to thickness",
+      "distinctive_features": {
+        "scars": "Deep scar running from left temple to jaw (legacy of the Parthian campaign)",
+        "face": "Aquiline nose, slightly broken from cavalry accident; weather-beaten face with deep lines; permanent furrow between brows",
+        "hair": "Steel-gray hair worn short in military fashion, receding at the temples",
+        "eyes": "Eyes that once reflected tactical brilliance now carry hints of opacity—a man beginning to doubt his own perceptions",
+        "bearing": "Rigid posture of career military officer; movements deliberate and measured; underlying tension in bearing"
+      },
+      "visual_signature": "Polished military dress; meticulously maintained armor; distinctive helm with crest; visible weight of command; aging beneath formal presentation"
+    },
+    
+    "personality": {
+      "primary_traits": [
+        {
+          "trait": "Arrogant Incompetence",
+          "description": "Possesses genuine experience but dramatically overestimates capabilities; confuses years of service with actual brilliance"
+        },
+        {
+          "trait": "Insecure Authority",
+          "description": "Desperately needs to be seen as competent and in control; any challenge creates disproportionate anger"
+        },
+        {
+          "trait": "Ego-Driven Judgment",
+          "description": "Makes decisions based on how they'll reflect on reputation rather than strategic merit"
+        },
+        {
+          "trait": "Habitual Blame-Shifting",
+          "description": "When outcomes disappoint, first instinct is to find someone else at fault; failures are never his own decisions"
+        },
+        {
+          "trait": "Desperate for Validation",
+          "description": "Constant need for affirmation that previous victories were due to brilliance; frequently references past successes"
+        }
+      ],
+      
+      "strengths": [
+        {
+          "strength": "Genuine Military Experience",
+          "shows_in": "Decades of service; organizational capability; physical courage; commanding presence"
+        },
+        {
+          "strength": "Military Organization",
+          "shows_in": "Excellent at managing established military structures; skilled in logistics and troop management"
+        },
+        {
+          "strength": "Physical Courage",
+          "shows_in": "Has proven himself in actual combat; dies fighting bravely"
+        }
+      ],
+      
+      "flaws_and_vulnerabilities": [
+        {
+          "flaw": "Fatal Overconfidence",
+          "manifestation": "Cannot accurately assess situations outside previous experience; equates following procedure with effective strategy; dismisses warnings"
+        },
+        {
+          "flaw": "Blind to Manipulation",
+          "manifestation": "Cannot recognize when he's being manipulated; accepts validation uncritically; vulnerable to Dybbukim influence through Corvus"
+        },
+        {
+          "flaw": "Inability to Adapt",
+          "manifestation": "Cannot adapt when initial assumptions prove wrong; makes decisions based on vanity rather than verification"
+        },
+        {
+          "flaw": "Arrogance and Insecurity",
+          "manifestation": "Arrogant enough to reject warnings; insecure enough to be manipulated by validation; projects confidence while harboring doubt"
+        }
+      ],
+      
+      "core_motivations": [
+        "Achieve final military victory that will cement legacy",
+        "Prove that military reputation is well-earned",
+        "Validate belief in own military genius",
+        "Secure comfortable retirement with full honors"
+      ]
+    },
+    
+    "relationships": [
+      {
+        "character_id": "lucius-claudius-corvus",
+        "character_name": "Lucius Claudius Corvus",
+        "relationship_type": "Second-in-Command/Strategic Advisor",
+        "dynamic": "Corvus is corrupted by Dybbukim influence and subtly manipulates Cestius's decisions; Cestius sees Corvus as capable subordinate whose advice he solicits; Corvus appears to defer while actually steering judgment"
+      },
+      {
+        "character_id": "roman-prefect",
+        "character_name": "The Roman Prefect",
+        "relationship_type": "Superior Officer",
+        "dynamic": "Respectful but wary; prefect appointed Cestius and made it clear success is expected; provides false intelligence"
+      }
+    ],
+    
+    "story_arc": {
+      "opening_state": "Confident general; expecting straightforward military engagement; secure in his strategy based on false premises",
+      "transformation": "Ambush erupts; all assumptions prove wrong; command authority disintegrates; realizes catastrophic error",
+      "closing_state": "Dies in combat; fragmented recognition of manipulation; bitter understanding that comes too late"
+    },
+    
+    "thematic_significance": [
+      "Corruption of free will through pride and insecurity",
+      "Hubris leading to catastrophic defeat",
+      "Tragic commander rather than villain",
+      "Cost of arrogance and overconfidence"
+    ],
+    
+    "why_readers_care": "Cestius represents the tragic figure whose destruction is orchestrated while he believes he's making free choices. His character demonstrates how pride and insecurity work together to create vulnerability to corruption. Readers are drawn to his genuine military experience and physical courage, even as they watch him make decisions that feel logical but are fundamentally flawed. His tragedy—competence undermined by fundamental limitations and corrupted judgment—becomes part of the larger story of how free will is compromised. Through Cestius, readers see how confidence is not the same as competence, and that accepting false intelligence and following flawed strategy have catastrophic consequences.",
+    
+    "character_questions_for_readers": [
+      "Can confidence be mistaken for competence?",
+      "How does pride and insecurity create vulnerability to manipulation?",
+      "What happens when experience is confused with expertise?",
+      "Can free will be corrupted while still feeling like free choice?",
+      "What is the cost of hubris for those who follow orders?"
+    ]
+  }
+}

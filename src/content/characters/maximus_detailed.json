@@ -1,0 +1,127 @@
+{
+  "character": {
+    "id": "maximus",
+    "image": "/images/characters/main-characters/antagonist/the-four/Character_Card_Portrait_Maximus.png",
+    
+    "identification": {
+      "full_name": "Gaius Ursus Maximus",
+      "alternative_names": ["Max", "Varro", "The Bruiser"],
+      "role": "Military officer, leader of a unit under Corvus; one of the Four Horsemen; aggressive enforcer of Rome's might",
+      "category": "Romans / The Four Horsemen",
+      "story_status": "Active through Parts 1-6+",
+      "primary_narrative_function": "Instrument of endless violence through supernatural curse"
+    },
+    
+    "physical_description": {
+      "age": "27-30 years old (living state); frozen at 30 (cursed state)",
+      "build": "Above average (approximately 6'0\"); heavily muscular; thick shoulders; powerful frame",
+      "distinctive_features": {
+        "scars": "Thick scar down left forearm; parallel scars across chest; rope burn marks on wrists",
+        "marks_tattoos": "Standard Roman military tattoos; Mars symbol prominently on right shoulder; small marks on forearms indicating combat kills",
+        "unusual_features": "Nose broken at least three times; misaligned; pale blue eyes (unusual for Italian); scar tissue around eyes from boxing or street fighting",
+        "bearing": "Upright but less rigid than Brutus; confident in physical dominance; sometimes slightly forward-leaning (aggressive posture)"
+      },
+      "visual_signature": "Impressive physical presence; obviously trained in combat; becomes increasingly disheveled as curse manifests"
+    },
+    
+    "personality": {
+      "primary_traits": [
+        {
+          "trait": "Physical Combat Mastery",
+          "description": "Exceptional warrior; strength and fighting skill are extraordinary; few can match him in direct combat"
+        },
+        {
+          "trait": "Aggressive Implementation",
+          "description": "Excels at direct application of force; executes aggressive strategies with commitment and efficiency"
+        },
+        {
+          "trait": "Leadership Through Presence",
+          "description": "Commands respect through physical dominance and demonstrated strength; subordinates follow him eagerly"
+        },
+        {
+          "trait": "Action-Focused",
+          "description": "Prefers immediate action over strategic planning; strength-obsessed; restless when inactive"
+        }
+      ],
+      
+      "strengths": [
+        {
+          "strength": "Physical Combat Mastery",
+          "shows_in": "Dominates in sparring; leaves opponents severely injured or dead; feared in hand-to-hand combat"
+        },
+        {
+          "strength": "Aggressive Implementation",
+          "shows_in": "Achieves objectives through forceful action; subordinates follow his aggressive lead; succeeds at combat-focused tasks"
+        },
+        {
+          "strength": "Leadership Through Presence",
+          "shows_in": "Unit performs well under his command; morale is high; soldiers want to follow him"
+        }
+      ],
+      
+      "flaws_and_vulnerabilities": [
+        {
+          "flaw": "Lack of Strategic Thinking",
+          "manifestation": "Prefers direct action; complex strategy is difficult; often wants to attack when subtlety would be more effective"
+        },
+        {
+          "flaw": "Emotional Immaturity",
+          "manifestation": "Has not developed emotional sophistication; restless, easily frustrated, acts impulsively"
+        },
+        {
+          "flaw": "Intolerance of Weakness",
+          "manifestation": "Categorizes people as strong or weak; those he deems weak are treated with contempt and sometimes brutality"
+        },
+        {
+          "flaw": "The Curse",
+          "manifestation": "Frozen at age 30; transformed into instrument of endless violence; restlessness becomes compulsive; aggression becomes autonomous"
+        }
+      ],
+      
+      "core_motivations": [
+        "Physical dominance and combat excellence",
+        "Direct action over strategic planning",
+        "Elimination of weakness through force",
+        "Serving purposes beyond understanding (post-curse)"
+      ]
+    },
+    
+    "relationships": [
+      {
+        "character_id": "lucius-claudius-corvus",
+        "character_name": "Lucius Claudius Corvus",
+        "relationship_type": "Superior Officer",
+        "dynamic": "Maximus serves under Corvus; respects command structure; executes aggressive strategies"
+      },
+      {
+        "character_id": "marcus-aurelius-brutus",
+        "character_name": "Marcus Aurelius Brutus",
+        "relationship_type": "Coordinated Predator",
+        "dynamic": "Brutus directs; Maximus executes; clear hierarchy with strategic coordination"
+      }
+    ],
+    
+    "story_arc": {
+      "opening_state": "Confident young officer; physically at peak; respected for strength; ambitious for advancement",
+      "transformation": "Cursed during crucifixion; frozen at age 30; transformed into instrument of endless violence",
+      "closing_state": "Trapped in curse; compulsive violence; autonomous aggression; serves purposes beyond understanding"
+    },
+    
+    "thematic_significance": [
+      "Violence as autonomous force",
+      "Curse as consequence of participation in crucifixion",
+      "Physical dominance as limitation",
+      "The Red Horse: war and bloodshed through violence"
+    ],
+    
+    "why_readers_care": "Maximus represents the cost of violence—not just to victims but to perpetrators. His curse demonstrates that participation in evil has consequences that transform the perpetrator. His physical dominance becomes a trap, and his action-focused nature leads him into a cycle of violence he cannot escape. Through Maximus, readers see how strength can become weakness, and how violence can consume those who wield it.",
+    
+    "character_questions_for_readers": [
+      "What is the cost of violence to the perpetrator?",
+      "Can strength become a trap?",
+      "How does participation in evil transform us?",
+      "Can violence become autonomous and compulsive?",
+      "What happens when action replaces thought?"
+    ]
+  }
+}

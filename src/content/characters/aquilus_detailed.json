@@ -1,0 +1,132 @@
+{
+  "character": {
+    "id": "aquilus",
+    "image": "/images/characters/romans/other/Character_Card_Portrait_Aquilus.png",
+    
+    "identification": {
+      "full_name": "Caius Tullius Aquilus",
+      "alternative_names": ["Verax", "Truth-Speaker"],
+      "role": "Soldier/Guard under Longinus's command; later assigned to tomb guard duty; bridge character between Longinus's transformation and the resurrection witness",
+      "category": "Romans / Other",
+      "story_status": "Active throughout Parts 1-3 and beyond",
+      "primary_narrative_function": "Embodies collision between Roman duty and supernatural truth"
+    },
+    
+    "physical_description": {
+      "age": "22-27 years old (Parts 1-3)",
+      "build": "Average for Roman soldier (approximately 5'8\"-5'10\"); average, unimposing; 'modest build masks quiet strength'",
+      "distinctive_features": {
+        "eyes": "Honest eyes; direct eye contact reflects commitment to truthfulness; post-resurrection, this directness becomes painful to maintain",
+        "face": "Forgettable, ordinary; described as reliable rather than notable; serious, thoughtful",
+        "bearing": "Perfect military bearing; stands with Roman military discipline; posture communicates training and reliability",
+        "posture": "Upright, military bearing; maintains formal stance even in informal settings"
+      },
+      "visual_signature": "Perfect military bearing; direct eye contact; impeccably maintained appearance; signs of stress visible post-resurrection"
+    },
+    
+    "personality": {
+      "primary_traits": [
+        {
+          "trait": "Reliability/Steadfastness",
+          "description": "Does what he promises, shows up as expected, maintains standards; officers seek him out as witnesses"
+        },
+        {
+          "trait": "Attention to Detail",
+          "description": "Notices things others miss; remembers facts precisely; reports events with exact times, positions, words"
+        },
+        {
+          "trait": "Moral Consistency",
+          "description": "Maintains principles even under pressure; maintains integrity in corrupt garrison"
+        },
+        {
+          "trait": "Truthfulness",
+          "description": "Built entire identity on never lying, on reporting events exactly as witnessed; known as 'Truth-Speaker'"
+        },
+        {
+          "trait": "Loyalty",
+          "description": "Deeply loyal to comrades and to superiors who earn respect; protects fellow soldiers"
+        }
+      ],
+      
+      "strengths": [
+        {
+          "strength": "Reliability",
+          "shows_in": "Officers seek him out as witnesses; soldiers trust his word implicitly; selected for sensitive assignments"
+        },
+        {
+          "strength": "Attention to Detail",
+          "shows_in": "Reports events with exact times, positions, words; remembers details others forget"
+        },
+        {
+          "strength": "Moral Consistency",
+          "shows_in": "Maintains integrity in corrupt garrison; refuses to compromise honor for advancement"
+        }
+      ],
+      
+      "flaws_and_vulnerabilities": [
+        {
+          "flaw": "Rigidity/Difficulty with Moral Gray Areas",
+          "manifestation": "Thinks in black-and-white terms; struggles when duty and conscience conflict; moral paralysis at critical moments"
+        },
+        {
+          "flaw": "Over-Reliance on Reputation",
+          "manifestation": "Single significant lie threatens entire identity; vulnerability if reputation ever questioned; identity depends entirely on being 'Truth-Speaker'"
+        },
+        {
+          "flaw": "Difficulty Adapting to Supernatural Reality",
+          "manifestation": "Encounters with divine power overwhelm his categories of understanding; spiritual confusion; struggles to reconcile resurrection with Roman framework"
+        },
+        {
+          "flaw": "Passivity",
+          "manifestation": "Excels at following orders but struggles with independent decision-making; becomes tool of others' agendas"
+        }
+      ],
+      
+      "core_motivations": [
+        "Maintain perfect integrity—to be the soldier who can be absolutely relied upon",
+        "Report events exactly as witnessed",
+        "Protect fellow soldiers",
+        "Reconcile military duty with spiritual awakening"
+      ]
+    },
+    
+    "relationships": [
+      {
+        "character_id": "cassius-longinus-mercator",
+        "character_name": "Cassius Longinus Mercator",
+        "relationship_type": "Best Friend and Spiritual Guide",
+        "dynamic": "Mutual respect for integrity; both share moral compass; Longinus's transformation becomes template for recognizing divine power; post-resurrection, friendship becomes source of both comfort and torment"
+      },
+      {
+        "character_id": "lucius-flavius-victor",
+        "character_name": "Lucius Flavius Victor",
+        "relationship_type": "Mentor",
+        "dynamic": "Aquilus's mentorship is most direct influence on Victor's decision to accept bribe; becomes fellow-conspirator in lie; bond deepens but also becomes tainted"
+      }
+    ],
+    
+    "story_arc": {
+      "opening_state": "Confident, reliable soldier; maintaining exemplary reputation; assumes truth and loyalty will never conflict",
+      "transformation": "Witnesses resurrection; faces impossible choice; accepts bribe; participates in lie; identity shattered",
+      "closing_state": "Spiritually awakened; morally tormented; identity fragmented; haunted by witnessed truth and conscious decision to deny it"
+    },
+    
+    "thematic_significance": [
+      "Integrity and compromise",
+      "Loyalty and truthfulness",
+      "Witnessing and faith",
+      "Cost of spiritual awakening",
+      "Redemption and guilt"
+    ],
+    
+    "why_readers_care": "Aquilus represents the ordinary person confronted by extraordinary truth. His character demonstrates that witnessing resurrection doesn't automatically produce faith or clear answers—sometimes it produces crisis and compromise. Readers are drawn to his integrity and reliability, even as they watch him face an impossible choice between truthfulness and loyalty. His decision to accept the bribe and lie creates moral crisis that illustrates the real-world consequences of resurrection for ordinary people. Through Aquilus, readers see how absolute integrity may be impossible, but compromise without principle is equally destructive.",
+    
+    "character_questions_for_readers": [
+      "Can perfect integrity be maintained in an imperfect world?",
+      "What happens when truth and loyalty conflict?",
+      "Does witnessing supernatural events automatically produce faith?",
+      "What is the cost of spiritual awakening?",
+      "Can redemption be possible after fundamental moral failure?"
+    ]
+  }
+}

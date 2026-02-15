@@ -1,0 +1,139 @@
+{
+  "character": {
+    "id": "brutus",
+    "image": "/images/characters/main-characters/antagonist/the-four/Character_Card_Portrait_Brutus.png",
+    
+    "identification": {
+      "full_name": "Marcus Aurelius Brutus",
+      "alternative_names": ["The Centurion Commander", "Brutus", "The White Horse"],
+      "role": "Centurion Commander of the Tenth Century; chief enforcer of Rome's occupation authority; one of the Four Horsemen",
+      "category": "Romans / The Four Horsemen",
+      "story_status": "Primary antagonist through Parts 1-3",
+      "primary_narrative_function": "Systematic destroyer of resistance through calculated cruelty and psychological manipulation"
+    },
+    
+    "physical_description": {
+      "age": "40-55 years old (Parts 1-3)",
+      "build": "Tall (~5'11\"), athletic, muscular; decades of military training evident",
+      "distinctive_features": {
+        "eyes": "Intense dark eyes that assess constantly; intelligence visible but accompanied by cold calculation",
+        "scars": "Left arm: campaign wound; Right shoulder: recent battle mark; Left wrist: faded legion tattoo; Face: broken nose healed asymmetrically",
+        "hair": "Dark brown with significant gray; military cut maintained with precision",
+        "bearing": "Perfectly upright; shoulders back; military bearing so ingrained it appears effortless"
+      },
+      "visual_signature": "Perfect military presentation; controlled; appears as model officer; predatory bearing becomes apparent as mask cracks"
+    },
+    
+    "personality": {
+      "primary_traits": [
+        {
+          "trait": "Command Authority",
+          "description": "Natural leader; soldiers follow instinctively; presence commands respect"
+        },
+        {
+          "trait": "Strategic Thinking",
+          "description": "Plans campaigns with precision; understands complex situations rapidly"
+        },
+        {
+          "trait": "Ruthlessness",
+          "description": "Never paralyzed by doubt; acts decisively; brutality deployed strategically"
+        },
+        {
+          "trait": "Psychological Control",
+          "description": "Masters ability to manipulate others through misdirection; the mask is perfect"
+        },
+        {
+          "trait": "Coordination",
+          "description": "Able to coordinate with other predators toward unified goal"
+        }
+      ],
+      
+      "strengths": [
+        {
+          "strength": "Natural Leadership",
+          "shows_in": "Soldiers follow instinctively; presence commands respect; effective commander"
+        },
+        {
+          "strength": "Strategic Thinking",
+          "shows_in": "Plans campaigns with precision; understands complex situations; tactical excellence"
+        },
+        {
+          "strength": "Perfect Mask",
+          "shows_in": "Controls how others perceive him; appears as model officer; deception is flawless"
+        }
+      ],
+      
+      "flaws_and_vulnerabilities": [
+        {
+          "flaw": "Dependence on Mask",
+          "manifestation": "Revelation of true nature could destabilize his position"
+        },
+        {
+          "flaw": "Cannot Use Military Logic Against Faith",
+          "manifestation": "Faith-motivated opponents prove more resilient than expected"
+        },
+        {
+          "flaw": "Ultimate Service to Rome",
+          "manifestation": "If Rome falls, his base of power collapses"
+        }
+      ],
+      
+      "core_motivations": [
+        "Systematic elimination of resistance through calculated cruelty",
+        "Coordination with other Horsemen to destroy opposition",
+        "Maintenance of perfect mask while revealing predatory nature",
+        "Positioning Longinus for elimination while appearing protective"
+      ]
+    },
+    
+    "relationships": [
+      {
+        "character_id": "cassius-longinus-mercator",
+        "character_name": "Cassius Longinus Mercator",
+        "relationship_type": "Mentor/Target",
+        "dynamic": "Initially respects as military peer; then sees as obstacle; finally positions for elimination while maintaining appearance of protection"
+      },
+      {
+        "character_id": "lucius-claudius-corvus",
+        "character_name": "Lucius Claudius Corvus",
+        "relationship_type": "Coordinated Predator",
+        "dynamic": "Professional respect; mutual recognition of ruthlessness; coordinated strategy"
+      },
+      {
+        "character_id": "gaius-ursus-maximus",
+        "character_name": "Gaius Ursus Maximus",
+        "relationship_type": "Coordinated Predator",
+        "dynamic": "Brutus directs; Maximus executes; clear hierarchy with strategic coordination"
+      },
+      {
+        "character_id": "quintus-sanguinarius-horatius",
+        "character_name": "Quintus Sanguinarius Horatius",
+        "relationship_type": "Coordinated Predator",
+        "dynamic": "Brutus directs; Horatius executes; clear hierarchy with enforcement coordination"
+      }
+    ],
+    
+    "story_arc": {
+      "opening_state": "Perfect military presentation; appears as model officer; controlled; respected commander",
+      "transformation": "Mask begins to crack; predatory nature becomes visible; coordination with other Horsemen revealed",
+      "closing_state": "Predatory bearing apparent; control loosens into menace; military bearing replaced with hunter's posture"
+    },
+    
+    "thematic_significance": [
+      "Deception as strategic weapon",
+      "War and conquest through systematic destruction",
+      "Predation masked as pragmatism",
+      "The White Horse: conquest through deception"
+    ],
+    
+    "why_readers_care": "Brutus represents the insidious nature of evil—not obvious villainy but calculated predation hidden behind a perfect mask. His character demonstrates how those we trust can be our greatest enemies. His relationship with Longinus is particularly devastating: he appears as mentor and protector while systematically positioning Longinus for destruction. Through Brutus, readers see how deception can be more effective than obvious cruelty, and how trust can be weaponized.",
+    
+    "character_questions_for_readers": [
+      "How do we recognize evil when it wears a perfect mask?",
+      "Can trust be weaponized against us?",
+      "What happens when those we admire are actually predators?",
+      "How does systematic deception destroy resistance?",
+      "Can military precision mask calculated cruelty?"
+    ]
+  }
+}

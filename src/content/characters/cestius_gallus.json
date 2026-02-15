@@ -1,0 +1,21 @@
+{
+  "character": {
+    "id": "cestius_gallus",
+    "name": "Cestius Gallus",
+    "alternative_names": ["Gaius Cestius Gallus"],
+    "role": "antagonist",
+    "symbolic_representation": "The Tragic Commander; corruption of free will through pride and insecurity",
+    "image": "/images/characters/romans/other/Character_Card_Portrait_Gallus.png",
+    "brief_description": "An aging Roman general whose desperate need for a final military victory blinds him to warning signs and makes him vulnerable to manipulation, leading to catastrophic defeat.",
+    "full_description": "Cestius Gallus is a Roman military commander in his late 50s, appointed to command forces in Judea as his final opportunity for glory before retirement. He possesses genuine military experience but dramatically overestimates his capabilities. His arrogance and insecurity make him vulnerable to manipulation by Corvus, who subtly steers his judgment toward poor decisions. When he leads his army into the Beth-Horon Pass based on false intelligence, he experiences the shattering of all his assumptions as an ambush destroys his command. He dies with fragmented awareness that he was manipulated, but there's no redemption—only the bitter understanding that comes too late.",
+    "origin": "Middle-rank Roman family with military tradition but no great prominence",
+    "occupation": "Roman military commander of Prefect and temple Guards",
+    "introduction_chapter": 10,
+    "key_chapters": [10],
+    "opening_state": "Confident general; expecting straightforward military engagement; secure in his strategy based on false premises",
+    "key_transformation": "Ambush erupts; all assumptions prove wrong; command authority disintegrates; realizes catastrophic error",
+    "closing_state": "Dies in combat; fragmented recognition of manipulation; bitter understanding that comes too late",
+    "arc_preview": "From confident general leading army into battle, through catastrophic ambush and realization of error, to tragic death with awareness of manipulation that comes too late",
+    "key_themes": ["Hubris", "Corruption of Free Will", "Tragic Commander", "Arrogance and Insecurity", "Cost of Pride"]
+  }
+}

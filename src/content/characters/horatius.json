@@ -1,0 +1,21 @@
+{
+  "character": {
+    "id": "horatius",
+    "name": "Quintus Sanguinarius Horatius",
+    "alternative_names": ["Sanguinarius", "The Bloodhound", "The Pale Horse"],
+    "role": "antagonist",
+    "symbolic_representation": "The Pale Horse (Death, Pestilence, Terror, Dehumanization)",
+    "image": "/images/characters/main-characters/antagonist/the-four/Character_Card_Portrait_Horatius.png",
+    "brief_description": "A brutal enforcement officer whose efficiency in cruelty masks progressive dehumanization, becoming Rome's tool while losing his own humanity.",
+    "full_description": "Horatius is a Roman enforcement officer and interrogator known for absolute obedience and effectiveness in harsh measures. He appears as a necessary enforcer doing Rome's dirty work, but beneath this appearance lies a man becoming progressively dehumanized. Every cruelty he inflicts costs him a piece of humanity. Every order he follows without question hardens him further. His arc isn't about revelation of hidden nature—it's about transformation into something inhuman. By Part 3, he must choose between complete dehumanization or reclaiming his humanity, but either outcome is devastating.",
+    "origin": "Unknown (possibly lower-class Roman or provincial)",
+    "occupation": "Roman enforcement officer, interrogator, administrator of harsh measures",
+    "introduction_chapter": 1,
+    "key_chapters": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "opening_state": "Controlled brutality; effective enforcement; feared; already dehumanized",
+    "key_transformation": "Psychological strain visible; compartmentalization breaking; awareness of dehumanization growing",
+    "closing_state": "Either broken and no longer functional, re-hardened more brutally, or defected/turned toward followers",
+    "arc_preview": "From efficient brutal tool coordinating with other Horsemen, through escalating brutality and psychological breakdown, to final choice between complete dehumanization or reclaiming humanity",
+    "key_themes": ["Dehumanization", "Terror as Weapon", "The Pale Horse", "Cost of Oppression", "Psychological Breakdown"]
+  }
+}

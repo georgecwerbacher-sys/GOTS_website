@@ -1,0 +1,21 @@
+{
+  "character": {
+    "id": "malchus",
+    "name": "Malchus bar Eleazar",
+    "alternative_names": ["Malchus", "The servant", "The one whose ear was healed"],
+    "role": "protagonist",
+    "symbolic_representation": "The Hidden Guardian; bridge between authority and faith",
+    "image": "/images/characters/sanhedrin/Character_Card_Portrait_Malchus.png",
+    "brief_description": "A High Priest's servant whose healed ear marks him as a secret believer, quietly protecting resurrection witnesses while serving in the heart of opposition.",
+    "full_description": "Malchus is the High Priest's personal servant, present during Christ's arrest when his ear was cut off and miraculously healed. This healing transforms him into a secret believer who must navigate the impossible tension between his duty to Caiaphas and his recognition of divine truth. He becomes a guardian of resurrection witnesses like Longinus, using his position within the Temple hierarchy to protect those marked by grace. His character embodies quiet courage—facing impossible situations with steady composure while carrying dangerous secrets that would mean execution if discovered.",
+    "origin": "Temple context or close proximity; raised within religious institution's environment",
+    "occupation": "High Priest's personal servant",
+    "introduction_chapter": 1,
+    "key_chapters": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "opening_state": "Conventional Temple servant; present at arrest; ear cut off",
+    "key_transformation": "Ear miraculously healed; recognition of Jesus's divinity; transformation into secret believer",
+    "closing_state": "Quiet revolutionary; guardian of witnesses; bridge between authority and faith; spiritual depth beyond his years",
+    "arc_preview": "From conventional Temple servant, through miraculous healing and recognition of divine truth, to secret guardian protecting resurrection witnesses while serving in the heart of opposition",
+    "key_themes": ["Mercy", "Hidden Faith", "Quiet Courage", "Protection", "Bridge Between Worlds"]
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "character": {
+    "id": "salome",
+    "image": "/images/characters/followers/shadows/Character_Card_Portrait_Salome.png",
+    
+    "identification": {
+      "full_name": "Salome bat Yochanan (Salome of Samaria)",
+      "alternative_names": ["Salome", "The Invisible", "The Keeper", "First Shadow Mother"],
+      "role": "Network Builder; Spear Keeper; Women's Leader; Invisible Strategist; primary female operative in networks",
+      "category": "Followers / Shadows",
+      "story_status": "Active throughout Parts 1-9; secondary protagonist; key to community survival",
+      "primary_narrative_function": "Invisible strategist whose networks and protection enable community survival; demonstrates how women's overlooked status becomes operational strength"
+    },
+    
+    "physical_description": {
+      "age": "22-27 years old in Parts 1-3 (30 CE); ages through Parts 4-9",
+      "build": "Wiry, practical strength from work; graceful without deliberate display; compact frame suited to movement through crowds",
+      "distinctive_features": {
+        "eyes": "Dark, intelligent eyes that seem to see and calculate simultaneously; show unusual depth; reveal strategic thinking and spiritual understanding",
+        "face": "Fades from memory moments after looking away—unusual ability to be forgotten; remarkable feature; intelligence visible to those who know to look",
+        "bearing": "Easily shifts between invisible (shoulders down, eyes averted) and present (shoulders back, direct gaze); masters both modes",
+        "hands": "Move with precision and purpose; show practical work and careful handling",
+        "movement": "Quick, economical movements; nothing wasted; can disappear into crowds through perfect calibration of demeanor"
+      },
+      "visual_signature": "Young woman of unremarkable appearance concealing extraordinary strategic capability; remarkable ability to be overlooked yet commanding in intimate spaces"
+    },
+    
+    "personality": {
+      "primary_traits": [
+        {
+          "trait": "Strategic Invisibility",
+          "description": "Masterfully uses overlooked status as strength; operationally brilliant through being underestimated"
+        },
+        {
+          "trait": "Acute Observation",
+          "description": "Notices details others miss; understands human motivation and structural vulnerabilities"
+        },
+        {
+          "trait": "Spiritual Clarity",
+          "description": "Direct encounter with divine makes her certain and unafraid; faith not dependent on doctrine"
+        },
+        {
+          "trait": "Protective Fierceness",
+          "description": "Deeply loyal; willing to sacrifice; guardian instinct toward those she commits to"
+        },
+        {
+          "trait": "Intelligent Humility",
+          "description": "Intellectually capable but chooses to appear simple; strategic self-effacement"
+        }
+      ],
+      
+      "strengths": [
+        {
+          "strength": "Strategic Invisibility",
+          "shows_in": "Moving through restricted spaces unnoticed; gathering intelligence freely; protecting spear by being last person anyone would suspect"
+        },
+        {
+          "strength": "Acute Observation",
+          "shows_in": "Knowing guard routines before others see them; reading people's intentions; identifying safe routes and danger points"
+        },
+        {
+          "strength": "Spiritual Clarity",
+          "shows_in": "Unshakeable certainty; refusal to be frightened by authorities; ability to inspire faith in others"
+        },
+        {
+          "strength": "Protective Fierceness",
+          "shows_in": "Risk-taking for community protection; refusal to betray anyone; caring for people beyond practical necessity"
+        },
+        {
+          "strength": "Network Building",
+          "shows_in": "Coordinating women followers; managing safe houses; distributing intelligence; building trust across communities"
+        }
+      ],
+      
+      "flaws_and_vulnerabilities": [
+        {
+          "flaw": "Gender-Based Limitations",
+          "manifestation": "Cannot openly lead; limited formal authority; constrained by societal expectations"
+        },
+        {
+          "flaw": "Isolation from Theology",
+          "manifestation": "Her understanding of Jesus (divine manifestation vs. prophet) differs from developing doctrine; possible conflict with male leadership"
+        },
+        {
+          "flaw": "Dependency on Invisibility",
+          "manifestation": "If recognized as threat, has no protection; cannot rely on status or connections; one mistake could expose everything"
+        },
+        {
+          "flaw": "Emotional Burden",
+          "manifestation": "Carries weight of secrets; loyalty to people who cannot acknowledge her publicly; rare moments of surfacing loneliness"
+        }
+      ],
+      
+      "core_motivations": [
+        "Protect divine truth and those who carry resurrection testimony",
+        "Build community among overlooked women; show them their power",
+        "Honor the divine encounter she witnessed; commit absolutely to preserving testimony",
+        "Protect vulnerable people (women, refugees, followers); offer safety to those persecuted"
+      ]
+    },
+    
+    "relationships": [
+      {
+        "character_id": "malchus",
+        "character_name": "Malchus",
+        "relationship_type": "Spiritual Peer/Partner in Work/Possible Romance",
+        "dynamic": "Deep friendship based on mutual spiritual understanding; partnership in protecting spear; unacknowledged romantic potential; met during refugee crisis; immediately recognized spiritual kinship"
+      },
+      {
+        "character_id": "longinus",
+        "character_name": "Cassius Longinus Mercator",
+        "relationship_type": "Keeper of Testimony/Spiritual Guide",
+        "dynamic": "Spiritual peer; sees him as keeper of crucial testimony; protective guardian; initially knew him through testimony; eventually works to protect him"
+      },
+      {
+        "character_id": "women-followers",
+        "character_name": "Women Followers",
+        "relationship_type": "Sisters/Network/Community",
+        "dynamic": "Leader and guide; organized network; spiritual mother figure; they trust her completely; recognize her spiritual authority; follow her leadership"
+      }
+    ],
+    
+    "story_arc": {
+      "opening_state": "Recently committed to follower community; newly befriended Malchus; beginning to organize women; understanding her role",
+      "transformation": "From curious skeptic evaluating claims, through witnessing evidence of divine power and Longinus's healing, to committed follower and network builder",
+      "closing_state": "Established strategist and network leader; spear keeper; either martyr preserving testimony through sacrifice or survivor leader of women's community"
+    },
+    
+    "thematic_significance": [
+      "Invisible strength and power through service",
+      "Women's essential role in preservation of testimony",
+      "Transformation of limitation into advantage",
+      "Faith that doesn't require institutional approval",
+      "Strategic invisibility as operational strength",
+      "Direct encounter transcending doctrine"
+    ],
+    
+    "why_readers_care": "Salome represents the power of those society overlooks. Her character demonstrates how strategic invisibility becomes operational strength, how women's overlooked status enables them to protect what visible leaders cannot. Readers watch her build networks, protect the spear, and teach other women to claim their power. Her faith comes from direct encounter rather than doctrine, making her certain and unafraid. Through Salome, readers see how the most essential work often happens in shadows, how those without formal authority can accomplish the impossible, and how grace works through the overlooked to preserve testimony.",
+    
+    "character_questions_for_readers": [
+      "How does invisibility become power?",
+      "Can those without formal authority lead effectively?",
+      "What is the cost of being the one who protects but cannot be acknowledged?",
+      "How does direct encounter with divine differ from doctrinal faith?",
+      "What happens when those society overlooks hold the greatest strategic power?"
+    ]
+  }
+}

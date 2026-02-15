@@ -1,0 +1,142 @@
+{
+  "character": {
+    "id": "corvus",
+    "image": "/images/characters/main-characters/antagonist/the-four/Character_Card_Portrait_Corvus.png",
+    
+    "identification": {
+      "full_name": "Lucius Claudius Corvus",
+      "alternative_names": ["The Raven", "Corvus", "The Black Horse"],
+      "role": "Roman officer, administrative specialist, intelligence coordinator; one of the Four Horsemen; economic predator",
+      "category": "Romans / The Four Horsemen",
+      "story_status": "Active through Parts 1-6+",
+      "primary_narrative_function": "Economic predator exploiting desperation for profit while maintaining helpful facade"
+    },
+    
+    "physical_description": {
+      "age": "35-55 years old (Parts 1-3)",
+      "build": "Average to slightly above; unremarkable by design; soft; maintained through administrative work",
+      "distinctive_features": {
+        "eyes": "Constantly calculating; assess situations for advantage",
+        "face": "Appears approachable and reasonable; smile suggests genuine warmth (false)",
+        "bearing": "Designed not to stand out; makes himself appear less threatening than he is",
+        "hair": "Dark; well-maintained but not ostentatiously so",
+        "posture": "Deceptively casual; can shift to command authority when needed"
+      },
+      "visual_signature": "Well-groomed, comfortable appearance; seems to fit into any situation; wealth becomes evident as profits mount"
+    },
+    
+    "personality": {
+      "primary_traits": [
+        {
+          "trait": "Moral Flexibility",
+          "description": "No conscience constraining options; can do anything; willing to exploit anyone"
+        },
+        {
+          "trait": "Emotional Intelligence",
+          "description": "Brilliant at reading people and situations; understands motivations; manipulates effectively"
+        },
+        {
+          "trait": "Strategic Economic Thinking",
+          "description": "Understands complex systems and profit potential; creates monopolies; exploits scarcity"
+        },
+        {
+          "trait": "Persuasiveness",
+          "description": "Can convince almost anyone to do what benefits him; negotiations always favor him"
+        },
+        {
+          "trait": "Sophisticated Mask",
+          "description": "Appears as pragmatic problem-solver; sophisticated, diplomatic presentation; readers trust his reasoning"
+        }
+      ],
+      
+      "strengths": [
+        {
+          "strength": "Emotional Intelligence",
+          "shows_in": "Understands motivations; manipulates effectively; builds networks through apparent sympathy"
+        },
+        {
+          "strength": "Strategic Economic Thinking",
+          "shows_in": "Creates monopolies; exploits scarcity; positions for maximum advantage"
+        },
+        {
+          "strength": "Persuasiveness",
+          "shows_in": "Negotiations always favor him; others believe they're getting fair deals"
+        },
+        {
+          "strength": "Sophisticated Mask",
+          "shows_in": "Readers trust his reasoning until they realize every solution creates dependency and profit"
+        }
+      ],
+      
+      "flaws_and_vulnerabilities": [
+        {
+          "flaw": "No Real Loyalty",
+          "manifestation": "Cannot build genuine partnerships; always calculating; everyone is potential profit source; fundamentally alone"
+        },
+        {
+          "flaw": "Underestimated Enemies",
+          "manifestation": "Assumes everyone is as compromised as he is; may underestimate followers' resilience; doesn't understand spiritual motivation"
+        },
+        {
+          "flaw": "System Dependency",
+          "manifestation": "Without occupation creating chaos, has limited opportunity; needs conflict to profit; vulnerable to peace"
+        },
+        {
+          "flaw": "Vulnerability to Ideological Opposition",
+          "manifestation": "Spiritual motivation he doesn't understand may overcome economic pressure"
+        }
+      ],
+      
+      "core_motivations": [
+        "Maximize personal wealth through systematic economic exploitation",
+        "Create monopolies on essential resources",
+        "Coordinate with other Horsemen to create economic collapse",
+        "Maintain sophisticated appearance while profiting from desperation"
+      ]
+    },
+    
+    "relationships": [
+      {
+        "character_id": "marcus-aurelius-brutus",
+        "character_name": "Marcus Aurelius Brutus",
+        "relationship_type": "Coordinated Predator",
+        "dynamic": "Brutus's military pressure creates Corvus's profit opportunities; professional respect; mutual recognition of ruthlessness"
+      },
+      {
+        "character_id": "gaius-ursus-maximus",
+        "character_name": "Gaius Ursus Maximus",
+        "relationship_type": "Coordinated Predator",
+        "dynamic": "Maximus's chaos creates Corvus's profit opportunities; strategic coordination"
+      },
+      {
+        "character_id": "quintus-sanguinarius-horatius",
+        "character_name": "Quintus Sanguinarius Horatius",
+        "relationship_type": "Coordinated Predator",
+        "dynamic": "Horatius eliminates economic competitors; Corvus secures monopoly; maximum profit"
+      }
+    ],
+    
+    "story_arc": {
+      "opening_state": "Well-groomed, comfortable appearance; appears as helpful problem-solver; already predatory",
+      "transformation": "Visibly wealthier; monopolies established; mask maintained; predatory nature revealed",
+      "closing_state": "Wealth evident in every detail; comfort with chaos as profit opportunity; economic predator fully revealed"
+    },
+    
+    "thematic_significance": [
+      "Economic predation as systematic weapon",
+      "Pragmatism as mask for absolute amorality",
+      "Scarcity as tool of control",
+      "The Black Horse: famine and economic collapse through manipulation"
+    ],
+    
+    "why_readers_care": "Corvus represents the insidious nature of economic exploitation. His character demonstrates how sophisticated, reasonable-sounding justifications can mask absolute amorality. Readers are drawn to his intelligence and apparent problem-solving, even as they sense something is wrong. His descent from helpful administrator to revealed economic predator shows how systems of exploitation can be built behind masks of pragmatism. Through Corvus, readers see how desperation can be weaponized for profit, and how apparent solutions can create dependency.",
+    
+    "character_questions_for_readers": [
+      "Can pragmatism mask absolute amorality?",
+      "How do we recognize when help is actually exploitation?",
+      "What is the difference between problem-solving and creating dependency?",
+      "How does scarcity become a tool of control?",
+      "Can intelligence and sophistication be used for pure exploitation?"
+    ]
+  }
+}

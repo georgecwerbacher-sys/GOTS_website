@@ -1,0 +1,21 @@
+{
+  "character": {
+    "id": "margaret",
+    "name": "Margaret of Samaria",
+    "alternative_names": ["Margaret the Keeper", "The Archive", "The First Shadow", "The Mother"],
+    "role": "supporting",
+    "symbolic_representation": "The First Shadow, Network Founder, Archive Keeper",
+    "image": "/images/characters/followers/shadows/Character_Card_Portrait_Margaret.png",
+    "brief_description": "A network founder and archive keeper who rescued two orphaned children from massacre, becoming their spiritual mother and building a protection network that spans decades.",
+    "full_description": "Margaret of Samaria is the founder and architect of the protection network, rescued Hannah Menahem (age 4) and Judah Menahem (age 3) from the Mount Gerizim massacre in 36 CE when she was 30 years old. Throwing herself between the children and soldiers, a divine flash blinded the attacker, allowing her to flee with both children. She raised them as her own for 32 years, becoming both their spiritual mother and the network's operational mind. Working alongside Malchus as equal partners, she built systematic protection systems, created archives preserving witness and memory, and trained operatives. By Part 7, she is transitioning authority to Hannah while watching with heartbreak as Judah chose violence over grace. Her life embodies the question: does grace determine response, or do those saved remain free to reject salvation?",
+    "origin": "Samaria (born ~5 CE to merchant family)",
+    "occupation": "Network Founder & Architect, Archive Keeper, Acting/Spiritual Mother to Hannah and Menahem",
+    "introduction_chapter": 1,
+    "key_chapters": [1, 2, 3, 4, 5, 6, 7],
+    "opening_state": "Network founder and archive keeper; spiritual mother to Hannah and Menahem; equal partner with Malchus in sanctuary leadership",
+    "key_transformation": "Rescued two orphaned children at Mount Gerizim; divine intervention saved them; transformed from grief-stricken widow into woman on sacred mission",
+    "closing_state": "Transitioning authority to Hannah; watching with heartbreak as Menahem chose violence; completing legacy of protection and preservation",
+    "arc_preview": "From 30-year-old widow who rescued two children from massacre, through 32 years building protection network and raising them as her own, to honored elder transitioning authority while living with the divergence of two children she loved equally",
+    "key_themes": ["Protection", "Motherhood", "Network Building", "Archive Keeping", "Divine Intervention", "Grace and Choice"]
+  }
+}

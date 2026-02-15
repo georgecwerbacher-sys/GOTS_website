@@ -1,0 +1,21 @@
+{
+  "character": {
+    "id": "victor",
+    "name": "Lucius Flavius Victor",
+    "alternative_names": ["Victor", "The Young One"],
+    "role": "protagonist",
+    "symbolic_representation": "The Innocent Witness; corruption of youth by impossible circumstances",
+    "image": "/images/characters/romans/other/Character_Card_Portrait_Victor.png",
+    "brief_description": "A young centurion whose innocence is lost when he witnesses the resurrection and must choose between truth and survival, following flawed guidance into moral compromise.",
+    "full_description": "Victor is a 20-year-old centurion, the youngest in his cohort, who achieved rank through merit despite his youth. He believes it's possible to be a good soldier AND a good man, maintaining integrity while serving Rome. When he witnesses the resurrection at the empty tomb, he faces terror and trauma beyond his ability to process. Following Aquilus's guidance, he accepts a bribe and participates in a lie about the tomb. This compromise violates the core integrity that defines him, marking his fall from innocence. His character represents the common soldier whose innocence is lost simply through forced participation in brutality and supernatural events.",
+    "origin": "Italia or Roman province; background suggests modest but respectable family",
+    "occupation": "Centurion (youngest in cohort); tomb guard (crucifixion detail)",
+    "introduction_chapter": 1,
+    "key_chapters": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "opening_state": "Hopeful young officer; eager to prove himself; believes integrity possible in military service; innocent",
+    "key_transformation": "Witnesses resurrection; terror and trauma; accepts bribe; participates in lie; innocence lost",
+    "closing_state": "Traumatized, morally compromised, spiritually confused; haunted by witnessed truth; burdened by lie",
+    "arc_preview": "From innocent young officer maintaining integrity, through resurrection witness and moral compromise following flawed guidance, to corrupted soldier carrying unprocessed trauma",
+    "key_themes": ["Innocence Corrupted", "Witnessing and Processing", "Price of Silence", "Youth vs. Experience", "Moral Compromise"]
+  }
+}

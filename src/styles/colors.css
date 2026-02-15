@@ -1,0 +1,123 @@
+/**
+ * Color System for Guardians of the Spear
+ * Siverstorm Theme Color Implementation
+ * 
+ * Official color scheme from Website Color Theme.md
+ * These CSS custom properties can be used alongside Tailwind classes
+ * for consistent theming across the application.
+ */
+
+:root {
+  /* ===== ROOT COLORS (Siverstorm Theme) ===== */
+  --dark-earth: #1a1613;
+  --charred-stone: #252218;
+  --aged-gold: #a68555;
+  --light-gold: #c9a961;
+  --pure-black: #000000;
+  --white: #ffffff;
+  --light-gray: #e0e0e0;
+  --medium-gray: #b0b0b0;
+
+  /* ===== SEMANTIC COLOR MAPPINGS ===== */
+  /* Primary Colors (Gold) */
+  --color-primary: var(--aged-gold);
+  --color-primary-hover: var(--light-gold);
+  --color-primary-light: var(--light-gold);
+  --color-primary-dark: var(--aged-gold);
+
+  /* Background Colors */
+  --color-background-dark: var(--dark-earth);
+  --color-background-medium: var(--charred-stone);
+  --color-background-light: var(--charred-stone);
+  --color-background-card: var(--charred-stone);
+  --color-background-card-hover: rgba(37, 34, 24, 0.8);
+
+  /* Text Colors */
+  --color-text-primary: var(--white);
+  --color-text-secondary: var(--light-gray);
+  --color-text-tertiary: var(--medium-gray);
+  --color-text-muted: var(--medium-gray);
+  --color-text-heading: var(--aged-gold);
+  --color-text-heading-hover: var(--light-gold);
+
+  /* Border Colors */
+  --color-border: var(--aged-gold);
+  --color-border-hover: var(--light-gold);
+  --color-border-light: rgba(166, 133, 85, 0.2);
+  --color-border-dashed: var(--aged-gold);
+
+  /* Link Colors */
+  --color-link: var(--aged-gold);
+  --color-link-hover: var(--light-gold);
+  --color-link-visited: var(--aged-gold);
+
+  /* Button Colors */
+  --color-button-bg: var(--aged-gold);
+  --color-button-bg-hover: var(--light-gold);
+  --color-button-text: var(--pure-black);
+  --color-button-border: var(--aged-gold);
+
+  /* Form Colors */
+  --color-input-bg: rgba(166, 133, 85, 0.1);
+  --color-input-bg-focus: rgba(166, 133, 85, 0.15);
+  --color-input-border: var(--aged-gold);
+  --color-input-border-focus: var(--light-gold);
+  --color-input-text: var(--white);
+  --color-input-placeholder: rgba(255, 255, 255, 0.5);
+
+  /* Widget/Card Colors */
+  --color-widget-bg: rgba(61, 52, 44, 0.3);
+  --color-widget-border: rgba(166, 133, 85, 0.2);
+  --color-widget-title: var(--aged-gold);
+
+  /* Footer Colors */
+  --color-footer-bg: var(--pure-black);
+  --color-footer-text: var(--light-gray);
+  --color-footer-border: var(--aged-gold);
+
+  /* Selection & Focus */
+  --color-selection-bg: var(--aged-gold);
+  --color-selection-text: var(--pure-black);
+  --color-focus-outline: var(--aged-gold);
+
+  /* Scrollbar Colors */
+  --color-scrollbar-track: var(--charred-stone);
+  --color-scrollbar-thumb: var(--aged-gold);
+  --color-scrollbar-thumb-hover: var(--light-gold);
+}
+
+/* ===== DARK MODE (Default theme is dark) ===== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Site uses dark theme by default, colors remain consistent */
+    body {
+      background-color: var(--dark-earth);
+      color: var(--white);
+    }
+  }
+}
+
+/* ===== UTILITY CLASSES (Optional - for direct CSS usage) ===== */
+.bg-dark-earth {
+  background-color: var(--dark-earth);
+}
+
+.bg-charred-stone {
+  background-color: var(--charred-stone);
+}
+
+.text-aged-gold {
+  color: var(--aged-gold);
+}
+
+.text-light-gold {
+  color: var(--light-gold);
+}
+
+.border-aged-gold {
+  border-color: var(--aged-gold);
+}
+
+.border-light-gold {
+  border-color: var(--light-gold);
+}

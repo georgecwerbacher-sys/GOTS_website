@@ -1,0 +1,261 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Character model
+model Character {
+  id            String   @id @default(uuid())
+  name          String   @unique
+  role          String
+  biography     String?  @db.Text
+  historicalEra String?  @map("historical_era")
+  timePeriod    String?  @map("time_period")
+  portraitUrl   String?  @map("portrait_url")
+  firstSceneId  String?  @map("first_scene_id")
+  firstScene    Scene?   @relation("FirstScene", fields: [firstSceneId], references: [id])
+  isActive      Boolean  @default(true) @map("is_active")
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  scenes         Scene[]
+  choices        SceneChoice[]           @relation("ToCharacter")
+  members        Member[]                @relation("CurrentCharacter")
+  favorites      Member[]                @relation("FavoriteCharacter")
+  relationshipsA CharacterRelationship[] @relation("CharacterA")
+  relationshipsB CharacterRelationship[] @relation("CharacterB")
+  visitedScenes  VisitedScene[]
+  sceneContents  SceneContent[]
+
+  @@index([name])
+  @@index([isActive])
+  @@map("characters")
+}
+
+// Scene model
+model Scene {
+  id                 String    @id @default(uuid())
+  characterId        String    @map("character_id")
+  character          Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  chapterNumber      Int       @map("chapter_number")
+  sceneNumber        Int       @map("scene_number")
+  title              String
+  preview            String?   @db.Text
+  content            String    @db.Text
+  location           String?
+  themes             String?
+  wordCount          Int?      @map("word_count")
+  readingTimeMinutes Int?      @map("reading_time_minutes")
+  isPublished        Boolean   @default(false) @map("is_published")
+  createdAt          DateTime  @default(now()) @map("created_at")
+  updatedAt          DateTime  @updatedAt @map("updated_at")
+
+  choicesFrom   SceneChoice[]  @relation("FromScene")
+  choicesTo     SceneChoice[]  @relation("ToScene")
+  firstForChar  Character[]    @relation("FirstScene")
+  members       Member[]       @relation("CurrentScene")
+  visitedScenes VisitedScene[]
+
+  @@unique([characterId, chapterNumber, sceneNumber])
+  @@index([characterId])
+  @@index([chapterNumber])
+  @@index([isPublished])
+  @@map("scenes")
+}
+
+// Scene Choice model
+model SceneChoice {
+  id            String    @id @default(uuid())
+  fromSceneId   String    @map("from_scene_id")
+  fromScene     Scene     @relation("FromScene", fields: [fromSceneId], references: [id], onDelete: Cascade)
+  toSceneId     String    @map("to_scene_id")
+  toScene       Scene     @relation("ToScene", fields: [toSceneId], references: [id], onDelete: Cascade)
+  toCharacterId String    @map("to_character_id")
+  toCharacter   Character @relation("ToCharacter", fields: [toCharacterId], references: [id], onDelete: Cascade)
+  choiceText    String    @map("choice_text")
+  description   String?   @db.Text
+  sortOrder     Int       @default(0) @map("sort_order")
+  createdAt     DateTime  @default(now()) @map("created_at")
+
+  @@unique([fromSceneId, toSceneId, toCharacterId])
+  @@index([fromSceneId])
+  @@index([toSceneId])
+  @@index([toCharacterId])
+  @@map("scene_choices")
+}
+
+// Member model
+model Member {
+  id              String    @id @default(cuid())
+  userId          String    @unique @map("user_id")
+  email           String    @unique
+  username        String    @unique
+  passwordHash    String    @map("password_hash")
+  displayName     String?   @map("display_name")
+  bio             String?   @db.Text
+  avatarUrl       String?   @map("avatar_url")
+  role            String    @default("user")
+  isActive        Boolean   @default(true) @map("is_active")
+  emailVerified   Boolean   @default(false) @map("email_verified")
+  emailVerifiedAt DateTime? @map("email_verified_at")
+
+  // Story progress
+  currentCharacterId  String?    @map("current_character_id")
+  currentCharacter    Character? @relation("CurrentCharacter", fields: [currentCharacterId], references: [id], onDelete: SetNull)
+  currentSceneId      String?    @map("current_scene_id")
+  currentScene        Scene?     @relation("CurrentScene", fields: [currentSceneId], references: [id], onDelete: SetNull)
+  progressPercentage  Int        @default(0) @map("progress_percentage")
+  totalScenesVisited  Int        @default(0) @map("total_scenes_visited")
+  totalReadingSeconds Int        @default(0) @map("total_reading_seconds")
+  favoriteCharacterId String?    @map("favorite_character_id")
+  favoriteCharacter   Character? @relation("FavoriteCharacter", fields: [favoriteCharacterId], references: [id], onDelete: SetNull)
+
+  // Timestamps
+  lastAccessed DateTime? @map("last_accessed")
+  createdAt    DateTime  @default(now()) @map("created_at")
+  updatedAt    DateTime  @updatedAt @map("updated_at")
+
+  // Relations
+  visitedScenes VisitedScene[]
+  refreshTokens RefreshToken[]
+  loginHistory  LoginHistory[]
+
+  @@index([email])
+  @@index([username])
+  @@map("members")
+}
+
+// Refresh Token model
+model RefreshToken {
+  id        String   @id @default(cuid())
+  memberId  String   @map("member_id")
+  member    Member   @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  token     String   @unique
+  expiresAt DateTime @map("expires_at")
+  isRevoked Boolean  @default(false) @map("is_revoked")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([memberId])
+  @@map("refresh_tokens")
+}
+
+// Login History model
+model LoginHistory {
+  id         String   @id @default(cuid())
+  memberId   String   @map("member_id")
+  member     Member   @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  ipAddress  String?  @map("ip_address")
+  userAgent  String?  @map("user_agent") @db.Text
+  successful Boolean
+  loginAt    DateTime @default(now()) @map("login_at")
+
+  @@index([memberId])
+  @@map("login_history")
+}
+
+// Visited Scene model
+model VisitedScene {
+  id               String    @id @default(uuid())
+  memberId         String    @map("member_id")
+  member           Member    @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  sceneId          String    @map("scene_id")
+  scene            Scene     @relation(fields: [sceneId], references: [id], onDelete: Cascade)
+  characterId      String    @map("character_id")
+  character        Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  visitedAt        DateTime  @default(now()) @map("visited_at")
+  timeSpentSeconds Int       @default(0) @map("time_spent_seconds")
+  visitOrder       Int       @map("visit_order")
+  // Multi-POV narrative tracking
+  narrativeSceneId String?         @map("narrative_scene_id")
+  narrativeScene   NarrativeScene? @relation(fields: [narrativeSceneId], references: [id], onDelete: SetNull)
+  sceneContentId   String?         @map("scene_content_id")
+  sceneContent     SceneContent?   @relation(fields: [sceneContentId], references: [id], onDelete: SetNull)
+  scrollPercentage Int?            @map("scroll_percentage")
+  isCompleted      Boolean         @default(false) @map("is_completed")
+  completedAt      DateTime?       @map("completed_at")
+  createdAt        DateTime  @default(now()) @map("created_at")
+
+  @@unique([memberId, sceneId, visitOrder])
+  @@index([memberId])
+  @@index([sceneId])
+  @@index([characterId])
+  @@index([narrativeSceneId])
+  @@index([sceneContentId])
+  @@index([visitedAt])
+  @@map("visited_scenes")
+}
+
+// Character Relationship model
+model CharacterRelationship {
+  id               String    @id @default(uuid())
+  characterAId     String    @map("character_a_id")
+  characterA       Character @relation("CharacterA", fields: [characterAId], references: [id], onDelete: Cascade)
+  characterBId     String    @map("character_b_id")
+  characterB       Character @relation("CharacterB", fields: [characterBId], references: [id], onDelete: Cascade)
+  relationshipType String?   @map("relationship_type")
+  description      String?   @db.Text
+  createdAt        DateTime  @default(now()) @map("created_at")
+
+  @@unique([characterAId, characterBId])
+  @@index([characterAId])
+  @@index([characterBId])
+  @@map("character_relationships")
+}
+
+// Narrative Scene model for multi-POV scenes (Scene 1 infrastructure)
+model NarrativeScene {
+  id                      String   @id
+  partNumber              Int      @map("part_number")
+  sceneNumber             Int      @map("scene_number")
+  title                   String
+  preview                 String?  @db.Text
+  location                String?
+  timeframe               String?
+  themes                  String?
+  wordCountTotal          Int?     @map("word_count_total")
+  readingTimeMinutesTotal Int?     @map("reading_time_minutes_total")
+  status                  String
+  createdAt               DateTime @default(now()) @map("created_at")
+  updatedAt               DateTime @updatedAt @map("updated_at")
+
+  sceneContents SceneContent[]
+  visitedScenes VisitedScene[]
+
+  @@unique([partNumber, sceneNumber])
+  @@index([partNumber])
+  @@index([sceneNumber])
+  @@index([status])
+  @@map("narrative_scenes")
+}
+
+// SceneContent model - individual POV versions of a scene
+model SceneContent {
+  id                String         @id
+  sceneId           String         @map("scene_id")
+  scene             NarrativeScene @relation(fields: [sceneId], references: [id], onDelete: Cascade)
+  characterId       String?        @map("character_id")
+  character         Character?     @relation(fields: [characterId], references: [id], onDelete: SetNull)
+  povLabel          String         @map("pov_label")
+  povType           String         @map("pov_type")
+  content           String         @db.Text
+  wordCount         Int            @map("word_count")
+  readingTimeMinutes Int           @map("reading_time_minutes")
+  internalMonologue Boolean        @default(false) @map("internal_monologue")
+  status            String         @map("status")
+  createdAt         DateTime       @default(now()) @map("created_at")
+  updatedAt         DateTime       @updatedAt @map("updated_at")
+
+  visitedScenes VisitedScene[]
+
+  @@index([sceneId])
+  @@index([characterId])
+  @@index([status])
+  @@map("scene_contents")
+}

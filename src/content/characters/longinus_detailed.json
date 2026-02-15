@@ -1,0 +1,159 @@
+{
+  "character": {
+    "id": "cassius-longinus-mercator",
+    "image": "/images/characters/main-characters/protagonist/Character_Card_Portrait_Longinus.png",
+    
+    "identification": {
+      "full_name": "Cassius Longinus Mercator",
+      "alternative_names": [
+        "The Spear Bearer",
+        "The Archer",
+        "Longinus",
+        "Mercator"
+      ],
+      "role": "The Sacred Spear Bearer; witness to resurrection through physical miracle; bridge between Roman occupation and divine intervention; embodiment of redemption and transformation",
+      "category": "Followers / Guardians",
+      "story_status": "Primary protagonist through Chapter 24",
+      "primary_narrative_function": "Bridge between Roman occupation and divine intervention"
+    },
+    
+    "physical_description": {
+      "age": "24-26 years old",
+      "build": "Compact, wiry frame (5'6\"); athletic, lean",
+      "distinctive_features": {
+        "eyes": "Pre-disease: legendary clarity; post-resurrection: perfect clarity with luminous quality",
+        "scars": "Multiple thin scars; prominent scar across left ribs",
+        "hands": "Calloused; unusual dexterous precision"
+      },
+      "visual_signature": "Compact frame with intense assessing eyes; centurion's armor with visible authority; spear positioned as extension of identity"
+    },
+    
+    "personality": {
+      "primary_traits": [
+        {
+          "trait": "Exceptional Accuracy/Precision",
+          "description": "Defines identity and self-worth"
+        },
+        {
+          "trait": "Survivor's Resilience",
+          "description": "Street origins grant danger assessment and endurance"
+        },
+        {
+          "trait": "Compassion & Empathy",
+          "description": "Recognizes humanity especially in the downtrodden"
+        },
+        {
+          "trait": "Moral Integrity",
+          "description": "Experiences conflict when duty violates conscience"
+        },
+        {
+          "trait": "Loyal Adaptability",
+          "description": "Deep loyalty with capacity to adjust approaches"
+        }
+      ],
+      
+      "strengths": [
+        {
+          "strength": "Exceptional Accuracy",
+          "shows_in": "Target perfection, life-saving throws"
+        },
+        {
+          "strength": "Survival Instinct",
+          "shows_in": "Crisis decisions, strategic positioning"
+        },
+        {
+          "strength": "Emotional Resilience",
+          "shows_in": "Continued performance despite vision decline, maintaining composure under stress"
+        },
+        {
+          "strength": "Compassion/Empathy",
+          "shows_in": "Mercy toward prisoners, recognition of occupied population's desperation"
+        },
+        {
+          "strength": "Adaptability",
+          "shows_in": "Finding alternative tactics as vision fails, code-switching between formal and informal speech"
+        }
+      ],
+      
+      "flaws_and_vulnerabilities": [
+        {
+          "flaw": "Identity Insecurity",
+          "manifestation": "Street orphan wearing centurion's armor; persistent doubt about authentic worth"
+        },
+        {
+          "flaw": "Vision Deterioration",
+          "manifestation": "Greatest gift being stolen; loss of gift equals loss of identity"
+        },
+        {
+          "flaw": "Moral Rigidity/Idealism",
+          "manifestation": "Paralysis when duty conflicts with conscience; difficulty accepting moral compromise"
+        },
+        {
+          "flaw": "Difficulty with Paradox/Spiritual Abstraction",
+          "manifestation": "Practical military mind struggles with concepts beyond direct experience"
+        },
+        {
+          "flaw": "Loyalty Conflicts",
+          "manifestation": "Deep loyalty to Malchus and Rome potentially conflicts with higher spiritual calling"
+        }
+      ],
+      
+      "core_motivations": [
+        "Prove worth beyond street origins",
+        "Protect those he cares about",
+        "Navigate conflicts between duty and conscience"
+      ]
+    },
+    
+    "relationships": [
+      {
+        "character_id": "malchus-bar-eleazar",
+        "character_name": "Malchus bar Eleazar",
+        "relationship_type": "Mentor/Father Figure",
+        "dynamic": "Deep loyalty; sees as savior from street life; professional respect deepening toward mentorship; witness to both vision deterioration and miraculous restoration"
+      },
+      {
+        "character_id": "caius-tullius-aquilus",
+        "character_name": "Caius Tullius Aquilus",
+        "relationship_type": "Friend/Peer/Brother-in-arms",
+        "dynamic": "Genuine friendship despite military hierarchy; mutual moral compass; safety of honest conversation rare in military; post-resurrection creates shared knowledge and deepened bond"
+      },
+      {
+        "character_id": "marcus-aurelius-brutus",
+        "character_name": "Marcus Aurelius Brutus",
+        "relationship_type": "Mentor/Target",
+        "dynamic": "Initially respects as military peer; then sees as obstacle; finally positions for elimination while maintaining appearance of protection"
+      }
+    ],
+    
+    "story_arc": {
+      "opening_state": "Respected centurion hiding vision failure; worships Brutus; isolated",
+      "transformation": "From isolated victim dependent on false mentor, through systematic psychological torture, to spiritual transformation through mercy and grace",
+      "closing_state": "Transformed believer; hunted by Rome; spiritually healed; spear-bearer of manifestation"
+    },
+    
+    "thematic_significance": [
+      "Grace as power transcending violence",
+      "Transformation through mercy",
+      "Spiritual blindness vs. sight",
+      "Evidence of divine power",
+      "The cost of spiritual awakening",
+      "Witness and testimony"
+    ],
+    
+    "why_readers_care": "Longinus represents universal struggle of transformation despite impossible circumstances. His vulnerability and moral integrity create internal tension readers recognize. His spiritual awakening through mercy offers hope.",
+    
+    "character_questions_for_readers": [
+      "What makes someone worthy despite humble origins?",
+      "Can you maintain moral integrity within an immoral system?",
+      "Can grace defeat systemic violence?",
+      "What happens when the gift that defines us begins to fail?",
+      "How do we reconcile duty with conscience when they conflict?",
+      "Can spiritual transformation occur in a single moment?",
+      "What is the cost of speaking truth when it challenges authority?",
+      "Can someone from the lowest origins achieve the highest purpose?",
+      "How do we know when we've encountered divine reality?",
+      "What does it mean to be chosen for sacred purpose?"
+    ]
+  }
+}

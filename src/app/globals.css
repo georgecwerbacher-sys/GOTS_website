@@ -1,0 +1,84 @@
+@import '../styles/colors.css';
+@import 'tailwindcss';
+
+/* Set root colors (also defined in colors.css, but kept here for reference) */
+:root {
+  --dark-earth: #1a1613;
+  --charred-stone: #252218;
+  --aged-gold: #a68555;
+  --light-gold: #c9a961;
+  --pure-black: #000000;
+  --white: #ffffff;
+  --light-gray: #e0e0e0;
+  --medium-gray: #b0b0b0;
+}
+
+@theme {
+  --color-background: var(--dark-earth);
+  --color-foreground: var(--white);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  
+  /* GOTS Theme Colors for Tailwind - Backgrounds */
+  --color-gots-dark: #1a1613;
+  --color-gots-charred: #252218;
+  --color-gots-body: #1a1613;
+  --color-gots-secondary: #252218;
+  --color-gots-footer: #000000;
+  
+  /* GOTS Theme Colors - Accent/Gold */
+  --color-gots-accent: #a68555;
+  --color-gots-accent-light: #c9a961;
+  --color-gots-gold: #a68555;
+  --color-gots-light-gold: #c9a961;
+  
+  /* GOTS Theme Colors - Text */
+  --color-gots-primary: #ffffff;
+  --color-gots-black: #000000;
+  --color-gots-white: #ffffff;
+  --color-gots-secondary-text: #e0e0e0;
+  --color-gots-medium-gray: #b0b0b0;
+  --color-gots-light-gray: #e0e0e0;
+  
+  /* GOTS Theme Colors - Border */
+  --color-gots-accent-border: #a68555;
+  --color-gots-accent-light-border: #c9a961;
+}
+
+/* Apply to body */
+body {
+  background-color: var(--color-gots-body);
+  color: var(--color-gots-primary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  background-color: var(--color-gots-body);
+}
+
+/* Links */
+a {
+  color: var(--color-gots-accent);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-gots-accent-light);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-gots-accent);
+}
+
+/* Buttons */
+button, .button {
+  background-color: var(--color-gots-accent);
+  color: var(--color-gots-black);
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+  background-color: var(--color-gots-accent-light);
+}
