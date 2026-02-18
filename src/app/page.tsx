@@ -1,12 +1,14 @@
 import { ReactNode } from 'react';
 import { get_all_characters } from '@/lib/data/characters';
 import {
+  book_1,
   atmosphere_layers,
   story_threads,
   cta_paths,
   testimonials,
 } from '@/lib/content/immersive-data';
 import { HeroSection } from '@/components/sections/immersive/HeroSection';
+import { BooksSection } from '@/components/sections/immersive/BooksSection';
 import { AtmosphereSection } from '@/components/sections/immersive/AtmosphereSection';
 import { CharacterTeaserSection } from '@/components/sections/immersive/CharacterTeaserSection';
 import { StoryThreadsSection } from '@/components/sections/immersive/StoryThreadsSection';
@@ -37,6 +39,8 @@ export default async function homepage(): Promise<ReactNode> {
         subtitle="Across every age, men and women have died for one thing — your right to choose your own fate."
         description="Go deeper than the book — discover the people, the places, and the price they paid."
       />
+
+      <BooksSection book1={book_1} />
 
       <AtmosphereSection layers={atmosphere_layers} />
 

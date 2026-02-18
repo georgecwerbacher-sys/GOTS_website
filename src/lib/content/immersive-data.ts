@@ -3,6 +3,14 @@ import type { StoryThread } from '@/lib/types/content.types';
 import type { CallToActionPath } from '@/lib/types/content.types';
 import type { Testimonial } from '@/lib/types/testimonial.types';
 
+export const book_1 = {
+  videoPath: '/video/Book_Cover_1_ver_1.mp4',
+  imagePath: '/images/Book_1/Book_Cover_1.png',
+  imageAlt: 'Guardians of the Spear cover',
+  title: 'Guardians of the Spear: The Awakening',
+  description: "The enemy's greatest weapon is your own will turned against you — and only the light of the spear can unite those strong enough to stand against it.",
+};
+
 export const atmosphere_layers: AtmosphereLayer[] = [
   {
     id: 'era',
