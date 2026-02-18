@@ -45,7 +45,7 @@ export function AtmosphereSection({ layers }: AtmosphereSectionProps) {
                 className="absolute -left-6 top-0 bottom-0 w-1 bg-gots-accent/30"
                 aria-hidden="true"
               />
-              <p className="text-lg md:text-xl leading-relaxed text-gots-secondary pl-4 italic font-light">
+              <p className="text-lg md:text-xl leading-relaxed text-white pl-4 italic font-light">
                 {layer.text}
               </p>
             </div>

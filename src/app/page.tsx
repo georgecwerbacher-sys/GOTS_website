@@ -31,11 +31,11 @@ export default async function homepage(): Promise<ReactNode> {
     <main className="min-h-screen bg-gots-body">
       <HeroSection
         videoPath="/assets/video/headers/Home_Page/Home_Header"
-        posterPath="/assets/video/headers/Home_Page/Home_Header_Poster.png"
+        posterPath="/images/Hero_images/Followers_1_.jpg"
         altText="Guardians of the Spear home page header video"
         title="Guardians of the Spear"
-        subtitle="A story of grace defeating predation"
-        description="Discover the characters and follow their journeys through the narrative of occupied Judaea."
+        subtitle="Across every age, men and women have died for one thing — your right to choose your own fate."
+        description="Go deeper than the book — discover the people, the places, and the price they paid."
       />
 
       <AtmosphereSection layers={atmosphere_layers} />

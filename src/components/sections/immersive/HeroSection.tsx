@@ -53,7 +53,7 @@ export function HeroSection({
           <motion.p
             variants={fade_in_up}
             transition={{ delay: 0.2 }}
-            className="text-xl md:text-2xl text-gots-secondary mb-4 drop-shadow-md max-w-2xl mx-auto"
+            className="text-base md:text-lg text-gots-medium-gray max-w-2xl mx-auto mb-4 drop-shadow-sm"
           >
             {subtitle}
           </motion.p>

@@ -54,7 +54,7 @@ function header_video_client({
             loop
             playsInline
             onLoadedData={() => set_video_loaded(true)}
-            onError={() => set_use_placeholder(true)}
+            onError={() => {}}
             poster={poster_path}
             className="absolute inset-0 w-full h-full object-contain"
             aria-label={alt_text}
