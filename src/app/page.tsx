@@ -18,6 +18,9 @@ import { CallToActionSection } from '@/components/sections/immersive/CallToActio
 import { SocialProofSection } from '@/components/sections/immersive/SocialProofSection';
 import { FooterSection } from '@/components/sections/immersive/FooterSection';
 
+// Force server rendering so Vercel serves the route correctly (avoids 404 on static export)
+export const dynamic = 'force-dynamic';
+
 export default async function homepage(): Promise<ReactNode> {
   let featured_characters: Array<{
     id: string;
