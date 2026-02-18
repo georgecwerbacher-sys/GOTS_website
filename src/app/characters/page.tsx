@@ -27,7 +27,7 @@ function character_group_card({
             src={image_path}
             alt={`${group_name} characters`}
             fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
             priority
             unoptimized
           />

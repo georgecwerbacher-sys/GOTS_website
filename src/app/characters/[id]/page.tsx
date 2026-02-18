@@ -34,7 +34,7 @@ export default async function character_detail_page({ params }: page_props) {
               src={image_src}
               alt={character.name}
               fill
-              className="object-contain"
+              className="object-contain object-center"
               unoptimized
             />
           </div>

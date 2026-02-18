@@ -7,24 +7,25 @@ import type { character_profile } from '@/lib/types/character';
 
 function character_card(character: character_profile): ReactNode {
   const image_src = asset_image_path(character.image || '/images/characters/placeholder.png');
+  const description = character.brief_description || character.full_description || 'No description available.';
   return (
     <Link href={`/characters/${character.id}`} key={character.id}>
-      <div className="bg-gots-charred hover:bg-gots-charred/80 rounded-lg overflow-hidden transition-all border border-gots-accent/20 hover:border-gots-accent/40 cursor-pointer group">
-        <div className="relative h-64 bg-gots-dark flex items-center justify-center">
-          <Image
-            src={image_src}
-            alt={character.name}
-            fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
-            unoptimized
-          />
-        </div>
-        <div className="p-6">
-          <h3 className="text-xl font-bold text-gots-accent mb-2">{character.name}</h3>
-          <p className="text-gots-content text-sm line-clamp-2">
-            {character.brief_description || character.full_description || 'No description available.'}
-          </p>
-          <span className="text-gots-accent font-semibold text-sm mt-2 block">View Profile →</span>
+      <div className="relative bg-gots-charred hover:bg-gots-charred/80 rounded-lg overflow-hidden transition-all border border-gots-accent/20 hover:border-gots-accent/40 cursor-pointer group h-96">
+        <Image
+          src={image_src}
+          alt={character.name}
+          fill
+          className="object-contain object-center transition-transform duration-300 group-hover:scale-105"
+          unoptimized
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-gots-charred/80 via-transparent to-gots-charred flex flex-col justify-between p-8">
+          <h3 className="text-3xl font-bold text-gots-accent">{character.name}</h3>
+          <div>
+            <p className="text-gots-primary mb-4 line-clamp-2">{description}</p>
+            <span className="text-gots-accent hover:text-gots-accent-light font-semibold text-sm">
+              View Profile →
+            </span>
+          </div>
         </div>
       </div>
     </Link>
@@ -45,7 +46,7 @@ export default async function followers_group_page(): Promise<ReactNode> {
       </header>
 
       <section className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {characters.map((c) => character_card(c))}
         </div>
       </section>
