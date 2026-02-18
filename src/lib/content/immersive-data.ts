@@ -9,6 +9,8 @@ export const book_1 = {
   imageAlt: 'Guardians of the Spear cover',
   title: 'Guardians of the Spear: The Awakening',
   description: "The enemy's greatest weapon is your own will turned against you — and only the light of the spear can unite those strong enough to stand against it.",
+  buyUrl: 'https://www.amazon.com/dp/B0GNWQZNQ3',
+  buttonText: 'Buy on Kindle',
 };
 
 export const book_2 = {
@@ -17,6 +19,9 @@ export const book_2 = {
   imageAlt: 'Guardians of the Spear cover',
   title: 'Guardians of the Spear: The Reckoning',
   description: "Exiled, hunted, and scattered across occupied Judaea, the guardians face a new enemy — one that doesn't just kill, it corrupts the very will to resist.",
+  buyUrl: '',
+  buttonText: 'Reserve on Kindle',
+  releaseDate: 'May 1 2026',
 };
 
 export const atmosphere_layers: AtmosphereLayer[] = [

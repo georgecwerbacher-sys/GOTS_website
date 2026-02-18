@@ -10,6 +10,9 @@ interface BookData {
   imageAlt: string;
   title: string;
   description: string;
+  buyUrl?: string;
+  buttonText?: string;
+  releaseDate?: string;
 }
 
 interface BooksSectionProps {
@@ -101,23 +104,32 @@ export function BooksSection({ book1, book2 }: BooksSectionProps) {
               <p className="text-gots-medium-gray text-sm mb-4">
                 $5.99 ebook · $14.99 soft cover
               </p>
-              <a
-                href="https://www.amazon.com/dp/B0GNWQZNQ3"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-8 py-4 bg-amber-700 hover:bg-amber-600 !text-white font-semibold tracking-widest uppercase transition-colors duration-300"
-              >
-                Buy on Kindle
-              </a>
+              {book1.buyUrl && (
+                <a
+                  href={book1.buyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-8 py-4 bg-amber-700 hover:bg-amber-600 !text-white font-semibold tracking-widest uppercase transition-colors duration-300"
+                >
+                  {book1.buttonText || 'Buy on Kindle'}
+                </a>
+              )}
             </div>
           </article>
 
           {/* Book 2 */}
           {book2 && (
             <article
-              className="flex flex-col md:flex-row gap-6 p-6 rounded-lg border-2 border-gots-accent/30 bg-gots-charred overflow-hidden"
+              className="flex flex-col md:flex-row gap-6 p-6 rounded-lg border-2 border-gots-accent/30 bg-gots-charred relative"
               aria-label={`${book2.title} - ${book2.description}`}
             >
+              {book2.releaseDate && (
+                <div className="absolute top-0 left-0 z-20 overflow-visible">
+                  <div className="bg-gots-accent text-gots-black px-6 py-1.5 text-sm font-bold tracking-wider uppercase rotate-12 -translate-x-2 -translate-y-1 shadow-lg">
+                    {book2.releaseDate}
+                  </div>
+                </div>
+              )}
               <div className="flex-shrink-0 relative w-full md:w-48 aspect-[3/4] rounded-md overflow-hidden bg-gots-dark">
                 <BookMedia
                   videoPath={book2.videoPath}
@@ -132,9 +144,19 @@ export function BooksSection({ book1, book2 }: BooksSectionProps) {
                 <p className="text-base md:text-lg text-gots-medium-gray drop-shadow-sm mb-4">
                   {book2.description}
                 </p>
-                <p className="text-gots-medium-gray text-sm">
+                <p className="text-gots-medium-gray text-sm mb-4">
                   $5.99 ebook · $14.99 soft cover
                 </p>
+                {(book2.buyUrl || book2.buttonText) && (
+                  <a
+                    href={book2.buyUrl || '#'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-8 py-4 bg-amber-700 hover:bg-amber-600 !text-white font-semibold tracking-widest uppercase transition-colors duration-300"
+                  >
+                    {book2.buttonText || 'Buy on Kindle'}
+                  </a>
+                )}
               </div>
             </article>
           )}
