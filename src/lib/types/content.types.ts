@@ -19,4 +19,7 @@ export interface CallToActionPath {
   href: string;
   description: string;
   icon?: string;
+  /** When set, opens buy modal instead of navigating */
+  buyUrl?: string;
+  buyButtonText?: string;
 }

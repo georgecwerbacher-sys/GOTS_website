@@ -82,6 +82,8 @@ export const cta_paths: CallToActionPath[] = [
     href: '/characters/longinus',
     description: 'Start with Longinus\'s journey',
     icon: '📖',
+    buyUrl: book_1.buyUrl,
+    buyButtonText: book_1.buttonText,
   },
 ];
 
