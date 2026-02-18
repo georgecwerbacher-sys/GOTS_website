@@ -19,19 +19,27 @@ import { SocialProofSection } from '@/components/sections/immersive/SocialProofS
 import { FooterSection } from '@/components/sections/immersive/FooterSection';
 
 export default async function homepage(): Promise<ReactNode> {
-  let featured_characters = [];
-  
+  let featured_characters: Array<{
+    id: string;
+    name: string;
+    role: string;
+    quote?: string;
+    description?: string;
+    imageUrl?: string;
+    path: string;
+  }> = [];
+
   try {
     const all_characters = await get_all_characters();
     featured_characters = all_characters.slice(0, 6).map((c) => ({
-    id: c.id,
-    name: c.name,
-    role: (c as { occupation?: string }).occupation || c.role || 'Character',
-    quote: (c as { key_themes?: string[] }).key_themes?.[0] || c.brief_description?.slice(0, 80),
-    description: c.brief_description,
-    imageUrl: c.image,
-    path: `/characters/${c.id}`,
-  }));
+      id: c.id,
+      name: c.name,
+      role: (c as { occupation?: string }).occupation || c.role || 'Character',
+      quote: (c as { key_themes?: string[] }).key_themes?.[0] || c.brief_description?.slice(0, 80),
+      description: c.brief_description,
+      imageUrl: c.image,
+      path: `/characters/${c.id}`,
+    }));
   } catch (error) {
     console.error('Error loading characters:', error);
     // Continue with empty array if characters fail to load
