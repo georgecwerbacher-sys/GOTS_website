@@ -26,7 +26,7 @@ export function CallToActionSection({ paths }: CallToActionSectionProps) {
           <h2 className="text-4xl md:text-5xl font-bold text-gots-accent mb-4">
             Choose Your Perspective
           </h2>
-          <p className="text-lg text-gots-secondary max-w-2xl mx-auto">
+          <p className="text-lg text-gots-content max-w-2xl mx-auto">
             How would you like to enter the world of Guardians of the Spear?
           </p>
         </motion.header>
@@ -51,7 +51,7 @@ export function CallToActionSection({ paths }: CallToActionSectionProps) {
                     <span className="text-4xl mb-3">{path.icon}</span>
                   )}
                   <span className="text-xl font-bold">{path.label}</span>
-                  <span className="text-sm font-normal mt-2 text-gots-secondary group-hover:text-gots-black/70 transition-colors">
+                  <span className="text-sm font-normal mt-2 text-gots-content group-hover:text-gots-black/70 transition-colors">
                     {path.description}
                   </span>
                 </div>

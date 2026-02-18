@@ -23,12 +23,12 @@ export default async function story_character_page({ params }: page_props) {
           <h1 className="text-3xl font-bold text-gots-accent mb-4">
             {character.name}&apos;s Story
           </h1>
-          <p className="text-gots-secondary mb-8">
+          <p className="text-gots-content mb-8">
             Scene content for this character is not yet available. Check back soon.
           </p>
           <Link
             href={`/characters/${characterId}`}
-            className="inline-block px-4 py-2 rounded font-semibold bg-gots-accent text-gots-black hover:bg-gots-accent-light"
+            className="inline-block px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light hover:!text-black"
           >
             ← Back to Character
           </Link>
@@ -42,7 +42,7 @@ export default async function story_character_page({ params }: page_props) {
     <main className="min-h-screen bg-gots-body">
       <header className="bg-gradient-to-b from-gots-charred to-gots-dark py-12 px-6 text-center border-b-2 border-dashed border-gots-accent">
         <h1 className="text-4xl font-bold text-gots-accent mb-2">{character.name}&apos;s Journey</h1>
-        <p className="text-gots-secondary">
+        <p className="text-gots-content">
           {scenes.length} scene{scenes.length !== 1 ? 's' : ''} in the story
         </p>
       </header>
@@ -58,7 +58,7 @@ export default async function story_character_page({ params }: page_props) {
               <div className="flex justify-between items-start">
                 <div>
                   <h2 className="text-xl font-bold text-gots-accent mb-2">{scene.title}</h2>
-                  <p className="text-gots-secondary text-sm mb-2">{scene.preview}</p>
+                  <p className="text-gots-content text-sm mb-2">{scene.preview}</p>
                   <p className="text-gots-medium-gray text-xs">
                     Part {scene.partNumber}, Scene {scene.sceneNumber} • {scene.readingTimeMinutesTotal} min read
                   </p>
@@ -72,7 +72,7 @@ export default async function story_character_page({ params }: page_props) {
         <div className="mt-12 text-center">
           <Link
             href={`/characters/${characterId}`}
-            className="inline-block px-4 py-2 rounded font-semibold border border-gots-accent text-gots-accent hover:bg-gots-accent/20"
+            className="inline-block px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light hover:!text-black"
           >
             ← Back to {character.name}
           </Link>

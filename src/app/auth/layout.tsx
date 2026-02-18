@@ -21,7 +21,7 @@ export default function AuthLayout({ children }: { children: ReactNode }) {
         </div>
 
         {/* Form Container */}
-        <div className="bg-white rounded-lg shadow-2xl p-8">{children}</div>
+        <div className="bg-white rounded-lg shadow-2xl p-8 text-black">{children}</div>
 
         {/* Footer */}
         <p className="text-center text-blue-100 mt-6 text-sm">

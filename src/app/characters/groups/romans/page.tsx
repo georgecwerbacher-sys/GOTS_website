@@ -21,7 +21,7 @@ function character_card(character: character_profile): ReactNode {
         </div>
         <div className="p-6">
           <h3 className="text-xl font-bold text-gots-accent mb-2">{character.name}</h3>
-          <p className="text-gots-secondary text-sm line-clamp-2">
+          <p className="text-gots-content text-sm line-clamp-2">
             {character.brief_description || character.full_description || 'No description available.'}
           </p>
           <span className="text-gots-accent font-semibold text-sm mt-2 block">View Profile →</span>
@@ -39,7 +39,7 @@ export default async function romans_group_page(): Promise<ReactNode> {
     <main className="min-h-screen bg-gots-body">
       <header className="bg-gradient-to-b from-gots-charred to-gots-dark py-16 px-6 text-center border-b-2 border-dashed border-gots-accent">
         <h1 className="text-5xl md:text-6xl font-bold text-gots-accent mb-4">Romans</h1>
-        <p className="text-xl text-gots-secondary max-w-2xl mx-auto">
+        <p className="text-xl text-white max-w-2xl mx-auto">
           The forces of Rome—soldiers, commanders, and officials whose paths intersect with the divine.
         </p>
       </header>
@@ -51,11 +51,11 @@ export default async function romans_group_page(): Promise<ReactNode> {
       </section>
 
       <div className="mt-12 pt-8 border-t border-dashed border-gots-accent/30 text-center space-x-4">
-        <Link href="/characters" className="inline-block px-4 py-2 rounded font-semibold bg-gots-accent text-gots-black hover:bg-gots-accent-light">
+        <Link href="/characters" className="inline-block px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light hover:!text-black">
           ← All Characters
         </Link>
-        <Link href="/" className="inline-block px-4 py-2 rounded font-semibold border border-gots-accent text-gots-accent hover:bg-gots-accent/20">
-          Home
+        <Link href="/" className="inline-block px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light hover:!text-black">
+          ← Back to Home
         </Link>
       </div>
     </main>

@@ -14,10 +14,10 @@ export function SiteHeader() {
             Guardians of the Spear
           </Link>
           <div className="flex items-center gap-4">
-            <Link href="/" className="text-gots-secondary hover:text-gots-accent transition-colors">Home</Link>
-            <Link href="/characters" className="text-gots-secondary hover:text-gots-accent transition-colors">Characters</Link>
-            <Link href="/groups" className="text-gots-secondary hover:text-gots-accent transition-colors">Groups</Link>
-            <Link href="/locations" className="text-gots-secondary hover:text-gots-accent transition-colors">Locations</Link>
+            <Link href="/" className="text-gots-content hover:text-gots-accent transition-colors">Home</Link>
+            <Link href="/characters" className="text-gots-content hover:text-gots-accent transition-colors">Characters</Link>
+            <Link href="/groups" className="text-gots-content hover:text-gots-accent transition-colors">Groups</Link>
+            <Link href="/locations" className="text-gots-content hover:text-gots-accent transition-colors">Locations</Link>
             {!loading && (
               isAuthenticated ? (
                 <>
@@ -30,8 +30,8 @@ export function SiteHeader() {
                 </>
               ) : (
                 <>
-                  <Link href="/auth/login" className="text-gots-secondary hover:text-gots-accent">Login</Link>
-                  <Link href="/auth/register" className="px-4 py-2 rounded font-semibold bg-gots-accent text-gots-black hover:bg-gots-accent-light">
+                  <Link href="/auth/login" className="text-gots-content hover:text-gots-accent">Login</Link>
+                  <Link href="/auth/register" className="px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light hover:!text-black">
                     Sign Up
                   </Link>
                 </>

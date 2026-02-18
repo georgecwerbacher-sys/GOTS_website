@@ -27,14 +27,14 @@ export default async function scene_reader_page({ params }: page_props) {
             Part {scene.partNumber}, Scene {scene.sceneNumber} • {scene.themes}
           </p>
           <h1 className="text-3xl font-bold text-gots-accent mb-2">{scene.title}</h1>
-          <p className="text-gots-secondary">{scene.preview}</p>
+          <p className="text-gots-content">{scene.preview}</p>
         </div>
       </header>
 
       <article className="max-w-3xl mx-auto px-6 py-12">
         <div
           className="prose prose-invert prose-lg max-w-none
-            prose-headings:text-gots-accent prose-p:text-gots-secondary
+            prose-headings:text-gots-accent prose-p:text-gots-content
             prose-p:leading-relaxed prose-p:mb-6
             [&_p]:whitespace-pre-wrap"
         >
@@ -47,7 +47,7 @@ export default async function scene_reader_page({ params }: page_props) {
       <nav className="max-w-3xl mx-auto px-6 py-8 border-t border-gots-accent/30 flex justify-between items-center">
         <Link
           href={`/story/${characterId}`}
-          className="px-4 py-2 rounded font-semibold bg-gots-accent text-gots-black hover:bg-gots-accent-light"
+          className="px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light hover:!text-black"
         >
           ← All Scenes
         </Link>

@@ -25,7 +25,7 @@ export function FooterSection() {
             >
               About GOTS
             </h3>
-            <p className="text-gots-secondary text-sm leading-relaxed">
+            <p className="text-gots-content text-sm leading-relaxed">
               A novel of spiritual transformation in occupied Judaea, exploring grace,
               faith, and the power of human connection.
             </p>
@@ -61,28 +61,33 @@ export function FooterSection() {
             <nav>
               <ul className="space-y-3">
                 <li>
-                  <Link href="/" className="text-gots-secondary hover:text-gots-accent transition-colors">
+                  <Link href="/" className="text-gots-content hover:text-gots-accent transition-colors">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="/characters" className="text-gots-secondary hover:text-gots-accent transition-colors">
+                  <Link href="/characters" className="text-gots-content hover:text-gots-accent transition-colors">
                     Characters
                   </Link>
                 </li>
                 <li>
-                  <Link href="/groups" className="text-gots-secondary hover:text-gots-accent transition-colors">
+                  <Link href="/groups" className="text-gots-content hover:text-gots-accent transition-colors">
                     Groups
                   </Link>
                 </li>
                 <li>
-                  <Link href="/locations" className="text-gots-secondary hover:text-gots-accent transition-colors">
+                  <Link href="/locations" className="text-gots-content hover:text-gots-accent transition-colors">
                     Locations
                   </Link>
                 </li>
                 <li>
-                  <Link href="/auth/login" className="text-gots-secondary hover:text-gots-accent transition-colors">
+                  <Link href="/auth/login" className="text-gots-content hover:text-gots-accent transition-colors">
                     Login
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/auth/register" className="inline-block px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light hover:!text-black transition-colors">
+                    Sign Up
                   </Link>
                 </li>
               </ul>

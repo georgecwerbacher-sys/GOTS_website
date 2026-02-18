@@ -1,9 +1,12 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { asset_image_path } from '@/lib/asset-paths';
 import { fade_in_up, scale_in, viewport_config, stagger_container } from '@/lib/animations/config';
+import { useAuth } from '@/context/AuthContext';
+import { SignUpModal } from '@/components/auth/SignUpModal';
 
 interface CharacterTeaser {
   id: string;
@@ -20,6 +23,18 @@ interface CharacterTeaserSectionProps {
 }
 
 export function CharacterTeaserSection({ characters }: CharacterTeaserSectionProps) {
+  const router = useRouter();
+  const { isAuthenticated } = useAuth();
+  const [signUpModalOpen, setSignUpModalOpen] = useState(false);
+
+  function handleCharacterClick(character: CharacterTeaser) {
+    if (isAuthenticated) {
+      router.push(`/story/${character.id}`);
+    } else {
+      setSignUpModalOpen(true);
+    }
+  }
+
   return (
     <section
       className="py-24 px-6 bg-gots-charred"
@@ -36,7 +51,7 @@ export function CharacterTeaserSection({ characters }: CharacterTeaserSectionPro
           <h2 className="text-4xl md:text-5xl font-bold text-gots-accent mb-4">
             Meet the Characters
           </h2>
-          <p className="text-lg text-gots-secondary max-w-2xl mx-auto">
+          <p className="text-lg text-gots-content max-w-2xl mx-auto">
             Follow the journeys of those who discover grace in the darkest moments
           </p>
         </motion.header>
@@ -55,9 +70,9 @@ export function CharacterTeaserSection({ characters }: CharacterTeaserSectionPro
               className="relative overflow-hidden rounded-lg border-2 border-gots-accent/50 bg-gots-charred hover:border-gots-accent transition-colors cursor-pointer group"
               role="article"
               aria-label={`Character card for ${character.name}`}
+              onClick={() => handleCharacterClick(character)}
             >
-              <Link href={character.path}>
-                <div className="relative w-full h-96 overflow-hidden bg-gots-dark">
+              <div className="relative w-full h-96 overflow-hidden bg-gots-dark">
                   <img
                     src={asset_image_path(character.imageUrl)}
                     alt={`${character.name}, ${character.role}`}
@@ -74,7 +89,7 @@ export function CharacterTeaserSection({ characters }: CharacterTeaserSectionPro
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                   {character.quote && (
-                    <p className="text-sm italic text-gots-secondary mb-2 line-clamp-2">
+                    <p className="text-sm italic text-gots-content mb-2 line-clamp-2">
                       &quot;{character.quote}&quot;
                     </p>
                   )}
@@ -90,12 +105,13 @@ export function CharacterTeaserSection({ characters }: CharacterTeaserSectionPro
                   </div>
                 </div>
 
-                <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-gots-accent/30 group-hover:border-gots-accent transition-colors" />
-              </Link>
+              <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-gots-accent/30 group-hover:border-gots-accent transition-colors" />
             </motion.article>
           ))}
         </motion.div>
       </div>
+
+      <SignUpModal isOpen={signUpModalOpen} onClose={() => setSignUpModalOpen(false)} />
     </section>
   );
 }

@@ -28,7 +28,7 @@ export function StoryThreadsSection({ threads }: StoryThreadsSectionProps) {
           <h2 className="text-4xl md:text-5xl font-bold text-gots-accent mb-4">
             The Narrative Tapestry
           </h2>
-          <p className="text-lg text-gots-secondary max-w-2xl mx-auto">
+          <p className="text-lg text-gots-content max-w-2xl mx-auto">
             Explore how themes interweave to create the story&apos;s meaning
           </p>
         </motion.header>
@@ -51,7 +51,7 @@ export function StoryThreadsSection({ threads }: StoryThreadsSectionProps) {
               <h3 className="text-3xl md:text-4xl font-bold text-gots-accent mb-4 group-hover:text-gots-accent-light transition-colors">
                 {centralThread.title}
               </h3>
-              <p className="text-gots-secondary text-lg">
+              <p className="text-gots-content text-lg">
                 {centralThread.description}
               </p>
             </article>
@@ -78,7 +78,7 @@ export function StoryThreadsSection({ threads }: StoryThreadsSectionProps) {
                 <h3 className="text-xl font-bold text-gots-accent mb-2 group-hover:text-gots-accent-light transition-colors">
                   {thread.title}
                 </h3>
-                <p className="text-sm text-gots-secondary mb-4">
+                <p className="text-sm text-gots-content mb-4">
                   {thread.description}
                 </p>
                 {thread.connections.length > 0 && (

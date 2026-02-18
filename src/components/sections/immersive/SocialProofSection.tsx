@@ -25,7 +25,7 @@ export function SocialProofSection({ testimonials }: SocialProofSectionProps) {
           <h2 className="text-4xl md:text-5xl font-bold text-gots-accent mb-4">
             Readers Are Discovering
           </h2>
-          <p className="text-lg text-gots-secondary max-w-2xl mx-auto">
+          <p className="text-lg text-gots-content max-w-2xl mx-auto">
             What early readers are saying about their experience
           </p>
         </motion.header>
@@ -67,7 +67,7 @@ export function SocialProofSection({ testimonials }: SocialProofSectionProps) {
                   </div>
                 )}
                 <blockquote className="mb-4">
-                  <p className="text-gots-secondary italic text-base leading-relaxed">
+                  <p className="text-gots-content italic text-base leading-relaxed">
                     &quot;{testimonial.quote}&quot;
                   </p>
                 </blockquote>
@@ -76,7 +76,7 @@ export function SocialProofSection({ testimonials }: SocialProofSectionProps) {
                     <p className="text-xs text-gots-accent font-semibold">
                       Favorite moment
                     </p>
-                    <p className="text-xs text-gots-secondary mt-1">
+                    <p className="text-xs text-gots-content mt-1">
                       {testimonial.highlight}
                     </p>
                   </div>

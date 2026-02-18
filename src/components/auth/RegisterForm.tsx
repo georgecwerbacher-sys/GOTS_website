@@ -94,7 +94,7 @@ export default function RegisterForm() {
           value={formData.email}
           onChange={(e) => handleInputChange('email', e.target.value)}
           placeholder="you@example.com"
-          className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+          className={`w-full px-4 py-2 border rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-500 ${
             getFieldError('email')
               ? 'border-red-300 bg-red-50'
               : 'border-gray-300 bg-white'
@@ -118,7 +118,7 @@ export default function RegisterForm() {
           value={formData.username}
           onChange={(e) => handleInputChange('username', e.target.value)}
           placeholder="Choose a username"
-          className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+          className={`w-full px-4 py-2 border rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-500 ${
             getFieldError('username')
               ? 'border-red-300 bg-red-50'
               : 'border-gray-300 bg-white'
@@ -145,7 +145,7 @@ export default function RegisterForm() {
           value={formData.displayName}
           onChange={(e) => handleInputChange('displayName', e.target.value)}
           placeholder="Your name"
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         {!getFieldError('displayName') && (
           <p className="text-xs text-gray-500">How other members will see you</p>
@@ -164,7 +164,7 @@ export default function RegisterForm() {
           value={formData.password}
           onChange={(e) => handleInputChange('password', e.target.value)}
           placeholder="Create a strong password"
-          className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+          className={`w-full px-4 py-2 border rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-500 ${
             getFieldError('password')
               ? 'border-red-300 bg-red-50'
               : 'border-gray-300 bg-white'
@@ -189,7 +189,7 @@ export default function RegisterForm() {
           value={formData.confirmPassword}
           onChange={(e) => handleInputChange('confirmPassword', e.target.value)}
           placeholder="Confirm your password"
-          className={`w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+          className={`w-full px-4 py-2 border rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-blue-500 ${
             getFieldError('confirmPassword')
               ? 'border-red-300 bg-red-50'
               : 'border-gray-300 bg-white'

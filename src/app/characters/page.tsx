@@ -54,7 +54,7 @@ function character_group_card({
     <Link href={link}>
       <div className="bg-gots-charred hover:bg-gots-charred/80 rounded-lg p-8 transition-all border border-gots-accent/20 hover:border-gots-accent/40 flex flex-col h-full cursor-pointer">
         <h2 className="text-3xl font-bold text-gots-accent mb-3">{group_name}</h2>
-        <p className="text-gots-secondary mb-4 flex-grow">{description}</p>
+        <p className="text-gots-content mb-4 flex-grow">{description}</p>
         <div className="mt-auto">
           <p className="text-sm text-gots-light-gold mb-2">
             {character_count} {character_count === 1 ? 'character' : 'characters'}
@@ -98,7 +98,7 @@ export default async function characters_page(): Promise<ReactNode> {
     <main className="min-h-screen bg-gots-body">
       <header className="bg-gradient-to-b from-gots-charred to-gots-dark py-16 px-6 text-center border-b-2 border-dashed border-gots-accent">
         <h1 className="text-5xl md:text-6xl font-bold text-gots-accent mb-4">All Characters</h1>
-        <p className="text-xl text-gots-secondary max-w-2xl mx-auto">
+        <p className="text-xl text-white max-w-2xl mx-auto">
           Explore the diverse perspectives that weave the tapestry of the Guardians of the Spear.
         </p>
       </header>
@@ -120,7 +120,7 @@ export default async function characters_page(): Promise<ReactNode> {
       </section>
 
       <div className="mt-12 pt-8 border-t border-dashed border-gots-accent/30 text-center">
-        <Link href="/" className="inline-block px-4 py-2 rounded font-semibold transition-colors bg-gots-accent text-gots-black hover:bg-gots-accent-light">
+        <Link href="/" className="inline-block px-4 py-2 rounded font-semibold transition-colors bg-gots-accent !text-black hover:bg-gots-accent-light hover:!text-black">
           ← Back to Home
         </Link>
       </div>

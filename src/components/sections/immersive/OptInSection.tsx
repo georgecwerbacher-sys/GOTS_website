@@ -66,7 +66,7 @@ export function OptInSection() {
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="px-8 py-3 bg-gots-accent text-gots-black font-bold tracking-wider uppercase hover:bg-gots-accent-light transition-colors disabled:opacity-70"
+                className="px-8 py-3 bg-gots-accent !text-black font-bold tracking-wider uppercase hover:bg-gots-accent-light hover:!text-black transition-colors disabled:opacity-70"
               >
                 {status === 'loading' ? 'Joining…' : 'Join'}
               </button>
