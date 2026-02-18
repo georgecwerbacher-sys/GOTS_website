@@ -1,13 +1,1 @@
-Saved/
-.obsidian
-Brain/
-Build/
-Layout/
-Map/
-Pricing_page/
-Review/
-Rules/
-pre-build/
-saved/
-.env.local
-node_modules
+# Nothing ignored - deploy everything (remove patterns as needed later)
