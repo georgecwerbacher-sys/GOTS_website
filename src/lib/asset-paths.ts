@@ -9,7 +9,8 @@ export function asset_image_path(path: string | undefined): string {
   if (!path) return HERO_PLACEHOLDER;
   if (path.startsWith('http')) return path;
   if (path.startsWith(ASSETS_BASE)) return path;
-  if (path.startsWith('/images/')) return `${ASSETS_BASE}${path}`;
+  // Paths under /images/ are served from public/images/
+  if (path.startsWith('/images/')) return path;
   return `${ASSETS_BASE}/images${path}`;
 }
 

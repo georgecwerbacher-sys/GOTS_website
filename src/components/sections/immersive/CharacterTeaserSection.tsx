@@ -57,29 +57,29 @@ export function CharacterTeaserSection({ characters }: CharacterTeaserSectionPro
               aria-label={`Character card for ${character.name}`}
             >
               <Link href={character.path}>
-                <div className="relative w-full h-72 overflow-hidden bg-gots-dark">
+                <div className="relative w-full h-96 overflow-hidden bg-gots-dark">
                   <img
                     src={asset_image_path(character.imageUrl)}
                     alt={`${character.name}, ${character.role}`}
-                    className="w-full h-full object-cover transition-all duration-300 group-hover:brightness-110"
+                    className="w-full h-full object-cover object-top transition-all duration-300 group-hover:brightness-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-gots-charred via-black/50 to-transparent opacity-95 group-hover:opacity-90 transition-opacity" />
-                </div>
-
-                <div className="relative p-6 bg-gots-charred/90 backdrop-blur-sm">
-                  <h3 className="text-2xl font-bold text-gots-accent mb-1 group-hover:text-gots-accent-light transition-colors">
-                    {character.name}
-                  </h3>
-                  <p className="text-sm font-semibold text-gots-accent/80 mb-4 uppercase tracking-wider">
-                    {character.role}
-                  </p>
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-gots-charred opacity-95 group-hover:opacity-90 transition-opacity" />
+                  <div className="absolute top-0 left-0 right-0 p-6">
+                    <h3 className="text-2xl font-bold text-gots-accent mb-1 group-hover:text-gots-accent-light transition-colors">
+                      {character.name}
+                    </h3>
+                    <p className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider">
+                      {character.role}
+                    </p>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
                   {character.quote && (
-                    <p className="text-sm italic text-gots-secondary mb-4 line-clamp-2">
+                    <p className="text-sm italic text-gots-secondary mb-2 line-clamp-2">
                       &quot;{character.quote}&quot;
                     </p>
                   )}
                   {character.description && (
-                    <p className="text-xs text-gots-medium-gray mb-6 leading-relaxed">
+                    <p className="text-xs text-gots-medium-gray mb-4 leading-relaxed">
                       {character.description}
                     </p>
                   )}
@@ -87,6 +87,7 @@ export function CharacterTeaserSection({ characters }: CharacterTeaserSectionPro
                     Follow Their Journey
                     <span className="ml-2" aria-hidden="true">→</span>
                   </span>
+                  </div>
                 </div>
 
                 <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-gots-accent/30 group-hover:border-gots-accent transition-colors" />

@@ -14,8 +14,8 @@ export default function root_layout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <AuthProvider>
           <SiteHeader />
           <main>{children}</main>

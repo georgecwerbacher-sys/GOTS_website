@@ -11,6 +11,7 @@ import {
 import { HeroSection } from '@/components/sections/immersive/HeroSection';
 import { BooksSection } from '@/components/sections/immersive/BooksSection';
 import { AtmosphereSection } from '@/components/sections/immersive/AtmosphereSection';
+import { OptInSection } from '@/components/sections/immersive/OptInSection';
 import { CharacterTeaserSection } from '@/components/sections/immersive/CharacterTeaserSection';
 import { StoryThreadsSection } from '@/components/sections/immersive/StoryThreadsSection';
 import { CallToActionSection } from '@/components/sections/immersive/CallToActionSection';
@@ -44,6 +45,8 @@ export default async function homepage(): Promise<ReactNode> {
       <BooksSection book1={book_1} book2={book_2} />
 
       <AtmosphereSection layers={atmosphere_layers} />
+
+      <OptInSection />
 
       <CharacterTeaserSection characters={featured_characters} />
 
