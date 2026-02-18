@@ -12,6 +12,7 @@ interface BookData {
   description: string;
   buyUrl?: string;
   buttonText?: string;
+  priceLabel?: string;
   releaseDate?: string;
 }
 
@@ -104,16 +105,6 @@ export function BooksSection({ book1, book2 }: BooksSectionProps) {
               <p className="text-gots-medium-gray text-sm mb-4">
                 $5.99 ebook · $14.99 soft cover
               </p>
-              {book1.buyUrl && (
-                <a
-                  href={book1.buyUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-8 py-4 bg-amber-700 hover:bg-amber-600 !text-white font-semibold tracking-widest uppercase transition-colors duration-300"
-                >
-                  {book1.buttonText || 'Buy on Kindle'}
-                </a>
-              )}
             </div>
           </article>
 
@@ -145,20 +136,40 @@ export function BooksSection({ book1, book2 }: BooksSectionProps) {
                   {book2.description}
                 </p>
                 <p className="text-gots-medium-gray text-sm mb-4">
-                  $5.99 ebook · $14.99 soft cover
+                  {book2.priceLabel ? `${book2.priceLabel} — $5.99 ebook · $14.99 soft cover` : '$5.99 ebook · $14.99 soft cover'}
                 </p>
-                {(book2.buyUrl || book2.buttonText) && (
-                  <a
-                    href={book2.buyUrl || '#'}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block px-8 py-4 bg-amber-700 hover:bg-amber-600 !text-white font-semibold tracking-widest uppercase transition-colors duration-300"
-                  >
-                    {book2.buttonText || 'Buy on Kindle'}
-                  </a>
-                )}
               </div>
             </article>
+          )}
+        </motion.div>
+
+        {/* Combined CTA Buttons */}
+        <motion.div
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8"
+          initial="initial"
+          whileInView="animate"
+          viewport={viewport_config}
+          variants={fade_in_up}
+        >
+          {book1.buyUrl && (
+            <a
+              href={book1.buyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 bg-amber-700 hover:bg-amber-600 text-black font-semibold tracking-widest uppercase transition-colors duration-300"
+            >
+              {book1.buttonText || 'Buy Book 1 on Kindle'}
+            </a>
+          )}
+          {book2?.buyUrl && (
+            <a
+              href={book2.buyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 border-2 border-amber-700 hover:bg-amber-700 text-amber-700 hover:text-white font-semibold tracking-widest uppercase transition-colors duration-300"
+            >
+              {book2.buttonText || 'Pre-Order Book 2'}
+            </a>
           )}
         </motion.div>
       </div>
