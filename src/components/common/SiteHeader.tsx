@@ -16,7 +16,6 @@ export function SiteHeader() {
           <div className="flex items-center gap-4">
             <Link href="/" className="text-gots-content hover:text-gots-accent transition-colors">Home</Link>
             <Link href="/characters" className="text-gots-content hover:text-gots-accent transition-colors">Characters</Link>
-            <Link href="/groups" className="text-gots-content hover:text-gots-accent transition-colors">Groups</Link>
             <Link href="/locations" className="text-gots-content hover:text-gots-accent transition-colors">Locations</Link>
             {!loading && (
               isAuthenticated ? (

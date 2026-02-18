@@ -33,10 +33,10 @@ function character_group_card({
           />
           
           {/* Overlay with content */}
-          <div className="absolute inset-0 bg-gradient-to-t from-gots-charred via-gots-charred/60 to-transparent flex flex-col justify-end p-8">
-            <h2 className="text-3xl font-bold text-gots-accent mb-3">{group_name}</h2>
-            <p className="text-gots-primary mb-4">{description}</p>
-            <div className="mt-auto">
+          <div className="absolute inset-0 bg-gradient-to-b from-gots-charred/80 via-transparent to-gots-charred flex flex-col justify-between p-8">
+            <h2 className="text-3xl font-bold text-gots-accent">{group_name}</h2>
+            <div>
+              <p className="text-gots-primary mb-4">{description}</p>
               <p className="text-sm text-gots-light-gold mb-2">
                 {character_count} {character_count === 1 ? 'character' : 'characters'}
               </p>
@@ -83,7 +83,7 @@ export default async function characters_page(): Promise<ReactNode> {
       count: character_groups['Romans']?.length || 0,
       description: group_descriptions['Romans'],
       link: '/characters/groups/romans',
-      image_path: '/assets/video/headers/romans/Romans_Header_Poster.png'
+      image_path: '/images/Hero_images/three_romans.jpg'
     },
     {
       name: 'Followers',

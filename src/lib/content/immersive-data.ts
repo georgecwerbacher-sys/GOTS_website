@@ -83,13 +83,6 @@ export const cta_paths: CallToActionPath[] = [
     description: 'Start with Longinus\'s journey',
     icon: '📖',
   },
-  {
-    id: 'groups',
-    label: 'Groups',
-    href: '/groups',
-    description: 'Discover factions and perspectives',
-    icon: '◆',
-  },
 ];
 
 export const testimonials: Testimonial[] = [

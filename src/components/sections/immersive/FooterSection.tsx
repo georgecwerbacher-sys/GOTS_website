@@ -71,11 +71,6 @@ export function FooterSection() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/groups" className="text-gots-content hover:text-gots-accent transition-colors">
-                    Groups
-                  </Link>
-                </li>
-                <li>
                   <Link href="/locations" className="text-gots-content hover:text-gots-accent transition-colors">
                     Locations
                   </Link>
