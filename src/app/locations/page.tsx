@@ -1,6 +1,8 @@
 import { ReactNode } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { get_locations_by_region } from '@/lib/data/locations';
+import { asset_image_path } from '@/lib/asset-paths';
 
 function location_card(location: {
   id: string;
@@ -8,7 +10,37 @@ function location_card(location: {
   region: string;
   description: string;
   significance?: string;
+  image?: string;
 }): ReactNode {
+  if (location.image) {
+    return (
+      <Link href={`/locations/${location.id}`} key={location.id}>
+        <div className="relative h-64 md:h-80 rounded-lg overflow-hidden transition-all border border-gots-accent/20 hover:border-gots-accent/40 cursor-pointer group">
+          <Image
+            src={asset_image_path(location.image)}
+            alt={location.name}
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            unoptimized
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-gots-charred via-gots-charred/60 to-transparent" />
+          <div className="absolute inset-0 flex flex-col justify-end p-6">
+            <p className="text-xs font-semibold text-gots-accent/90 uppercase tracking-wider mb-2">
+              {location.region}
+            </p>
+            <h3 className="text-xl font-bold text-gots-accent mb-2 group-hover:text-gots-accent-light transition-colors">
+              {location.name}
+            </h3>
+            <p className="text-gots-content text-sm line-clamp-2">
+              {location.description}
+            </p>
+            <span className="text-gots-accent font-semibold text-sm mt-2">Explore Location →</span>
+          </div>
+        </div>
+      </Link>
+    );
+  }
+
   return (
     <Link href={`/locations/${location.id}`} key={location.id}>
       <div className="bg-gots-charred hover:bg-gots-charred/80 rounded-lg overflow-hidden transition-all border border-gots-accent/20 hover:border-gots-accent/40 cursor-pointer group">

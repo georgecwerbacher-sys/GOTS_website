@@ -4,6 +4,7 @@ export interface location_profile {
   region: string;
   description: string;
   significance?: string;
+  image?: string;
 }
 
 // Key locations from the Guardians of the Spear narrative
@@ -21,6 +22,7 @@ const LOCATIONS: location_profile[] = [
     region: 'Jerusalem',
     description: 'The place of the skull—an execution ground outside Jerusalem\'s walls where the crucifixion unfolds.',
     significance: 'Where Longinus pierces Christ\'s side and receives his sight; where divine light meets state violence.',
+    image: '/images/Locations/Golgotha.jpg',
   },
   {
     id: 'praetorium',
