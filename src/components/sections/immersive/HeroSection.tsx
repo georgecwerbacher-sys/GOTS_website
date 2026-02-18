@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { fade_in_up, stagger_container } from '@/lib/animations/config';
-import { HeaderVideo } from '../../layout/header_video';
+import { HeaderVideo } from '../../layout';
 
 interface HeroSectionProps {
   videoPath: string;
