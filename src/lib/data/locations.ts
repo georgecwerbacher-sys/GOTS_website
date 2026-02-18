@@ -30,6 +30,7 @@ const LOCATIONS: location_profile[] = [
     region: 'Jerusalem',
     description: 'The Roman governor\'s residence and military headquarters in Jerusalem.',
     significance: 'Site of the scourging and judgment; where Roman authority confronts the accused.',
+    image: '/images/Locations/Praetorium.jpg',
   },
   {
     id: 'temple',
@@ -37,6 +38,7 @@ const LOCATIONS: location_profile[] = [
     region: 'Jerusalem',
     description: 'The heart of Jewish religious life—where Malchus serves and where authority and faith intersect.',
     significance: 'Center of religious power; base for secret believers who protect resurrection witnesses.',
+    image: '/images/Locations/the-temple.jpg',
   },
   {
     id: 'judean-desert',
@@ -101,7 +103,7 @@ export async function get_location_extended_profile(
   location_id: string
 ): Promise<location_extended_profile | null> {
   try {
-    const mod = await import(`@/content/locations/${location_id}.json`);
+    const mod = await import(`@/content/Locations/${location_id}.json`);
     return (mod.default ?? mod) as location_extended_profile;
   } catch {
     return null;

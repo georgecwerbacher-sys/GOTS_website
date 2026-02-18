@@ -106,46 +106,54 @@ function render_extended_profile(profile: location_extended_profile) {
       {sections.physical_description && (
         <SectionBlock title="Physical Description & Layout">
           <div className="space-y-6">
-            {(sections.physical_description as { geographic_setting?: string }).geographic_setting && (
-              <div>
-                <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
-                  Geographic Setting
-                </h3>
-                <p className="text-gots-content">
-                  {(sections.physical_description as { geographic_setting: string }).geographic_setting}
-                </p>
-              </div>
-            )}
-            {(sections.physical_description as { scale?: string }).scale && (
-              <div>
-                <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
-                  Scale
-                </h3>
-                <p className="text-gots-content">
-                  {(sections.physical_description as { scale: string }).scale}
-                </p>
-              </div>
-            )}
-            {(sections.physical_description as { natural_features?: string }).natural_features && (
-              <div>
-                <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
-                  Natural Features
-                </h3>
-                <p className="text-gots-content">
-                  {(sections.physical_description as { natural_features: string }).natural_features}
-                </p>
-              </div>
-            )}
-            {(sections.physical_description as { primary_structures?: string }).primary_structures && (
-              <div>
-                <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
-                  Primary Structures
-                </h3>
-                <p className="text-gots-content">
-                  {(sections.physical_description as { primary_structures: string }).primary_structures}
-                </p>
-              </div>
-            )}
+            {(() => {
+              const pd = sections.physical_description as Record<string, unknown>;
+              const val = pd?.geographic_setting;
+              return val ? (
+                <div>
+                  <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
+                    Geographic Setting
+                  </h3>
+                  <p className="text-gots-content">{String(val)}</p>
+                </div>
+              ) : null;
+            })()}
+            {(() => {
+              const pd = sections.physical_description as Record<string, unknown>;
+              const val = pd?.scale;
+              return val ? (
+                <div>
+                  <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
+                    Scale
+                  </h3>
+                  <p className="text-gots-content">{String(val)}</p>
+                </div>
+              ) : null;
+            })()}
+            {(() => {
+              const pd = sections.physical_description as Record<string, unknown>;
+              const val = pd?.natural_features;
+              return val ? (
+                <div>
+                  <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
+                    Natural Features
+                  </h3>
+                  <p className="text-gots-content">{String(val)}</p>
+                </div>
+              ) : null;
+            })()}
+            {(() => {
+              const pd = sections.physical_description as Record<string, unknown>;
+              const val = pd?.primary_structures;
+              return val ? (
+                <div>
+                  <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
+                    Primary Structures
+                  </h3>
+                  <p className="text-gots-content">{String(val)}</p>
+                </div>
+              ) : null;
+            })()}
           </div>
         </SectionBlock>
       )}
@@ -154,51 +162,30 @@ function render_extended_profile(profile: location_extended_profile) {
       {sections.sensory_details && (
         <SectionBlock title="Sensory Details & Atmosphere">
           <div className="space-y-6">
-            {(sections.sensory_details as { overall_impression?: string }).overall_impression && (
-              <div>
-                <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
-                  Overall Impression
-                </h3>
-                <p className="text-gots-content">
-                  {(sections.sensory_details as { overall_impression: string }).overall_impression}
-                </p>
-              </div>
-            )}
-            {(sections.sensory_details as { dominant_colors?: string }).dominant_colors && (
-              <div>
-                <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
-                  Dominant Colors
-                </h3>
-                <p className="text-gots-content">
-                  {(sections.sensory_details as { dominant_colors: string }).dominant_colors}
-                </p>
-              </div>
-            )}
-            {(sections.sensory_details as { signature_visual?: string }).signature_visual && (
-              <div>
-                <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
-                  Signature Visual
-                </h3>
-                <p className="text-gots-content">
-                  {(sections.sensory_details as { signature_visual: string }).signature_visual}
-                </p>
-              </div>
-            )}
-            {(sections.sensory_details as { lighting?: string }).lighting && (
-              <div>
-                <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
-                  Lighting
-                </h3>
-                <p className="text-gots-content">
-                  {(sections.sensory_details as { lighting: string }).lighting}
-                </p>
-              </div>
-            )}
-            {(sections.sensory_details as { essential_atmosphere?: string }).essential_atmosphere && (
-              <p className="text-gots-accent font-medium italic">
-                {(sections.sensory_details as { essential_atmosphere: string }).essential_atmosphere}
-              </p>
-            )}
+            {['overall_impression', 'dominant_colors', 'signature_visual', 'lighting'].map((key) => {
+              const sd = sections.sensory_details as Record<string, unknown>;
+              const val = sd?.[key];
+              const labels: Record<string, string> = {
+                overall_impression: 'Overall Impression',
+                dominant_colors: 'Dominant Colors',
+                signature_visual: 'Signature Visual',
+                lighting: 'Lighting',
+              };
+              return val ? (
+                <div key={key}>
+                  <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
+                    {labels[key]}
+                  </h3>
+                  <p className="text-gots-content">{String(val)}</p>
+                </div>
+              ) : null;
+            })}
+            {(() => {
+              const val = (sections.sensory_details as Record<string, unknown>)?.essential_atmosphere;
+              return val ? (
+                <p className="text-gots-accent font-medium italic">{String(val)}</p>
+              ) : null;
+            })()}
           </div>
         </SectionBlock>
       )}
@@ -207,45 +194,32 @@ function render_extended_profile(profile: location_extended_profile) {
       {sections.historical_context && (
         <SectionBlock title="Historical & Cultural Context">
           <div className="space-y-6">
-            {(sections.historical_context as { historical_significance?: string }).historical_significance && (
-              <div>
-                <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
-                  Historical Significance
-                </h3>
-                <p className="text-gots-content">
-                  {(sections.historical_context as { historical_significance: string }).historical_significance}
-                </p>
-              </div>
-            )}
-            {(sections.historical_context as { cultural_importance?: string }).cultural_importance && (
-              <div>
-                <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
-                  Cultural Importance
-                </h3>
-                <p className="text-gots-content">
-                  {(sections.historical_context as { cultural_importance: string }).cultural_importance}
-                </p>
-              </div>
-            )}
-            {(sections.historical_context as { symbolic_meaning?: string }).symbolic_meaning && (
-              <div>
-                <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
-                  Symbolic Meaning
-                </h3>
-                <p className="text-gots-content">
-                  {(sections.historical_context as { symbolic_meaning: string }).symbolic_meaning}
-                </p>
-              </div>
-            )}
+            {['historical_significance', 'cultural_importance', 'symbolic_meaning'].map((key) => {
+              const hc = sections.historical_context as Record<string, unknown>;
+              const val = hc?.[key];
+              const labels: Record<string, string> = {
+                historical_significance: 'Historical Significance',
+                cultural_importance: 'Cultural Importance',
+                symbolic_meaning: 'Symbolic Meaning',
+              };
+              return val ? (
+                <div key={key}>
+                  <h3 className="text-sm font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
+                    {labels[key]}
+                  </h3>
+                  <p className="text-gots-content">{String(val)}</p>
+                </div>
+              ) : null;
+            })}
           </div>
         </SectionBlock>
       )}
 
       {/* Character Connections */}
       {sections.character_connections && (
-        <SectionBlock title={(sections.character_connections as { title?: string }).title ?? 'Character Connections'}>
+        <SectionBlock title={String((sections.character_connections as Record<string, unknown>)?.title ?? 'Character Connections')}>
           <div className="space-y-6">
-            {((sections.character_connections as { primary?: { name: string; role: string }[] }).primary ?? []).map(
+            {((sections.character_connections as Record<string, unknown>)?.primary as { name: string; role: string }[] ?? []).map(
               (char) => (
                 <div key={char.name} className="bg-gots-charred rounded-lg p-4 border border-gots-accent/20">
                   <h3 className="font-bold text-gots-accent mb-2">{char.name}</h3>
@@ -261,7 +235,7 @@ function render_extended_profile(profile: location_extended_profile) {
       {sections.key_scenes && (
         <SectionBlock title="Key Scenes & Events">
           <ul className="space-y-3">
-            {((sections.key_scenes as { events?: string[] }).events ?? []).map((event, i) => (
+            {((sections.key_scenes as Record<string, unknown>)?.events as string[] ?? []).map((event, i) => (
               <li key={i} className="flex gap-3">
                 <span className="text-gots-accent font-bold">•</span>
                 <span className="text-gots-content">{event}</span>
@@ -281,7 +255,7 @@ export default async function location_detail_page({ params }: page_props) {
 
   if (!location) notFound();
 
-  const heroImage = extendedProfile?.image;
+  const heroImage = extendedProfile?.image ?? location.image;
 
   return (
     <main className="min-h-screen bg-gots-body">

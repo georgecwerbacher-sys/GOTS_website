@@ -90,7 +90,7 @@ export default async function characters_page(): Promise<ReactNode> {
       count: character_groups['Followers']?.length || 0,
       description: group_descriptions['Followers'],
       link: '/characters/groups/followers',
-      image_path: '/assets/video/headers/followers/Followers_Header_Poster.png'
+      image_path: '/images/Hero_images/Followers_1_.jpg'
     }
   ].filter(group => group.count > 0);
 

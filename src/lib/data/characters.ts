@@ -146,17 +146,8 @@ export async function get_characters_by_group(): Promise<Record<string, characte
 }
 
 // Get all scenes featuring a character
-export async function get_character_scenes(character_id: string) {
-  try {
-    // Load all scenes from all acts
-    const all_scenes: any[] = [];
-    
-    // In real implementation, you'd iterate through acts/sequences
-    // For now, this is a placeholder
-    const response = await import(`@/content/character-scenes/${character_id}.json`);
-    return response.default;
-  } catch (error) {
-    console.error(`Error loading scenes for ${character_id}:`, error);
-    return [];
-  }
+export async function get_character_scenes(_character_id: string) {
+  // Character scenes are loaded from the database via get_scenes_for_character
+  // This placeholder returns empty until character-scenes JSON files are added
+  return [];
 }
