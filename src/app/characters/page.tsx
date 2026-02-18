@@ -29,6 +29,7 @@ function character_group_card({
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-105"
             priority
+            unoptimized
           />
           
           {/* Overlay with content */}
@@ -82,14 +83,14 @@ export default async function characters_page(): Promise<ReactNode> {
       count: character_groups['Romans']?.length || 0,
       description: group_descriptions['Romans'],
       link: '/characters/groups/romans',
-      image_path: '/video/headers/romans/Romans_Header_Poster.png'
+      image_path: '/assets/video/headers/romans/Romans_Header_Poster.png'
     },
     {
       name: 'Followers',
       count: character_groups['Followers']?.length || 0,
       description: group_descriptions['Followers'],
       link: '/characters/groups/followers',
-      image_path: '/video/headers/followers/Followers_Header_Poster.png'
+      image_path: '/assets/video/headers/followers/Followers_Header_Poster.png'
     }
   ].filter(group => group.count > 0);
 
@@ -119,10 +120,8 @@ export default async function characters_page(): Promise<ReactNode> {
       </section>
 
       <div className="mt-12 pt-8 border-t border-dashed border-gots-accent/30 text-center">
-        <Link href="/">
-          <button className="px-4 py-2 rounded font-semibold transition-colors bg-gots-accent text-gots-black hover:bg-gots-accent-light">
-            ← Back to Home
-          </button>
+        <Link href="/" className="inline-block px-4 py-2 rounded font-semibold transition-colors bg-gots-accent text-gots-black hover:bg-gots-accent-light">
+          ← Back to Home
         </Link>
       </div>
     </main>

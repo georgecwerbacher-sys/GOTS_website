@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { AuthProvider } from '@/context/AuthContext';
+import { SiteHeader } from '@/components/layout/SiteHeader';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -16,7 +17,8 @@ export default function root_layout({
     <html lang="en">
       <body>
         <AuthProvider>
-          {children}
+          <SiteHeader />
+          <main>{children}</main>
         </AuthProvider>
       </body>
     </html>

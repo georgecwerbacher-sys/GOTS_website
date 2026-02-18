@@ -1,52 +1,70 @@
 'use client';
 
-import { useState } from 'react';
-import Image from 'next/image';
+import { useState, useEffect } from 'react';
+
+const HERO_PLACEHOLDER = '/images/hero-placeholder.svg';
 
 interface header_video_props {
   video_path: string;
   poster_path: string;
   alt_text?: string;
+  full_screen?: boolean;
 }
 
 function header_video_client({
   video_path,
   poster_path,
-  alt_text = 'Header video'
+  alt_text = 'Header video',
+  full_screen = false
 }: header_video_props) {
   const [video_loaded, set_video_loaded] = useState(false);
+  const [use_placeholder, set_use_placeholder] = useState(true);
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => set_use_placeholder(false);
+    img.onerror = () => set_use_placeholder(true);
+    img.src = poster_path;
+  }, [poster_path]);
+
+  const height_class = full_screen ? 'min-h-screen' : 'h-[600px] min-h-[400px]';
 
   return (
-    <div className="relative w-full h-[600px] overflow-hidden bg-gots-dark flex items-center justify-center">
-      {/* Poster Image (loads first) */}
-      <Image
-        src={poster_path}
+    <div className={`relative w-full ${height_class} overflow-hidden bg-gots-dark flex items-center justify-center`}>
+      <img
+        src={HERO_PLACEHOLDER}
         alt={alt_text}
-        fill
-        priority
-        className={`absolute inset-0 object-contain transition-opacity duration-500 ${
-          video_loaded ? 'opacity-0' : 'opacity-100'
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+          use_placeholder ? 'opacity-100' : 'opacity-0'
         }`}
       />
-
-      {/* Video Container */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        onLoadedData={() => set_video_loaded(true)}
-        poster={poster_path}
-        className="w-full h-full object-contain"
-        aria-label={alt_text}
-      >
-        <source src={`${video_path}.webm`} type="video/webm" />
-        <source src={`${video_path}.mp4`} type="video/mp4" />
-        Your browser does not support HTML5 video.
-      </video>
-
-      {/* Optional Overlay (adjust opacity for text readability) */}
-      <div className="absolute inset-0 bg-black/20" />
+      {!use_placeholder && (
+        <>
+          <img
+            src={poster_path}
+            alt={alt_text}
+            className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 ${
+              video_loaded ? 'opacity-0' : 'opacity-100'
+            }`}
+            onError={() => set_use_placeholder(true)}
+          />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            onLoadedData={() => set_video_loaded(true)}
+            onError={() => set_use_placeholder(true)}
+            poster={poster_path}
+            className="absolute inset-0 w-full h-full object-contain"
+            aria-label={alt_text}
+          >
+            <source src={`${video_path}.webm`} type="video/webm" />
+            <source src={`${video_path}.mp4`} type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-black/20" />
+        </>
+      )}
     </div>
   );
 }

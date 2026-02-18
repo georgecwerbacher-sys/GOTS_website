@@ -1,4 +1,14 @@
-.next
-   node_modules
-   .env.local
-   .git
+Saved/
+.obsidian
+Brain/
+Build/
+Images/
+Layout/
+Map/
+Pricing_page/
+Review/
+Rules/
+pre-build/
+saved/
+.env.local
+node_modules
