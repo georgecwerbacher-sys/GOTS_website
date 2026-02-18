@@ -11,6 +11,14 @@ export const book_1 = {
   description: "The enemy's greatest weapon is your own will turned against you — and only the light of the spear can unite those strong enough to stand against it.",
 };
 
+export const book_2 = {
+  videoPath: '/video/Book_Cover_2_ver_1.mp4',
+  imagePath: '/images/Book_2/Book_Cover_2.png',
+  imageAlt: 'Guardians of the Spear cover',
+  title: 'Guardians of the Spear: The Reckoning',
+  description: "Exiled, hunted, and scattered across occupied Judaea, the guardians face a new enemy — one that doesn't just kill, it corrupts the very will to resist.",
+};
+
 export const atmosphere_layers: AtmosphereLayer[] = [
   {
     id: 'era',

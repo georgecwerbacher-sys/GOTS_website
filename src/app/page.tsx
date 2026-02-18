@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import { get_all_characters } from '@/lib/data/characters';
 import {
   book_1,
+  book_2,
   atmosphere_layers,
   story_threads,
   cta_paths,
@@ -40,7 +41,7 @@ export default async function homepage(): Promise<ReactNode> {
         description="Go deeper than the book — discover the people, the places, and the price they paid."
       />
 
-      <BooksSection book1={book_1} />
+      <BooksSection book1={book_1} book2={book_2} />
 
       <AtmosphereSection layers={atmosphere_layers} />
 

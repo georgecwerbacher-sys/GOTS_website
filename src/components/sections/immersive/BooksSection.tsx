@@ -4,17 +4,20 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { fade_in_up, viewport_config } from '@/lib/animations/config';
 
-interface BooksSectionProps {
-  book1: {
-    videoPath?: string;
-    imagePath: string;
-    imageAlt: string;
-    title: string;
-    description: string;
-  };
+interface BookData {
+  videoPath?: string;
+  imagePath: string;
+  imageAlt: string;
+  title: string;
+  description: string;
 }
 
-function Book1Media({
+interface BooksSectionProps {
+  book1: BookData;
+  book2?: BookData;
+}
+
+function BookMedia({
   videoPath,
   imagePath,
   imageAlt,
@@ -62,7 +65,7 @@ function Book1Media({
   );
 }
 
-export function BooksSection({ book1 }: BooksSectionProps) {
+export function BooksSection({ book1, book2 }: BooksSectionProps) {
   return (
     <section
       className="relative py-16 px-6 bg-gots-body"
@@ -82,7 +85,7 @@ export function BooksSection({ book1 }: BooksSectionProps) {
             aria-label={`${book1.title} - ${book1.description}`}
           >
             <div className="flex-shrink-0 relative w-full md:w-48 aspect-[3/4] rounded-md overflow-hidden bg-gots-dark">
-              <Book1Media
+              <BookMedia
                 videoPath={book1.videoPath}
                 imagePath={book1.imagePath}
                 imageAlt={book1.imageAlt}
@@ -92,27 +95,49 @@ export function BooksSection({ book1 }: BooksSectionProps) {
               <h3 className="text-2xl font-bold text-gots-accent mb-2">
                 {book1.title}
               </h3>
-              <p className="text-base md:text-lg text-gots-medium-gray drop-shadow-sm">
+              <p className="text-base md:text-lg text-gots-medium-gray drop-shadow-sm mb-4">
                 {book1.description}
               </p>
+              <p className="text-gots-medium-gray text-sm mb-4">
+                $5.99 ebook · $14.99 soft cover
+              </p>
+              <a
+                href="https://www.amazon.com/dp/B0GNWQZNQ3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-4 bg-amber-700 hover:bg-amber-600 !text-white font-semibold tracking-widest uppercase transition-colors duration-300"
+              >
+                Buy on Kindle
+              </a>
             </div>
           </article>
 
-          {/* Book 2 - Coming Soon */}
-          <article
-            className="flex flex-col items-center justify-center p-8 rounded-lg border-2 border-dashed border-gots-accent/30 bg-gots-charred/50"
-            aria-label="Book 2 coming soon"
-          >
-            <div className="aspect-[3/4] w-full max-w-[192px] rounded-md bg-gots-dark/80 flex items-center justify-center mb-4">
-              <span className="text-6xl text-gots-accent/30">◆</span>
-            </div>
-            <h3 className="text-xl font-bold text-gots-accent/70 mb-2">
-              Book 2
-            </h3>
-            <p className="text-base md:text-lg text-white drop-shadow-sm italic">
-              Coming Soon
-            </p>
-          </article>
+          {/* Book 2 */}
+          {book2 && (
+            <article
+              className="flex flex-col md:flex-row gap-6 p-6 rounded-lg border-2 border-gots-accent/30 bg-gots-charred overflow-hidden"
+              aria-label={`${book2.title} - ${book2.description}`}
+            >
+              <div className="flex-shrink-0 relative w-full md:w-48 aspect-[3/4] rounded-md overflow-hidden bg-gots-dark">
+                <BookMedia
+                  videoPath={book2.videoPath}
+                  imagePath={book2.imagePath}
+                  imageAlt={book2.imageAlt}
+                />
+              </div>
+              <div className="flex flex-col justify-center">
+                <h3 className="text-2xl font-bold text-gots-accent mb-2">
+                  {book2.title}
+                </h3>
+                <p className="text-base md:text-lg text-gots-medium-gray drop-shadow-sm mb-4">
+                  {book2.description}
+                </p>
+                <p className="text-gots-medium-gray text-sm">
+                  $5.99 ebook · $14.99 soft cover
+                </p>
+              </div>
+            </article>
+          )}
         </motion.div>
       </div>
     </section>
