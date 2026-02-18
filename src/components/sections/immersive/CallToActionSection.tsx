@@ -63,7 +63,7 @@ function BuyBookModal({
           href={buyUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block w-full text-center px-8 py-4 bg-gots-accent hover:bg-gots-accent-light text-black font-semibold tracking-widest uppercase transition-colors duration-300 rounded"
+          className="inline-block w-full text-center px-8 py-4 bg-gots-accent hover:bg-gots-accent-light !text-black font-semibold tracking-widest uppercase transition-colors duration-300 rounded"
         >
           {buttonText}
         </a>
@@ -89,7 +89,7 @@ export function CallToActionSection({ paths }: CallToActionSectionProps) {
           variants={fade_in_up}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gots-accent mb-4">
-            Choose Your Perspective
+            Enhance Your Journey By becoming a member
           </h2>
           <p className="text-lg text-gots-content max-w-2xl mx-auto">
             How would you like to enter the world of Guardians of the Spear?

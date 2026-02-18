@@ -85,6 +85,13 @@ export const cta_paths: CallToActionPath[] = [
     buyUrl: book_1.buyUrl,
     buyButtonText: book_1.buttonText,
   },
+  {
+    id: 'locations',
+    label: 'Locations',
+    href: '/locations',
+    description: 'Discover the places where the story unfolds',
+    icon: '📍',
+  },
 ];
 
 export const testimonials: Testimonial[] = [
