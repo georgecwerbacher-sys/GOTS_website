@@ -60,7 +60,11 @@ const ACTS: Act[] = [
   },
 ];
 
-const HIDDEN_ACT_TEASER = 'The Arcani execute three of the spear\'s guardians. What Rome intends as destruction becomes something else entirely — and Malchus is left as the sole living witness, alone with the weight of everything they died protecting.';
+const HIDDEN_ACT_TEASER = [
+  'In the center of this clearing stood a figure unlike the others.',
+  'The man was heavily shackled—chains that suggested Rome feared him beyond ordinary prisoner calculation. His frame was lean but powerful, etched with the evidence of years of violence. His bare chest was a record of brutality: whip scars that had healed into ridged tissue, burn marks that had faded into permanent discoloration, the systematic evidence of abuse designed not simply to punish but to break the will to resist.',
+  'But it was his eyes that marked him as truly different.',
+];
 
 export function StoryThreadsSection() {
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -234,9 +238,13 @@ export function StoryThreadsSection() {
                   </div>
                 </div>
 
-                <p className="text-base md:text-lg italic text-gots-medium-gray leading-relaxed mb-4 max-w-xl">
-                  {HIDDEN_ACT_TEASER}
-                </p>
+                <div className="space-y-4 max-w-xl">
+                  {HIDDEN_ACT_TEASER.map((para, i) => (
+                    <p key={i} className="text-base md:text-lg italic text-gots-medium-gray leading-relaxed">
+                      {para}
+                    </p>
+                  ))}
+                </div>
 
                 {/* Blurred "locked" content hint */}
                 <div className="space-y-2 select-none pointer-events-none" aria-hidden="true">
