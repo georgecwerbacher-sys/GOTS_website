@@ -14,13 +14,13 @@ export function SiteHeader() {
             Guardians of the Spear
           </Link>
           <div className="flex items-center gap-4">
-            <Link href="/" className="text-gots-content hover:text-gots-accent transition-colors">Home</Link>
-            <Link href="/characters" className="text-gots-content hover:text-gots-accent transition-colors">Characters</Link>
-            <Link href="/locations" className="text-gots-content hover:text-gots-accent transition-colors">Locations</Link>
             {!loading && (
               isAuthenticated ? (
                 <>
-                  <Link href="/dashboard" className="px-4 py-2 rounded font-semibold bg-gots-accent text-gots-black hover:bg-gots-accent-light">
+                  <Link href="/" className="text-gots-content hover:text-gots-accent transition-colors">Home</Link>
+                  <Link href="/characters" className="text-gots-content hover:text-gots-accent transition-colors">Characters</Link>
+                  <Link href="/locations" className="text-gots-content hover:text-gots-accent transition-colors">Locations</Link>
+                  <Link href="/dashboard" className="px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light">
                     Dashboard
                   </Link>
                   <button onClick={() => logout()} className="text-gots-medium-gray hover:text-gots-accent text-sm">

@@ -1,11 +1,26 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { fade_in_up, viewport_config } from '@/lib/animations/config';
+import { useAuth } from '@/context/AuthContext';
+import { SignUpModal } from '@/components/auth/SignUpModal';
 
 export function FooterSection() {
   const currentYear = new Date().getFullYear();
+  const router = useRouter();
+  const { isAuthenticated } = useAuth();
+  const [signUpModalOpen, setSignUpModalOpen] = useState(false);
+
+  function handleProtectedLink(href: string) {
+    if (isAuthenticated) {
+      router.push(href);
+    } else {
+      setSignUpModalOpen(true);
+    }
+  }
 
   return (
     <motion.footer
@@ -66,14 +81,22 @@ export function FooterSection() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/characters" className="text-gots-content hover:text-gots-accent transition-colors">
+                  <button
+                    type="button"
+                    onClick={() => handleProtectedLink('/characters')}
+                    className="text-gots-content hover:text-gots-accent transition-colors text-left"
+                  >
                     Characters
-                  </Link>
+                  </button>
                 </li>
                 <li>
-                  <Link href="/locations" className="text-gots-content hover:text-gots-accent transition-colors">
+                  <button
+                    type="button"
+                    onClick={() => handleProtectedLink('/locations')}
+                    className="text-gots-content hover:text-gots-accent transition-colors text-left"
+                  >
                     Locations
-                  </Link>
+                  </button>
                 </li>
                 <li>
                   <Link href="/auth/login" className="text-gots-content hover:text-gots-accent transition-colors">
@@ -89,6 +112,8 @@ export function FooterSection() {
             </nav>
           </section>
         </div>
+
+        <SignUpModal isOpen={signUpModalOpen} onClose={() => setSignUpModalOpen(false)} />
 
         <div className="pt-8 border-t border-gots-accent/30 text-center">
           <p className="text-gots-medium-gray text-sm">
