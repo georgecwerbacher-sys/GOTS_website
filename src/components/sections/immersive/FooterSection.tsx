@@ -31,24 +31,16 @@ export function FooterSection() {
             </p>
           </section>
 
-          <section aria-labelledby="footer-structure-heading">
+          <section aria-labelledby="footer-copyright-heading">
             <h3
-              id="footer-structure-heading"
+              id="footer-copyright-heading"
               className="font-bold text-gots-accent mb-4 text-lg"
             >
-              Story Structure
+              Copyright
             </h3>
-            <div className="space-y-3">
-              <div>
-                <p className="block font-semibold text-gots-accent">
-                  Part 1: The Hidden Witness
-                </p>
-                <p className="text-xs text-gots-medium-gray mt-1">Chapters 1-12</p>
-              </div>
-              <p className="text-xs text-gots-medium-gray italic">
-                Parts 2-3 coming soon
-              </p>
-            </div>
+            <p className="text-gots-content text-sm leading-relaxed">
+              All images, text, and audio on this site are protected by copyright and may not be reproduced, distributed, or used without permission.
+            </p>
           </section>
 
           <section aria-labelledby="footer-nav-heading">

@@ -4,8 +4,6 @@ import {
   book_1,
   book_2,
   atmosphere_layers,
-  story_threads,
-  cta_paths,
   testimonials,
 } from '@/lib/content/immersive-data';
 import { HeroSection } from '@/components/sections/immersive/HeroSection';
@@ -66,7 +64,7 @@ export default async function homepage(): Promise<ReactNode> {
 
       <CharacterTeaserSection characters={featured_characters} />
 
-      <StoryThreadsSection threads={story_threads} />
+      <StoryThreadsSection />
 
       <SocialProofSection testimonials={testimonials} />
 
