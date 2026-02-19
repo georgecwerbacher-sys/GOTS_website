@@ -1,0 +1,58 @@
+{
+  "id": "jerusalem",
+  "name": "Jerusalem",
+  "alternative_names": ["The Holy City", "The City of David", "Zion", "Salem", "Yerushalayim", "Hierosolyma", "Aelia Capitolina (after 135 CE)"],
+  "type": "Ancient walled city - religious, political, and commercial center",
+  "time_period": "30-135 CE (primary narrative focus); also 26-36 CE (Crucifixion era)",
+  "region": "Judea, Judean highlands",
+  "coordinates": "Approximately 31.768°N, 35.234°E (Mount Moriah)",
+  "historical_status": "Real historical location - meticulously documented",
+  "narrative_significance": "THE central setting of the entire novel; where the Spear is held, where the Crucifixion occurs, where the network operates, where the apocalyptic conflict unfolds",
+  "story_arcs": "Present in ALL parts; central to Parts 1-9 (30-70 CE), aftermath of destruction in Part 9 (70-135 CE)",
+  "one_line_description": "The heart of 1st century Judea—a city of pilgrimage, power, and profound tension under Roman occupation.",
+  "sections": {
+    "physical_description": {
+      "title": "Physical Description & Layout",
+      "geographic_setting": "Mountain stronghold in Judean highlands; built on series of steep hills separated by valleys. Approximately 1 mile per side when fully walled; population 50,000-100,000 during major festivals.",
+      "scale": "Semi-arid, hot, rocky; rare but heavy winter rains; elevation ~2,500 feet above sea level. Four main gates: Damascus Gate (north), Jaffa Gate (west), Dung Gate (south), Golden Gate (east).",
+      "natural_features": "Mount Moriah (Temple Mount), Mount of Olives to the east, Hinnom Valley to the south, Kidron Valley to the east; natural springs including Gihon Spring. Highly varied elevation; Temple Mount highest point, Kidron Valley lowest.",
+      "primary_structures": "Second Temple Complex (Mount Moriah), Fortress of Antonia (NW corner of Temple Mount), The Praetorium, Royal Palaces (Western Hill), Sanhedrin Chamber, City Walls (three concentric walls), Gates, Residential Houses, Market Areas, Water Systems (Gihon Spring, cisterns). Herodian period architecture—massive stone construction, predominantly pale to golden limestone."
+    },
+    "sensory_details": {
+      "title": "Sensory Details & Atmosphere",
+      "overall_impression": "A city of contrasts—golden temple gleaming in sunlight, narrow shadowy streets, constant noise and activity, incense and sacrifice mingling with dust and crowding.",
+      "dominant_colors": "Pale golden limestone walls (especially at sunrise/sunset), blue Mediterranean sky, deep shadows in narrow streets, green vegetation in Gethsemane, blood-red soil, white priestly garments",
+      "signature_visual": "Golden roof of Temple gleams in sunlight; massive stone blocks; from Temple Mount, can see Kidron Valley and Mount of Olives.",
+      "lighting": "Intense sunlight at midday casting sharp shadows; golden light at sunrise/sunset on the temple and walls; dim, shadowy streets in the densely built lower city; complete darkness at night in narrow alleys.",
+      "essential_atmosphere": "Constant noise during daytime—marketplace haggling, bleating animals, shouted conversations in Hebrew/Aramaic/Greek. Incense from Temple permeates upper city; blood and butchering from temple sacrifices during festival seasons."
+    },
+    "historical_context": {
+      "title": "Historical & Cultural Context",
+      "historical_significance": "Center of Jewish faith, politics, and culture for over 1,000 years; site of ancient temples; focus of worldwide Jewish pilgrimage; politically significant to Rome; location of Christian faith's foundational event (Crucifixion).",
+      "cultural_importance": "Home of Second Temple—holiest site in Judaism. Required pilgrimage site for major festivals (Passover, Pentecost, Sukkot). Sanhedrin meets here—highest Jewish legal and religious authority. Hub of scholarship, legal interpretation, religious innovation.",
+      "symbolic_meaning": "Jerusalem = the City of God, the Holy City, Zion. Represents Jewish independence and religious freedom. Symbol of hope for restoration and redemption. Focus of messianic expectations."
+    },
+    "character_connections": {
+      "title": "Characters in Jerusalem",
+      "primary": [
+        {"name": "Cassius Longinus Mercator", "role": "Roman centurion; primary residence in Jerusalem; commands troops in Fortress of Antonia; present at Crucifixion (Mount Golgotha); witnessed the spear; central to story's opening"},
+        {"name": "Malchus bar Eleazar", "role": "Disciple of Jesus; present at major events (Crucifixion, post-resurrection encounters); later becomes guardian of the Spear; leads network from Jerusalem"},
+        {"name": "Hannah of Samaria", "role": "Network coordinator; operates refugee network from Jerusalem; moves through city identifying those needing help"},
+        {"name": "Pontius Pilate", "role": "Roman prefect; primary residence in Jerusalem; conducts Crucifixion trial; seat of political authority"},
+        {"name": "Joseph Caiaphas", "role": "High Priest; seat of religious authority; central to Sanhedrin; instrumental in Jesus's trial"}
+      ]
+    },
+    "key_scenes": {
+      "title": "Key Scenes & Events",
+      "events": [
+        "The Crucifixion (30 or 33 CE, Mount Golgotha): Jesus executed by Roman crucifixion; spear pierces Jesus's side; cosmic light erupts; foundational event for Christian faith and our narrative",
+        "Post-Resurrection Appearances: Jesus appears to disciples multiple times in Jerusalem; establishes community of believers",
+        "Pentecost (50 days after Passover): Holy Spirit descends on disciples in Jerusalem; Christian community begins",
+        "Early Christian Community Growth (30-70 CE): Gradual growth of Christian believers; increasing tension with religious authorities",
+        "Jewish Revolt (66 CE): Armed rebellion against Rome begins in Jerusalem; Jewish factions seize control",
+        "Siege of Jerusalem (70 CE): Roman legions under Titus besiege city; months of starvation and violence",
+        "Destruction (70 CE): Roman forces systematically destroy city; Temple destroyed; massive death toll"
+      ]
+    }
+  }
+}

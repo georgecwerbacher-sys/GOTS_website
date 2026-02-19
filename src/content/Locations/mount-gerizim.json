@@ -1,0 +1,55 @@
+{
+  "id": "mount-gerizim",
+  "name": "Mount Gerizim",
+  "alternative_names": ["The Holy Mountain (Samaritan tradition)", "Har Gerizim (Hebrew)", "Jebel al-Tor (modern Arabic)"],
+  "type": "Sacred Mountain / Pilgrimage Site / Spiritual Sanctuary",
+  "time_period": "36 CE (Narrative focus) - Ongoing Samaritan tradition from antiquity",
+  "region": "Samaria, north of Jerusalem",
+  "coordinates": "32.2121°N, 35.2833°E",
+  "historical_status": "Real historical location with deep archaeological and religious significance",
+  "narrative_significance": "The site of the Samaritan massacre (36 CE)—a pivotal moment where spiritual power (The Spear) intersects with historical tragedy. The mountain serves as the threshold between human ambition and divine judgment.",
+  "story_arcs": "Part 6 - Mount Gerizim (Chapters 23-28); Potential future references in Parts 7-10 as the consequences of the massacre unfold",
+  "one_line_description": "Sacred mountain in Samaria—site of the massacre where Margaret rescued Hannah and Menahem; origin of Margaret's calling.",
+  "sections": {
+    "physical_description": {
+      "title": "Physical Description & Layout",
+      "geographic_setting": "Prominent isolated mountain rising approximately 881 meters (2,890 feet) above sea level in the rolling highlands of Samaria. Dominates the landscape for miles, visible from Jerusalem on clear days. The sacred summit occupies roughly 20-30 acres of relatively level ground.",
+      "scale": "Hot, semi-arid climate. Summer temperatures exceed 40°C (104°F) at midday; winter temperatures drop to near freezing at night. Vegetation is sparse—scrub brush, thorny trees, hardy wildflowers. Steep approaches on most sides with well-established pilgrimage trails.",
+      "natural_features": "Abundant exposed bedrock in tan, gray, reddish-brown; limestone outcroppings; natural spring near summit (Ain al-Shuhada/Spring of the Martyrs); ancient stone structures; natural amphitheater-like depression at summit suitable for large gatherings.",
+      "primary_structures": "Samaritan Temple Complex (destroyed 128 BCE, ruins visible); Altar of Sacrifice (ancient, cut from living rock); Pilgrim encampments and shelter structures; Guard posts and observation points; Water management systems (cisterns, channels)."
+    },
+    "sensory_details": {
+      "title": "Sensory Details & Atmosphere",
+      "overall_impression": "A mountain of profound silence when empty—spiritual quietness interrupted only by natural sounds. Exposed and vulnerable under full sunlight; golden-orange at sunset. The ruins of the destroyed Temple paradoxically add spiritual power.",
+      "dominant_colors": "Tan and gray bedrock, golden-brown scrub vegetation, deep shadows in rocky crevasses, brilliant blue sky on clear days, dusty atmosphere on windy days",
+      "signature_visual": "From the summit, visibility extends across Samaria to distant hills. The ruined Temple foundation stones and scattered architectural elements create a powerful symbolic presence.",
+      "lighting": "Full sunlight most of the day. Sunrise casts long shadows from the east; sunset bathes the mountain in golden-orange light. At night, the summit is exposed and dark with limited shelter from moonlight.",
+      "essential_atmosphere": "Wind constant, sometimes fierce. The summit and natural amphitheater create powerful acoustic effects—voices carry and amplify. Dry earth and stone dust; incense from sacred practices; the mineral smell of the spring water."
+    },
+    "historical_context": {
+      "title": "Historical & Cultural Context",
+      "historical_significance": "One of the two most sacred mountains in Judaism/Samaritanism. For Samaritans, Gerizim is *the* holy mountain—site where Abraham almost sacrificed Isaac (Samaritan tradition), where Joshua placed the Ark, where the Samaritan Temple was built. The 36 CE massacre led to Pilate's removal as prefect.",
+      "cultural_importance": "Primary pilgrimage site for Samaritan religious practice. Center of Samaritan theology. The mountain embodies Samaritan identity—a symbol of peoplehood, continuity with ancient tradition, resistance to Jewish religious authority centered in Jerusalem.",
+      "symbolic_meaning": "For Samaritans: Sacred continuity, ancestral connection, resistance to oppression, hope for restoration. For the novel: A threshold where human violence meets divine judgment, where the Spear's presence becomes manifest."
+    },
+    "character_connections": {
+      "title": "Characters at Mount Gerizim",
+      "primary": [
+        {"name": "Margaret", "role": "Rescued Hannah and Menahem during the massacre; origin of her calling"},
+        {"name": "Hannah", "role": "Rescued by Margaret during the Samaritan massacre"},
+        {"name": "Menahem", "role": "Rescued by Margaret during the Samaritan massacre"},
+        {"name": "The Samaritan Prophet", "role": "Organized the large gathering; claimed Moses hid sacred vessels"},
+        {"name": "Pontius Pilate", "role": "Roman prefect; his forces conducted the massacre; removed from office after the event"}
+      ]
+    },
+    "key_scenes": {
+      "title": "Key Scenes & Events",
+      "events": [
+        "The Samaritan Massacre (36 CE): Roman forces attack pilgrims gathered on the mountain; hundreds killed; sacred space desecrated",
+        "Margaret's Rescue: Margaret saves Hannah and Menahem during the violence—origin of her calling",
+        "Divine Intervention: The light of the Spear appears—divine judgment in response to human brutality; violence freezes in its presence",
+        "Pilate's Removal: The massacre leads to Pontius Pilate's removal as prefect after 10 years in office"
+      ]
+    }
+  }
+}
