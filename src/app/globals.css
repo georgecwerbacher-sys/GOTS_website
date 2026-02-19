@@ -14,6 +14,10 @@
 }
 
 @theme {
+  /* Custom font utilities */
+  --font-cinzel: var(--font-cinzel);
+  --font-cormorant: var(--font-cormorant);
+
   --color-background: var(--dark-earth);
   --color-foreground: var(--white);
   --font-sans: var(--font-geist-sans);

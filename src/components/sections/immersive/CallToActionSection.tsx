@@ -2,11 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import type { CallToActionPath } from '@/lib/types/content.types';
 import { fade_in_up, scale_in, viewport_config, stagger_container } from '@/lib/animations/config';
-import { useAuth } from '@/context/AuthContext';
-import { SignUpModal } from '@/components/auth/SignUpModal';
 
 interface CallToActionSectionProps {
   paths: CallToActionPath[];
@@ -75,20 +73,7 @@ function BuyBookModal({
 }
 
 export function CallToActionSection({ paths }: CallToActionSectionProps) {
-  const router = useRouter();
-  const { isAuthenticated } = useAuth();
   const [buyModalPath, setBuyModalPath] = useState<CallToActionPath | null>(null);
-  const [signUpModalOpen, setSignUpModalOpen] = useState(false);
-
-  function handlePathClick(path: CallToActionPath) {
-    if (path.buyUrl && path.buyButtonText) {
-      setBuyModalPath(path);
-    } else if (isAuthenticated) {
-      router.push(path.href);
-    } else {
-      setSignUpModalOpen(true);
-    }
-  }
 
   return (
     <section
@@ -120,24 +105,44 @@ export function CallToActionSection({ paths }: CallToActionSectionProps) {
         >
           {paths.map((path) => (
             <motion.div key={path.id} variants={scale_in}>
-              <button
-                type="button"
-                onClick={() => handlePathClick(path)}
-                className="block w-full group relative p-8 rounded-lg border-2 border-gots-accent bg-gots-charred hover:bg-gots-accent text-gots-accent hover:text-gots-black font-bold transition-all duration-300 overflow-hidden text-left"
-                aria-label={`${path.label}: ${path.description}`}
-              >
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-20 bg-gots-accent transition-opacity" />
-                <div className="relative flex flex-col items-center">
-                  {path.icon && (
-                    <span className="text-4xl mb-3">{path.icon}</span>
-                  )}
-                  <span className="text-xl font-bold">{path.label}</span>
-                  <span className="text-sm font-normal mt-2 text-gots-content group-hover:text-gots-black/70 transition-colors">
-                    {path.description}
-                  </span>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gots-accent-light" />
-              </button>
+              {path.buyUrl && path.buyButtonText ? (
+                <button
+                  type="button"
+                  onClick={() => setBuyModalPath(path)}
+                  className="block w-full group relative p-8 rounded-lg border-2 border-gots-accent bg-gots-charred hover:bg-gots-accent text-gots-accent hover:text-gots-black font-bold transition-all duration-300 overflow-hidden text-left"
+                  aria-label={`${path.label}: ${path.description}`}
+                >
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-20 bg-gots-accent transition-opacity" />
+                  <div className="relative flex flex-col items-center">
+                    {path.icon && (
+                      <span className="text-4xl mb-3">{path.icon}</span>
+                    )}
+                    <span className="text-xl font-bold">{path.label}</span>
+                    <span className="text-sm font-normal mt-2 text-gots-content group-hover:text-gots-black/70 transition-colors">
+                      {path.description}
+                    </span>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gots-accent-light" />
+                </button>
+              ) : (
+                <Link
+                  href={path.href}
+                  className="block w-full group relative p-8 rounded-lg border-2 border-gots-accent bg-gots-charred hover:bg-gots-accent text-gots-accent hover:text-gots-black font-bold transition-all duration-300 overflow-hidden"
+                  aria-label={`${path.label}: ${path.description}`}
+                >
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-20 bg-gots-accent transition-opacity" />
+                  <div className="relative flex flex-col items-center">
+                    {path.icon && (
+                      <span className="text-4xl mb-3">{path.icon}</span>
+                    )}
+                    <span className="text-xl font-bold">{path.label}</span>
+                    <span className="text-sm font-normal mt-2 text-gots-content group-hover:text-gots-black/70 transition-colors">
+                      {path.description}
+                    </span>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gots-accent-light" />
+                </Link>
+              )}
             </motion.div>
           ))}
         </motion.div>
@@ -150,8 +155,6 @@ export function CallToActionSection({ paths }: CallToActionSectionProps) {
             buttonText={buyModalPath.buyButtonText}
           />
         )}
-
-        <SignUpModal isOpen={signUpModalOpen} onClose={() => setSignUpModalOpen(false)} />
 
         <motion.p
           className="text-center text-gots-medium-gray text-sm italic"

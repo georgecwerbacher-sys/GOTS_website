@@ -11,10 +11,9 @@ import {
 import { HeroSection } from '@/components/sections/immersive/HeroSection';
 import { BooksSection } from '@/components/sections/immersive/BooksSection';
 import { AtmosphereSection } from '@/components/sections/immersive/AtmosphereSection';
-import { OptInSection } from '@/components/sections/immersive/OptInSection';
+import { GoDeeperSection } from '@/components/sections/immersive/GoDeeperSection';
 import { CharacterTeaserSection } from '@/components/sections/immersive/CharacterTeaserSection';
 import { StoryThreadsSection } from '@/components/sections/immersive/StoryThreadsSection';
-import { CallToActionSection } from '@/components/sections/immersive/CallToActionSection';
 import { SocialProofSection } from '@/components/sections/immersive/SocialProofSection';
 import { FooterSection } from '@/components/sections/immersive/FooterSection';
 
@@ -63,13 +62,11 @@ export default async function homepage(): Promise<ReactNode> {
 
       <AtmosphereSection layers={atmosphere_layers} />
 
-      <OptInSection />
+      <GoDeeperSection />
 
       <CharacterTeaserSection characters={featured_characters} />
 
       <StoryThreadsSection threads={story_threads} />
-
-      <CallToActionSection paths={cta_paths} />
 
       <SocialProofSection testimonials={testimonials} />
 

@@ -1,12 +1,9 @@
 'use client';
 
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { asset_image_path } from '@/lib/asset-paths';
 import { fade_in_up, scale_in, viewport_config, stagger_container } from '@/lib/animations/config';
-import { useAuth } from '@/context/AuthContext';
-import { SignUpModal } from '@/components/auth/SignUpModal';
 
 interface CharacterTeaser {
   id: string;
@@ -24,15 +21,9 @@ interface CharacterTeaserSectionProps {
 
 export function CharacterTeaserSection({ characters }: CharacterTeaserSectionProps) {
   const router = useRouter();
-  const { isAuthenticated } = useAuth();
-  const [signUpModalOpen, setSignUpModalOpen] = useState(false);
 
   function handleCharacterClick(character: CharacterTeaser) {
-    if (isAuthenticated) {
-      router.push(`/story/${character.id}`);
-    } else {
-      setSignUpModalOpen(true);
-    }
+    router.push(`/story/${character.id}`);
   }
 
   return (
@@ -110,8 +101,6 @@ export function CharacterTeaserSection({ characters }: CharacterTeaserSectionPro
           ))}
         </motion.div>
       </div>
-
-      <SignUpModal isOpen={signUpModalOpen} onClose={() => setSignUpModalOpen(false)} />
     </section>
   );
 }
