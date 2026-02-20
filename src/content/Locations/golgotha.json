@@ -43,19 +43,23 @@
       "primary": [
         {
           "name": "Longinus",
-          "role": "Commands the execution. His act of mercy (offering posca), his punishment by Brutus, and his driving of the spear — and the restoration and transformation of his vision — all occur here. Golgotha divides his life into before and after."
+          "role": "Commands the execution. His act of mercy (offering posca), his punishment by Brutus, and his driving of the spear — and the restoration and transformation of his vision — all occur here. Golgotha divides his life into before and after.",
+          "character_id": "longinus"
         },
         {
           "name": "Malchus",
-          "role": "Positions himself in the crowd as a witness. Struck by the light of the spear at the moment of piercing — a second miraculous encounter with the same divine power that healed his ear in Gethsemane. He and Longinus make eye contact at the foot of the cross in the aftermath."
+          "role": "Positions himself in the crowd as a witness. Struck by the light of the spear at the moment of piercing — a second miraculous encounter with the same divine power that healed his ear in Gethsemane. He and Longinus make eye contact at the foot of the cross in the aftermath.",
+          "character_id": "malchus"
         },
         {
           "name": "Brutus",
-          "role": "Oversees the execution with cold military precision. Uses Golgotha to confirm his authority — he physically drives Longinus to the ground for the act of mercy. The earthquake and the light shake even Brutus's certainty."
+          "role": "Oversees the execution with cold military precision. Uses Golgotha to confirm his authority — he physically drives Longinus to the ground for the act of mercy. The earthquake and the light shake even Brutus's certainty.",
+          "character_id": "brutus"
         },
         {
           "name": "Horatius",
-          "role": "The calculating observer. Golgotha is where Horatius first recognizes that what occurred exceeds Roman military understanding. He stops Brutus from striking Longinus after the piercing — the only time Horatius intervenes to protect Longinus."
+          "role": "The calculating observer. Golgotha is where Horatius first recognizes that what occurred exceeds Roman military understanding. He stops Brutus from striking Longinus after the piercing — the only time Horatius intervenes to protect Longinus.",
+          "character_id": "horatius"
         }
       ]
     },

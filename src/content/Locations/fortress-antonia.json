@@ -36,7 +36,7 @@
     "character_connections": {
       "title": "Characters at the Fortress of Antonia",
       "primary": [
-        {"name": "Longinus (Cassius Longinus Mercator)", "role": "Centurion stationed here; his workplace and military home; where Roman identity is strongest and internal conflict with spiritual awakening becomes acute"},
+        {"name": "Longinus (Cassius Longinus Mercator)", "role": "Centurion stationed here; his workplace and military home; where Roman identity is strongest and internal conflict with spiritual awakening becomes acute", "character_id": "longinus"},
         {"name": "Pontius Pilate", "role": "Prefect; ultimate authority; resides or holds audience here; Jesus's trial takes place here"},
         {"name": "Decimus", "role": "Longinus's second-in-command; also based at fortress; loyal soldier and friend"},
         {"name": "Roman garrison", "role": "480+ soldiers; fortress is their military home, workplace, and identity"}

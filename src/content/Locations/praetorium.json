@@ -37,9 +37,9 @@
       "title": "Characters at the Praetorium",
       "primary": [
         {"name": "Pontius Pilate", "role": "The Praetorium is Pilate's domain—his residence, his court, his seat of power. The location of his most famous failure: the trial and condemnation of an innocent man he knows is innocent. The man who washes his hands of what he knows is wrong."},
-        {"name": "Malchus", "role": "Positions himself in the Lithostrotos crowd. His ear burns during the proceedings—a physical reminder of the healing the condemned man gave him. He watches the condemnation. He does not speak. The Praetorium is the location of Malchus's greatest failure."},
-        {"name": "Brutus", "role": "Receives his assignments here. Summoned in Chapter 9 to accept the crucifixion assignment. In Book 2 Chapter 1, summoned again to face Pilate's reckoning over Mount Gerizim."},
-        {"name": "Horatius", "role": "Present in Chapter 9—meets Brutus here to discuss the assignment. Explains the political complications of the Nazarene. The calculating intelligence that frames the crucifixion as political necessity."},
+        {"name": "Malchus", "role": "Positions himself in the Lithostrotos crowd. His ear burns during the proceedings—a physical reminder of the healing the condemned man gave him. He watches the condemnation. He does not speak. The Praetorium is the location of Malchus's greatest failure.", "character_id": "malchus"},
+        {"name": "Brutus", "role": "Receives his assignments here. Summoned in Chapter 9 to accept the crucifixion assignment. In Book 2 Chapter 1, summoned again to face Pilate's reckoning over Mount Gerizim.", "character_id": "brutus"},
+        {"name": "Horatius", "role": "Present in Chapter 9—meets Brutus here to discuss the assignment. Explains the political complications of the Nazarene. The calculating intelligence that frames the crucifixion as political necessity.", "character_id": "horatius"},
         {"name": "Jesus (the condemned man)", "role": "The only figure not operating from fear—whose composure under Pilate's interrogation unsettles Pilate more than any advocacy could"}
       ]
     },

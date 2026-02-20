@@ -37,8 +37,8 @@
       "title": "Characters at Qumran",
       "primary": [
         {"name": "The Essenes", "role": "The entire community; collective character of the settlement; scribes, copyists, priests, overseers"},
-        {"name": "Malchus", "role": "Possible Essene or sympathizer; connection to contemplative community; possible refuge"},
-        {"name": "Longinus", "role": "Possible contact with Essenes; source of wisdom and spiritual grounding"},
+        {"name": "Malchus", "role": "Possible Essene or sympathizer; connection to contemplative community; possible refuge", "character_id": "malchus"},
+        {"name": "Longinus", "role": "Possible contact with Essenes; source of wisdom and spiritual grounding", "character_id": "longinus"},
         {"name": "The Guardians / Followers", "role": "Possible refuge during persecution; encounter between spiritual seekers"},
         {"name": "Early Christians", "role": "Possible contact with Essene communities; parallel concerns about purity"}
       ]

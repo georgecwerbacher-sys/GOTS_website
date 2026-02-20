@@ -7,6 +7,7 @@ import {
   type location_extended_profile,
 } from '@/lib/data/locations';
 import { asset_image_path } from '@/lib/asset-paths';
+import { CharacterLinkModal } from '@/components/locations/CharacterLinkModal';
 
 interface page_props {
   params: Promise<{ id: string }>;
@@ -219,12 +220,9 @@ function render_extended_profile(profile: location_extended_profile) {
       {sections.character_connections && (
         <SectionBlock title={String((sections.character_connections as Record<string, unknown>)?.title ?? 'Character Connections')}>
           <div className="space-y-6">
-            {((sections.character_connections as Record<string, unknown>)?.primary as { name: string; role: string }[] ?? []).map(
+            {((sections.character_connections as Record<string, unknown>)?.primary as { name: string; role: string; character_id?: string }[] ?? []).map(
               (char) => (
-                <div key={char.name} className="bg-gots-charred rounded-lg p-4 border border-gots-accent/20">
-                  <h3 className="font-bold text-gots-accent mb-2">{char.name}</h3>
-                  <p className="text-gots-content text-sm">{char.role}</p>
-                </div>
+                <CharacterLinkModal key={char.name} character={char} />
               )
             )}
           </div>

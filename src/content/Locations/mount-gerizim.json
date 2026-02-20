@@ -36,10 +36,10 @@
     "character_connections": {
       "title": "Characters at Mount Gerizim",
       "primary": [
-        {"name": "Margaret", "role": "Rescued Hannah and Menahem during the massacre; origin of her calling"},
+        {"name": "Margaret", "role": "Rescued Hannah and Menahem during the massacre; origin of her calling", "character_id": "margaret"},
+        {"name": "Malchus", "role": "Network partner with Margaret; connected to the aftermath and protection of witnesses", "character_id": "malchus"},
         {"name": "Hannah", "role": "Rescued by Margaret during the Samaritan massacre"},
         {"name": "Menahem", "role": "Rescued by Margaret during the Samaritan massacre"},
-        {"name": "The Samaritan Prophet", "role": "Organized the large gathering; claimed Moses hid sacred vessels"},
         {"name": "Pontius Pilate", "role": "Roman prefect; his forces conducted the massacre; removed from office after the event"}
       ]
     },

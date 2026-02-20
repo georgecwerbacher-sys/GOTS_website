@@ -37,8 +37,8 @@
       "title": "Characters at Masada",
       "primary": [
         {"name": "Eleazar ben Yair", "role": "Primary leader; commands fortress; makes final decision; orchestrates defense; symbolic figure"},
-        {"name": "Malchus", "role": "If present—would experience fortress as symbol of resistance; witnesses finality"},
-        {"name": "Longinus", "role": "If witnessing from distance—would see final chapter of Jewish independence"}
+        {"name": "Malchus", "role": "If present—would experience fortress as symbol of resistance; witnesses finality", "character_id": "malchus"},
+        {"name": "Longinus", "role": "If witnessing from distance—would see final chapter of Jewish independence", "character_id": "longinus"}
       ]
     },
     "key_scenes": {

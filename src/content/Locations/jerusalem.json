@@ -36,8 +36,8 @@
     "character_connections": {
       "title": "Characters in Jerusalem",
       "primary": [
-        {"name": "Cassius Longinus Mercator", "role": "Roman centurion; primary residence in Jerusalem; commands troops in Fortress of Antonia; present at Crucifixion (Mount Golgotha); witnessed the spear; central to story's opening"},
-        {"name": "Malchus bar Eleazar", "role": "Disciple of Jesus; present at major events (Crucifixion, post-resurrection encounters); later becomes guardian of the Spear; leads network from Jerusalem"},
+        {"name": "Cassius Longinus Mercator", "role": "Roman centurion; primary residence in Jerusalem; commands troops in Fortress of Antonia; present at Crucifixion (Mount Golgotha); witnessed the spear; central to story's opening", "character_id": "longinus"},
+        {"name": "Malchus bar Eleazar", "role": "Disciple of Jesus; present at major events (Crucifixion, post-resurrection encounters); later becomes guardian of the Spear; leads network from Jerusalem", "character_id": "malchus"},
         {"name": "Hannah of Samaria", "role": "Network coordinator; operates refugee network from Jerusalem; moves through city identifying those needing help"},
         {"name": "Pontius Pilate", "role": "Roman prefect; primary residence in Jerusalem; conducts Crucifixion trial; seat of political authority"},
         {"name": "Joseph Caiaphas", "role": "High Priest; seat of religious authority; central to Sanhedrin; instrumental in Jesus's trial"}
