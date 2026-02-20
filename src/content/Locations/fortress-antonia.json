@@ -1,6 +1,7 @@
 {
   "id": "fortress-antonia",
   "name": "The Fortress of Antonia",
+  "image": "/images/Locations/fort_of_antonio.jpg",
   "alternative_names": ["Fort Antonia", "Fortress Antonia", "The Citadel", "The Roman Fort", "Antonia", "The Garrison"],
   "type": "Military Fortress / Roman Garrison / Occupied Territory Command Center",
   "time_period": "24 BCE - 70 CE (built by Herod the Great; destroyed during First Jewish War)",

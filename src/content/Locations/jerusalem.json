@@ -1,6 +1,7 @@
 {
   "id": "jerusalem",
   "name": "Jerusalem",
+  "image": "/images/Locations/Jerusalem.jpg",
   "alternative_names": ["The Holy City", "The City of David", "Zion", "Salem", "Yerushalayim", "Hierosolyma", "Aelia Capitolina (after 135 CE)"],
   "type": "Ancient walled city - religious, political, and commercial center",
   "time_period": "30-135 CE (primary narrative focus); also 26-36 CE (Crucifixion era)",

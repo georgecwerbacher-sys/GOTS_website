@@ -15,6 +15,7 @@ const LOCATIONS: location_profile[] = [
     region: 'Judea',
     description: 'The heart of 1st century Judea—a city of pilgrimage, power, and profound tension under Roman occupation.',
     significance: 'Central setting for the crucifixion, resurrection, and the clash between Roman authority and divine truth.',
+    image: '/images/Locations/Jerusalem.jpg',
   },
   {
     id: 'golgotha',
@@ -46,6 +47,7 @@ const LOCATIONS: location_profile[] = [
     region: 'Judea',
     description: 'Harsh wilderness where Roman cohorts march—a landscape of merciless sun and hidden danger.',
     significance: 'Where the Death Squad\'s march begins; backdrop for Longinus\'s journey into the story.',
+    image: '/images/Locations/troops_in_desert.jpg',
   },
   {
     id: 'beth-horon',
@@ -53,6 +55,7 @@ const LOCATIONS: location_profile[] = [
     region: 'Judea',
     description: 'A narrow mountain pass where Roman forces faced catastrophic ambush.',
     significance: 'Where Cestius Gallus\'s army was destroyed; a turning point in the occupation.',
+    image: '/images/Locations/Beth_horon_pass.jpg',
   },
   {
     id: 'mount-gerizim',
@@ -60,6 +63,7 @@ const LOCATIONS: location_profile[] = [
     region: 'Samaria',
     description: 'Sacred mountain in Samaria—site of the massacre where Margaret rescued Hannah and Menahem.',
     significance: 'Origin of Margaret\'s calling; where divine intervention saved two children.',
+    image: '/images/Locations/Mount-Gerizim.jpg',
   },
   {
     id: 'masada',
@@ -67,6 +71,7 @@ const LOCATIONS: location_profile[] = [
     region: 'Judea',
     description: 'Mountain fortress in the Judean desert—last stronghold of organized Jewish resistance against Rome.',
     significance: 'Climactic location of the Fall of Masada; symbolic end of Temple-era Jewish independence.',
+    image: '/images/Locations/masada.jpg',
   },
   {
     id: 'jerusalem-marketplace',
@@ -74,6 +79,7 @@ const LOCATIONS: location_profile[] = [
     region: 'Jerusalem',
     description: 'The commercial heart of Jerusalem—where common people gather and economic grievances crystallize.',
     significance: 'Where Florus\'s treasury theft becomes public knowledge and the Jewish-Roman relationship reaches breaking point.',
+    image: '/images/Locations/marketplace.jpg',
   },
   {
     id: 'nahal-bezek',
@@ -81,6 +87,7 @@ const LOCATIONS: location_profile[] = [
     region: 'Judea-Samaria Border',
     description: 'A limestone wadi north of Jerusalem where Ein Bezek spring draws travelers into a narrow, ambush-vulnerable passage.',
     significance: 'Critical waypoint on the military route—water as both survival and trap; 90+ minutes of vulnerability for a full cohort.',
+    image: '/images/Locations/troops_in_desert.jpg',
   },
   {
     id: 'qumran',
@@ -88,6 +95,7 @@ const LOCATIONS: location_profile[] = [
     region: 'Judean Desert',
     description: 'An austere desert sanctuary where the Essenes preserved sacred texts and lived in ritual purity.',
     significance: 'Potential refuge for the Guardians; source of wisdom and preservation; destroyed by Romans in 68 CE.',
+    image: '/images/Locations/troops_in_desert.jpg',
   },
   {
     id: 'fortress-antonia',
@@ -95,6 +103,7 @@ const LOCATIONS: location_profile[] = [
     region: 'Jerusalem',
     description: 'The Roman military command center overlooking the Temple Mount—garrison, trials, and occupation.',
     significance: 'Where Longinus serves; where Jesus was tried and scourged; central to crucifixion and Roman control.',
+    image: '/images/Locations/fort_of_antonio.jpg',
   },
 ];
 

@@ -1,6 +1,7 @@
 {
   "id": "qumran",
   "name": "Qumran (Khirbet Qumran)",
+  "image": "/images/Locations/troops_in_desert.jpg",
   "alternative_names": ["The Settlement at Qumran", "The Dead Sea Community", "Essene Monastery", "Khirbet Qumran"],
   "type": "Monastic/Communal Settlement with Religious, Scholarly, and Administrative Functions",
   "time_period": "Approximately 150 BCE - 68 CE (occupied during narrative: 30-66 CE)",

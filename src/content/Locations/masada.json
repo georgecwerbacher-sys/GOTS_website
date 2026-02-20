@@ -1,6 +1,7 @@
 {
   "id": "masada",
   "name": "Masada",
+  "image": "/images/Locations/masada.jpg",
   "alternative_names": ["Masada Fortress", "The Stronghold", "The Last Fortress", "The Desert Fortress"],
   "type": "Fortress / Stronghold / Mountain Fortress",
   "time_period": "73-74 CE (primary narrative significance); Historical presence from 37 BCE onward",

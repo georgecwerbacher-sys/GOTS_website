@@ -1,6 +1,7 @@
 {
   "id": "nahal-bezek",
   "name": "Nahal Bezek (Wadi el-Beir)",
+  "image": "/images/Locations/troops_in_desert.jpg",
   "alternative_names": ["Wadi el-Beir", "Ein Bezek"],
   "type": "Wadi / Water Source / Military Waypoint / Ambush Location",
   "time_period": "30–70 CE",
