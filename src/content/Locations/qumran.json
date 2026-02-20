@@ -1,0 +1,58 @@
+{
+  "id": "qumran",
+  "name": "Qumran (Khirbet Qumran)",
+  "alternative_names": ["The Settlement at Qumran", "The Dead Sea Community", "Essene Monastery", "Khirbet Qumran"],
+  "type": "Monastic/Communal Settlement with Religious, Scholarly, and Administrative Functions",
+  "time_period": "Approximately 150 BCE - 68 CE (occupied during narrative: 30-66 CE)",
+  "region": "Judean Desert",
+  "coordinates": "Approximately 31°44'N, 35°27'E; 13 miles east of Jerusalem; 1.5 km from Dead Sea shore; 430 meters below sea level",
+  "historical_status": "Real historical location (archaeologically confirmed); main settlement of the Essenes; connected to the Dead Sea Scrolls",
+  "narrative_significance": "Potential sanctuary for the Essenes—a community built on dramatic isolation and spiritual discipline. Location of profound spiritual community, source of wisdom and preservation, possible refuge during persecution. The scriptorium, ritual baths, and scroll caves embody a mission to preserve sacred texts and live in purity, withdrawn from a corrupted world. Destroyed by Roman forces in 68 CE during the First Jewish Revolt.",
+  "story_arcs": "Books 1-2; Guardian Selection and Testing Arc; Crisis and Refuge arcs; possible refuge for Malchus, the Followers, or the Guardians",
+  "one_line_description": "An austere desert sanctuary where the Essenes preserved sacred texts and lived in ritual purity—stone and water defying the desert until Roman destruction in 68 CE.",
+  "sections": {
+    "physical_description": {
+      "title": "Physical Description & Layout",
+      "geographic_setting": "High desert plateau overlooking the Dead Sea; dramatic, austere, isolated landscape. The settlement sits on a dry marl plateau approximately 1.5 km from the Dead Sea shore, positioned at roughly 430 meters below sea level—Earth's lowest elevation. This creates an otherworldly, cut-off quality. Limestone cliffs riddled with caves surround the plateau; these caves became repositories for the Dead Sea Scrolls. Extreme desert conditions: summer 32-39°C, winter 20-23°C, under 50mm annual rainfall. Access via Wadi Qumran from the north, Dead Sea shore from the south, mountain passes westward toward Jerusalem (3-4 hour journey).",
+      "scale": "Modest but purposefully organized—approximately 100 × 80 meters (large medieval monastery or small village size). Compact scale creates intimate community density. Cemetery 50 meters east with approximately 1,100 graves.",
+      "natural_features": "Wadi Qumran seasonal stream feeding the aqueduct system; limestone cliffs and caves; salt formations along the Dead Sea shore; sparse vegetation; relentless sun. Plateau elevated above immediate shore, providing views and defensive advantage.",
+      "primary_structures": "Scriptorium (upper-story room with plastered benches, 4-5 inkwells—scholarly heart); Dining Hall/Assembly Room (communal meals, ~1,000 serving vessels in pantry); Eight Mikva'ot (ritual baths fed by aqueduct, descent/ascent paths for purity); Potter's Workshop (two kilns, produces distinctive scroll jars); Tower (northwestern corner—defense, lookout, water storage); Cemetery (50m east). Aqueduct system channels water from Wadi Qumran—engineering marvel in the desert."
+    },
+    "sensory_details": {
+      "title": "Sensory Details & Atmosphere",
+      "overall_impression": "Austere desert sanctuary—stone and water defying the desert. Brilliant harsh sunlight; deep shadows from stone structures; golden hour at dawn and dusk transforms the landscape. Bluish haze hanging over the Dead Sea. Profound silence—cut off from the world.",
+      "dominant_colors": "Pale limestone gray-white; earth tones (tan, brown, rust); deep blue of the Dead Sea in distance; warm golden/amber at dawn and dusk; bright white sun and deep black shadows at midday.",
+      "signature_visual": "The tower dominating the northwestern corner; aqueduct channels; ritual baths in patterns; scriptorium benches; scroll jars; Dead Sea visible in distance. Stone structures, sparse vegetation, relentless sun.",
+      "lighting": "Golden hour light at dawn and dusk illuminates stone beautifully. Midday: brilliant harsh white sunlight; heat shimmer over stone. Night: profound darkness; stars extraordinary bright; torch or lamp creates pools of golden light.",
+      "essential_atmosphere": "Ink and papyrus from the scriptorium; dust and stone; water/salt from the Dead Sea; bread and communal cooking; smoke from pottery kilns. Purposeful, controlled, spiritually focused. The distinctive smell of the Dead Sea community—part ink, part mineral, part desert heat."
+    },
+    "historical_context": {
+      "title": "Historical & Cultural Context",
+      "historical_significance": "One of the most significant Jewish communities of the Second Temple period. Main settlement of the Essenes—known for strict observance, community living, textual study, and apocalyptic theology. Directly connected to the Dead Sea Scrolls. Founded ca. 150 BCE; height of activity 100 BCE - 68 CE; destroyed during Vespasian's campaign (68 CE).",
+      "cultural_importance": "For the Essenes, Qumran represents the ideal community—living according to Torah away from Jerusalem's corruption. Primary mission: preserve and copy sacred texts. Eight ritual baths demonstrate obsessive commitment to purification. Communal meals with spiritual significance. Organized around expectation of imminent divine judgment.",
+      "symbolic_meaning": "Withdrawal from corrupted world; preservation of truth in crisis; purity separate from contamination; preparation for divine transformation; resistance maintaining Jewish integrity despite occupation. The community as the Remnant, the Pure, the Knowing, the Prepared."
+    },
+    "character_connections": {
+      "title": "Characters at Qumran",
+      "primary": [
+        {"name": "The Essenes", "role": "The entire community; collective character of the settlement; scribes, copyists, priests, overseers"},
+        {"name": "Malchus", "role": "Possible Essene or sympathizer; connection to contemplative community; possible refuge"},
+        {"name": "Longinus", "role": "Possible contact with Essenes; source of wisdom and spiritual grounding"},
+        {"name": "The Guardians / Followers", "role": "Possible refuge during persecution; encounter between spiritual seekers"},
+        {"name": "Early Christians", "role": "Possible contact with Essene communities; parallel concerns about purity"}
+      ]
+    },
+    "key_scenes": {
+      "title": "Key Scenes & Events",
+      "events": [
+        "The Refuge: Malchus or the Followers flee to Qumran; find sanctuary and unexpected wisdom",
+        "The Meeting: Encounter between the community's spiritual seekers and the Followers",
+        "The Testing: Qumran becomes place where spear's purpose is tested against Essene apocalyptic expectations",
+        "The Revelation: Longinus's testimony resonates with Essene preparation for messianic times",
+        "Scrolls and Truth: Preserved scrolls contain truth significant to the spear's mission",
+        "Rising Tension (65 CE): Community aware of Roman pressure; possible acceleration of scroll copying; hiding of manuscripts",
+        "Destruction (68 CE): Roman military destroys settlement; scrolls hidden in caves; community scattered"
+      ]
+    }
+  }
+}

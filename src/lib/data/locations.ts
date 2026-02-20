@@ -61,6 +61,41 @@ const LOCATIONS: location_profile[] = [
     description: 'Sacred mountain in Samaria—site of the massacre where Margaret rescued Hannah and Menahem.',
     significance: 'Origin of Margaret\'s calling; where divine intervention saved two children.',
   },
+  {
+    id: 'masada',
+    name: 'Masada',
+    region: 'Judea',
+    description: 'Mountain fortress in the Judean desert—last stronghold of organized Jewish resistance against Rome.',
+    significance: 'Climactic location of the Fall of Masada; symbolic end of Temple-era Jewish independence.',
+  },
+  {
+    id: 'jerusalem-marketplace',
+    name: 'Jerusalem Marketplace (Summer 66 CE)',
+    region: 'Jerusalem',
+    description: 'The commercial heart of Jerusalem—where common people gather and economic grievances crystallize.',
+    significance: 'Where Florus\'s treasury theft becomes public knowledge and the Jewish-Roman relationship reaches breaking point.',
+  },
+  {
+    id: 'nahal-bezek',
+    name: 'Nahal Bezek (Wadi el-Beir)',
+    region: 'Judea-Samaria Border',
+    description: 'A limestone wadi north of Jerusalem where Ein Bezek spring draws travelers into a narrow, ambush-vulnerable passage.',
+    significance: 'Critical waypoint on the military route—water as both survival and trap; 90+ minutes of vulnerability for a full cohort.',
+  },
+  {
+    id: 'qumran',
+    name: 'Qumran (Khirbet Qumran)',
+    region: 'Judean Desert',
+    description: 'An austere desert sanctuary where the Essenes preserved sacred texts and lived in ritual purity.',
+    significance: 'Potential refuge for the Guardians; source of wisdom and preservation; destroyed by Romans in 68 CE.',
+  },
+  {
+    id: 'fortress-antonia',
+    name: 'The Fortress of Antonia',
+    region: 'Jerusalem',
+    description: 'The Roman military command center overlooking the Temple Mount—garrison, trials, and occupation.',
+    significance: 'Where Longinus serves; where Jesus was tried and scourged; central to crucifixion and Roman control.',
+  },
 ];
 
 export async function get_all_locations(): Promise<location_profile[]> {

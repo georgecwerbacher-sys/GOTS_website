@@ -1,0 +1,53 @@
+{
+  "id": "nahal-bezek",
+  "name": "Nahal Bezek (Wadi el-Beir)",
+  "alternative_names": ["Wadi el-Beir", "Ein Bezek"],
+  "type": "Wadi / Water Source / Military Waypoint / Ambush Location",
+  "time_period": "30–70 CE",
+  "region": "Judea-Samaria Border",
+  "coordinates": "Approximately 15–18 miles north of Jerusalem; Lat 32.32, Long 35.40",
+  "historical_status": "Real historical location; critical waypoint for armies, merchant caravans, and travelers moving north from Judea; natural boundary and barrier since antiquity",
+  "narrative_significance": "A critical waypoint on the primary trade and military route toward Samaria. The wadi's spring (Ein Bezek) provides the only reliable water for miles, forcing Roman cohorts and caravans into a narrow, vulnerable passage. The extended hydration period (90+ minutes for a full cohort) makes it ideal for coordinated ambush—a landscape where water means both survival and danger.",
+  "story_arcs": "Military route; ambush-vulnerable water stop; caravan route; pivotal in Roman march sequences",
+  "one_line_description": "A limestone wadi north of Jerusalem where the spring of Ein Bezek draws travelers into a narrow, ambush-vulnerable passage—water as both survival and trap.",
+  "sections": {
+    "physical_description": {
+      "title": "Physical Description & Layout",
+      "geographic_setting": "Approximately 15–18 miles north of Jerusalem along the primary trade and military route toward Samaria. The wadi cuts through the landscape like a scar carved by ancient waters, creating a north-south passage through elevated terrain. Steep limestone banks rise 15–25 feet on both eastern and western sides. The wadi channel runs dry most of the year; in winter, after rare heavy rains, water rushes through with violent force. Sparse shrubs and stunted trees dot the ridge above.",
+      "scale": "Wadi passage narrow enough to concentrate travelers at the spring. Spring pool approximately 12 feet wide and 4–6 feet deep. Natural alcoves and formations on both banks; western bank 20–30 feet above wadi level provides elevated ambush positions. Small caves and recessed areas deep enough to conceal 3–4 people.",
+      "natural_features": "Limestone canyon with weathered cream, tan, and pale gray stone; natural alcoves and formations; Ein Bezek spring emerging from a fissure in the eastern bank; year-round spring flow sufficient to water a hundred soldiers and animals; packed earth and scattered loose stones in dry channel.",
+      "primary_structures": "Ein Bezek (Spring of Bezek)—natural pool, limestone basin worn smooth by centuries of use; no built structures; natural rock formations and alcoves serve as concealment and vantage points."
+    },
+    "sensory_details": {
+      "title": "Sensory Details & Atmosphere",
+      "overall_impression": "Arid, stark, vulnerable. Golden-hour light creates dramatic amber illumination; at midday, shadows fall deep and sharp. In summer: extreme heat, dust clouds, parched landscape. In winter: darker wet stone, richer greens, flowing water. The spring stands out as an island of clear blue-green water in an otherwise dry landscape.",
+      "dominant_colors": "Cream, tan, and pale gray limestone; warm amber in angled light; deep brown and gray shadows; pale gray dust in summer; moss and algae green-gold at the spring; clear blue-green water.",
+      "signature_visual": "Steep limestone banks rising on both sides; the spring pool as oasis; golden-hour light penetrating the wadi; natural alcoves and rock formations; dust rising from the passage in dry season.",
+      "lighting": "Golden-hour light at morning and evening creates dramatic amber illumination. At midday, deep sharp shadows where high banks create shelter. Stone glows with warm tones. At night, deep shadow; torch or lamp creates pools of golden light that emphasize the darkness.",
+      "essential_atmosphere": "Water as survival and trap. The extended vulnerable period—90+ minutes for a cohort to hydrate—makes the passage feel both intimate and isolating. Starkness in summer; abundance and threat coexisting in winter."
+    },
+    "historical_context": {
+      "title": "Historical & Cultural Context",
+      "historical_significance": "Critical waypoint since antiquity. Served as natural boundary and barrier. Primary route for armies, merchant caravans, and travelers moving north from Judea toward Samaria. Two-day march from Jerusalem (30–35 miles total).",
+      "cultural_importance": "Water source on an otherwise waterless route. Strategic chokepoint where all northbound traffic must pass. Natural ambush site due to extended hydration requirements.",
+      "symbolic_meaning": "The landscape forces vulnerability—thirst draws travelers into the open, where the narrow passage and elevated banks create ideal ambush conditions. Water brings both life and danger."
+    },
+    "character_connections": {
+      "title": "Characters at Nahal Bezek",
+      "primary": [
+        {"name": "Roman cohorts", "role": "March north from Jerusalem; forced to stop at spring; vulnerable during 90+ minute hydration period"},
+        {"name": "Merchant caravans", "role": "Use same route; depend on Ein Bezek for water; targets of ambush"},
+        {"name": "Ambushers", "role": "Concealed in natural alcoves and rock formations; elevated positions on western bank overlook spring"}
+      ]
+    },
+    "key_scenes": {
+      "title": "Key Scenes & Events",
+      "events": [
+        "Two-day march from Jerusalem: Day 1—cohort camps near olive groves; Day 2—arrives at Nahal Bezek by late afternoon",
+        "Water management: 45–90 minutes for full cohort hydration; additional 30–45 minutes for supply train animals; minimum 90 minutes vulnerable period",
+        "Ambush vulnerability: Natural alcoves and western bank positions allow observation and attack on soldiers at the spring",
+        "Seasonal transformation: Summer—dry channel, dust, desperation; Winter—flowing water, treacherous passage, brief lush growth"
+      ]
+    }
+  }
+}

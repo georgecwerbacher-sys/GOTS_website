@@ -1,0 +1,57 @@
+{
+  "id": "fortress-antonia",
+  "name": "The Fortress of Antonia",
+  "alternative_names": ["Fort Antonia", "Fortress Antonia", "The Citadel", "The Roman Fort", "Antonia", "The Garrison"],
+  "type": "Military Fortress / Roman Garrison / Occupied Territory Command Center",
+  "time_period": "24 BCE - 70 CE (built by Herod the Great; destroyed during First Jewish War)",
+  "region": "Jerusalem",
+  "coordinates": "Approximately 31.7768° N, 35.2355° E; Northwest corner of Temple Mount perimeter; 760-770 meters above sea level",
+  "historical_status": "Real historical location; extensively documented in archaeology and biblical/historical texts",
+  "narrative_significance": "Central Roman military command for Jerusalem—primary location for garrison scenes, military discipline, soldier training, and Roman occupation dynamics. Crucial for establishing Roman control and military presence. Positioned directly adjacent to Temple Mount, overlooking sacred space. Site of Jesus's trial before Pilate and crucifixion preparation (in tradition identifying trial with Fortress Antonia). Longinus's workplace and military home.",
+  "story_arcs": "Parts 1-3 (Crucifixion planning and execution logistics); Part 10 (Fall of Jerusalem and final siege coordination)",
+  "one_line_description": "The Roman military command center overlooking the Temple Mount—where Longinus serves, where Jesus was tried and scourged, and where occupation is enforced.",
+  "sections": {
+    "physical_description": {
+      "title": "Physical Description & Layout",
+      "geographic_setting": "High ground in northwestern Jerusalem, positioned on a hill overlooking the Temple Mount and dominant over the surrounding city. Strategic military advantage of elevation and sight lines. Arid, semi-desert climate; hot dry summers, cool winters with occasional rain; dust constant. Water from cisterns and aqueducts. Main ceremonial gate faces south toward Temple Mount; secondary gates on east and west; narrow streets of Old City connect via controlled Roman checkpoints.",
+      "scale": "Sprawling military complex covering approximately 5-6 acres. Multiple connected structures, parade grounds, fortification perimeters. Large enough to house 480+ soldiers plus officers, support staff, and provisions. Walls 8-12 meters high, 3-4 meters thick.",
+      "natural_features": "Built on naturally elevated terrain; slope advantage on multiple sides. No rivers nearby; dependence on cistern systems and aqueducts. Natural stone outcrops used in foundation and wall construction. Highest point of northwestern Jerusalem.",
+      "primary_structures": "The Keep (central four-story tower, 20-25m high—command offices, observation deck); Barracks Blocks (four major buildings, contubernia for 8 soldiers each); Lithostrotos (parade ground—stone-paved courtyard, site of trials and assemblies); Administration Building (military records, prefect's audience chamber); Temple/Altar Area (Roman religious shrine); Stables and Supply Storage; Guardhouse/Watch Towers at each gate; Officers' Quarters; Fortress Walls (crenellated, corner towers). Underground cistern system; network of underground passages."
+    },
+    "sensory_details": {
+      "title": "Sensory Details & Atmosphere",
+      "overall_impression": "Roman military precision—honey-colored and gray ashlar stone, rust-red iron banding, dull bronze hardware. Bright harsh sunlight on parade ground; deep shadows in barracks. Horse manure, leather, iron, sweat, dust. Trumpet calls marking time. Stone walls echo.",
+      "dominant_colors": "Honey-colored and gray ashlar stone; rust-red iron on doors; dull bronze hardware; crimson and gold of Roman insignia and uniforms; dust creating perpetual haze.",
+      "signature_visual": "The Keep tower dominating the skyline; crenellated fortress walls; parade ground (Lithostrotos) paved in stone; Temple Mount visible to the south. Soldiers in formation; military standards.",
+      "lighting": "Bright harsh sunlight on parade ground creating stark shadows. Golden hour at dawn and dusk warms stone walls. Barracks interior dim (few windows). Night: complete darkness except torches and lamps. Tower observation deck offers commanding views with ever-changing light.",
+      "essential_atmosphere": "Military discipline—trumpet calls, footsteps on stone, creaking equipment, horse sounds. Stone walls amplify and echo. Horse manure, leather, sweat, dust, cooking fires, torch smoke. Roman control; oppression; confinement."
+    },
+    "historical_context": {
+      "title": "Historical & Cultural Context",
+      "historical_significance": "Most important Roman military installation in Judea from construction until destruction. Built 24 BCE by Herod the Great, named after Mark Antony. Command center for Roman military activity during Crucifixion (33 CE) and decades leading to First Jewish War. Destroyed 70 CE during siege by Titus. Site of Jesus's trial and scourging (in tradition).",
+      "cultural_importance": "For Romans: symbol of power, authority, control. For Jews: visible representation of occupation, loss of sovereignty, military oppression. Positioned deliberately to overlook Temple Mount—political statement about religious control. Constant tension: sacred Jewish space under Roman military surveillance.",
+      "symbolic_meaning": "For Romans: power, order, military superiority, imperial authority. For Jews: occupation, oppression, loss of independence, threat to religious freedom. For Christians: site of suffering, trial, preparation for crucifixion."
+    },
+    "character_connections": {
+      "title": "Characters at the Fortress of Antonia",
+      "primary": [
+        {"name": "Longinus (Cassius Longinus Mercator)", "role": "Centurion stationed here; his workplace and military home; where Roman identity is strongest and internal conflict with spiritual awakening becomes acute"},
+        {"name": "Pontius Pilate", "role": "Prefect; ultimate authority; resides or holds audience here; Jesus's trial takes place here"},
+        {"name": "Decimus", "role": "Longinus's second-in-command; also based at fortress; loyal soldier and friend"},
+        {"name": "Roman garrison", "role": "480+ soldiers; fortress is their military home, workplace, and identity"}
+      ]
+    },
+    "key_scenes": {
+      "title": "Key Scenes & Events",
+      "events": [
+        "Jesus's trial, interrogation, and scourging (circa 33 CE); soldiers mock Jesus, prepare execution detail",
+        "Political/religious negotiations between Pilate and Jewish leaders",
+        "Spear assigned to Longinus here or wielded for first time in crucifixion context",
+        "Regular drill and formation on parade ground; military hierarchy demonstrated",
+        "Prisoner interrogations in guardhouse chambers; executions on parade ground",
+        "Longinus's revelation about spear and grace; testing of spear's power",
+        "First Jewish War: fortress under attack; military response to rebellion; final destruction 70 CE"
+      ]
+    }
+  }
+}

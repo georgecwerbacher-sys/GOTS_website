@@ -1,0 +1,52 @@
+{
+  "id": "jerusalem-marketplace",
+  "name": "Jerusalem Marketplace (Summer 66 CE)",
+  "alternative_names": ["Shuk", "Royal Stoa Market", "Old City Commercial Areas", "Temple Market District", "Lower City Markets", "Merchant Quarter", "Commercial Center of Jerusalem"],
+  "type": "Commercial District / Public Gathering Space / Social Center",
+  "time_period": "Year-round (focus on Summer 66 CE - Florus Treasury Raid); significant during festival seasons",
+  "region": "Jerusalem",
+  "coordinates": "Multiple marketplace areas throughout Old City; primary focus Royal Stoa (southern Temple colonnade commercial area)",
+  "historical_status": "Real historical location; archaeological and textual evidence; functioning marketplace from Second Temple period through present",
+  "narrative_significance": "The marketplace serves as the social pulse of Jerusalem where common people gather, where economic grievances crystallize, where Florus's treasury theft becomes public knowledge, and where the Jewish-Roman relationship reaches breaking point. Summer 66 CE marketplace scenes show the escalation from economic oppression to active rebellion through the eyes of merchants, money changers, and common people.",
+  "story_arcs": "Central to The Guardian's Watch (recurring location), pivotal in The Fall (Summer 66 CE turning point - Florus raid triggers rebellion)",
+  "one_line_description": "The social pulse of Jerusalem—where economic grievances crystallize and Florus's treasury theft becomes the breaking point of Jewish-Roman relations.",
+  "sections": {
+    "physical_description": {
+      "title": "Physical Description & Layout",
+      "geographic_setting": "Interwoven throughout Old City Jerusalem—partially in Lower City (southern commercial district), partially in Temple Mount adjacent areas (Royal Stoa), connected through narrow streets, alleys, and public gathering spaces. Built on naturally sloped terrain creating vertical organization and multiple market levels. Crowded urban density with narrow winding streets typical of ancient Near Eastern cities.",
+      "scale": "Sprawling distributed marketplace rather than single centralized location. Multiple specialized market areas: money-changer district (Temple-adjacent), livestock markets (outside Temple for sacrificial animals), textile and goods merchants (throughout Old City), spice and incense merchants (specialized area). During major festivals, entire Old City functions as marketplace supporting hundreds of thousands of pilgrims.",
+      "natural_features": "Built on Jerusalem ridge with natural slope; marketplace areas at various elevation levels. Stone foundations and bedrock visible in places. Limited natural water sources (cistern systems); water scarcity affects marketplace. Valleys surrounding Old City create natural boundaries.",
+      "primary_structures": "Royal Stoa (southern Temple portico supporting marketplace commercial activity); Temple Mount gates opening directly to marketplace; covered market areas; money-changer stalls; livestock pens; textile and goods stalls; spice and incense merchant areas."
+    },
+    "sensory_details": {
+      "title": "Sensory Details & Atmosphere",
+      "overall_impression": "Hot, crowded, bustling—the social pulse of Jerusalem. Urban heat island effect in densely packed marketplace. Poor sanitation and crowding create unpleasant smells. Limited shade except in covered areas and narrow alley shadows.",
+      "dominant_colors": "Stone and earth tones; colorful textiles and goods; livestock and market wares; Mediterranean sunlight casting sharp shadows in narrow streets",
+      "signature_visual": "Narrow winding streets; merchants at stalls; Temple Mount visible above; common people and pilgrims circulating; animals (donkeys, goats) creating congestion.",
+      "lighting": "Intense Mediterranean sunlight; harsh in open areas; dim in narrow alleys and covered sections. Urban heat amplifies the sense of crowding.",
+      "essential_atmosphere": "The noise of commerce—haggling, animals, footsteps on stone. Crowding and congestion. Economic grievances crystallizing. The tension of Summer 66 CE as Florus's treasury theft becomes public knowledge."
+    },
+    "historical_context": {
+      "title": "Historical & Cultural Context",
+      "historical_significance": "Functioning marketplace from Second Temple period. Summer 66 CE: Florus's treasury raid triggers rebellion. The marketplace serves as the social pulse where common people gather and where the Jewish-Roman relationship reaches breaking point.",
+      "cultural_importance": "Commercial heart of Jerusalem. Where economic life intersects with religious life (Temple-adjacent money changers, sacrificial animal markets). Social center for common people.",
+      "symbolic_meaning": "Vertical geography reinforces social hierarchy—common people in lower market areas vs. wealthy Upper City and Temple authority higher up. The marketplace is where economic oppression becomes visible and where rebellion finds its voice."
+    },
+    "character_connections": {
+      "title": "Characters at the Marketplace",
+      "primary": [
+        {"name": "Merchants", "role": "Eyes of economic life; first to feel Florus's oppression; voices of grievance"},
+        {"name": "Money changers", "role": "Temple-adjacent; central to pilgrimage economy; targets of Roman extraction"},
+        {"name": "Common people", "role": "Gather here; where grievances crystallize; where rebellion finds its voice"}
+      ]
+    },
+    "key_scenes": {
+      "title": "Key Scenes & Events",
+      "events": [
+        "Summer 66 CE - Florus Treasury Raid: Roman prefect Gessius Florus raids the Temple treasury; the theft becomes public knowledge in the marketplace",
+        "The Breaking Point: Economic grievances crystallize; Jewish-Roman relationship reaches breaking point",
+        "Escalation: Marketplace scenes show the escalation from economic oppression to active rebellion through the eyes of merchants, money changers, and common people"
+      ]
+    }
+  }
+}

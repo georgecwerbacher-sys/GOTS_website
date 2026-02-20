@@ -1,0 +1,56 @@
+{
+  "id": "praetorium",
+  "name": "The Praetorium",
+  "image": "/images/Locations/Praetorium.jpg",
+  "alternative_names": ["Pilate's Judgment Hall", "The Governor's Palace", "The Herodian Palace", "Praetorium (Latin)", "The Pavement (Lithostrotos)"],
+  "type": "Roman Governor's Residence / Administrative Headquarters / Trial Court / Place of Scourging",
+  "time_period": "Active as Roman governor's Jerusalem headquarters approximately 6 CE–70 CE; narrative focus — Nisan 15, approximately 30–33 CE",
+  "region": "Jerusalem, Judea",
+  "coordinates": "Approximately 31.7767° N, 35.2297° E (Herod's Palace) or 31.7768° N, 35.2355° E (Fortress of Antonia)",
+  "historical_status": "Real historical location; precise identification debated between Fortress of Antonia and Herod's Palace. Within the narrative, Pilate's judicial and residential headquarters—the seat of Roman civil authority in Jerusalem.",
+  "narrative_significance": "The location where Roman civil power renders its most consequential judgment in history—and where that judgment is immediately undermined by the man rendering it. Pilate's hand-washing occurs here. The scourging occurs here. The crowd's choice of Barabbas occurs here. And it is here that Malchus stands in the crowd and makes his fatal silence—choosing not to speak when speaking might have changed something. The Praetorium is the location of human moral failure at its most organized and bureaucratic.",
+  "story_arcs": "Book 1 Part 4 (Chapter 11 — \"Washing His Hands\"); Book 2 Part 1 (Chapter 1 — Pilate's chambers, Brutus summoned to account for Mount Gerizim); referenced throughout as the seat of Roman civil authority",
+  "one_line_description": "The seat of Roman civil power in Jerusalem—where bureaucratic order renders its most consequential and most guilty judgment, and where a prefect washes his hands of what he already knows.",
+  "sections": {
+    "physical_description": {
+      "title": "Physical Description & Layout",
+      "geographic_setting": "Occupies prominent, elevated ground within Jerusalem's walled city. Whether identified with the Fortress of Antonia (overlooking the Temple Mount from the northwest) or Herod's Palace (the western hill overlooking the lower city), it stands above the city—literally and architecturally. Roman governors do not build at street level.",
+      "scale": "A substantial complex—not a single building but a walled compound containing the governor's residence, administrative offices, the public trial courtyard (Lithostrotos/Pavement), audience chambers, staff quarters, and gardens. Herod's Palace was famously lavish—rooms of extraordinary size, gold and silver vessels, porticoes with colonnades of white stone.",
+      "natural_features": "Within the compound, Herod's original gardens may still be maintained—formal gardens with water features and shade trees. The compound walls create a sealed world where Roman authority operates in relative isolation from the city outside.",
+      "primary_structures": "The Governor's Residence (Pilate's personal quarters, sparse and military-precise); The Judgment Hall (formal space with Pilate's tribunal); The Lithostrotos (stone-paved trial courtyard, open to sky); The Scourging Post; Administrative Offices; Staff Quarters and Guard Rooms."
+    },
+    "sensory_details": {
+      "title": "Sensory Details & Atmosphere",
+      "overall_impression": "The Praetorium projects authority—high walls, elevated position, formal stone architecture, Roman military order. But within that projected authority lives its contradiction: Pilate is a man who knows the truth of what he is about to do and does it anyway.",
+      "dominant_colors": "White Jerusalem limestone—honey-colored stone, dressed and polished. Cool gray shadow in interior spaces. The harsh white light from Pilate's high windows. The color of Roman bureaucratic precision—white, gray, dull iron of military hardware.",
+      "signature_visual": "Pilate at his tribunal, elevated above the crowd, looking down at the condemned man and the assembled faces—a man rendered small by the power he wields and the choice he is about to make.",
+      "lighting": "The public courtyard is open to the spring morning sky—bright, clear, exposing. The interior spaces are lit by high, positioned windows that deliver harsh white light from above. The light in Pilate's chambers \"reveals everything, hides nothing.\"",
+      "essential_atmosphere": "A room where everyone knows what is about to happen and proceeds anyway—the atmosphere of institutional complicity."
+    },
+    "historical_context": {
+      "title": "Historical & Cultural Context",
+      "historical_significance": "The location of the trial of Jesus before Pontius Pilate—one of the most documented trials in human history. Where the political and religious machinery that enables the crucifixion operates most visibly: Pilate and the Sanhedrin in their complicated collaboration, the crowd manipulated into demanding what it may not have chosen freely.",
+      "cultural_importance": "For Rome, the seat of civil authority in Jerusalem—where Roman law is administered. For the Jewish religious leadership, a necessary but ritually compromised space—entering during Passover would cause impurity, which is why the chief priests conduct their advocacy from the courtyard outside.",
+      "symbolic_meaning": "The location of institutional complicity—where systems designed to serve justice are bent toward injustice by political fear, religious self-protection, and crowd momentum. Pilate's hand-washing is the ultimate act of corrupted choice: he knows the truth, announces it, and then chooses the opposite."
+    },
+    "character_connections": {
+      "title": "Characters at the Praetorium",
+      "primary": [
+        {"name": "Pontius Pilate", "role": "The Praetorium is Pilate's domain—his residence, his court, his seat of power. The location of his most famous failure: the trial and condemnation of an innocent man he knows is innocent. The man who washes his hands of what he knows is wrong."},
+        {"name": "Malchus", "role": "Positions himself in the Lithostrotos crowd. His ear burns during the proceedings—a physical reminder of the healing the condemned man gave him. He watches the condemnation. He does not speak. The Praetorium is the location of Malchus's greatest failure."},
+        {"name": "Brutus", "role": "Receives his assignments here. Summoned in Chapter 9 to accept the crucifixion assignment. In Book 2 Chapter 1, summoned again to face Pilate's reckoning over Mount Gerizim."},
+        {"name": "Horatius", "role": "Present in Chapter 9—meets Brutus here to discuss the assignment. Explains the political complications of the Nazarene. The calculating intelligence that frames the crucifixion as political necessity."},
+        {"name": "Jesus (the condemned man)", "role": "The only figure not operating from fear—whose composure under Pilate's interrogation unsettles Pilate more than any advocacy could"}
+      ]
+    },
+    "key_scenes": {
+      "title": "Key Scenes & Events",
+      "events": [
+        "Chapter 9 — Brutus Summoned: Corvus arrives with Pilate's summons. Brutus and Horatius meet in the Praetorium office. Brutus accepts the crucifixion assignment.",
+        "Chapter 11 — The Trial: Malchus in the Lithostrotos crowd. Pilate's interrogation. The offer of Barabbas. The crowd's demand. Pilate's hand-washing. The condemnation. Malchus's silence. The procession departing for Golgotha.",
+        "The Scourging: The condemned man scourged at the post before the procession to Golgotha.",
+        "Book 2, Chapter 1 — The Reckoning: Brutus summoned at dawn to Pilate's chambers. Pilate's cold accounting of the Mount Gerizim catastrophe. Maximus exiled."
+      ]
+    }
+  }
+}
