@@ -58,6 +58,15 @@ const ACTS: Act[] = [
     tension: 'They came to hide. They stayed to become something Rome would fear.',
     pov: 'Longinus & Malchus',
   },
+  {
+    id: 'sacrifice',
+    number: 'V',
+    label: 'The Sacrifice',
+    headline: 'Death is not the end. Sometimes it is the beginning of something Rome has no name for.',
+    body: 'In Jerusalem, seventeen trained assassins descend on a single man — and what happens next cannot be explained by any military calculation. In the mountains of Samaria, Rome\'s soldiers advance against pilgrims and families with arrows already in flight. Two moments. Two locations. One impossible cosmic event that bridges the distance between them in an instant. When the light erupts — from a dying man, from a prophet\'s raised hands, from the spear itself — it does not destroy what it touches. It reveals it. Soldiers drop their weapons. Commanders fall to their knees with the agony of their own deaths burning through them. And somewhere in the dust of Mount Gerizim, a young soldier named Lucius lies on his back, staring at the sky, understanding that Rome has just lost him forever.',
+    tension: 'The spear does not make war. It restores something war has stolen — the will to choose.',
+    pov: 'Longinus & Malchus',
+  },
 ];
 
 const HIDDEN_ACT_TEASER = [
