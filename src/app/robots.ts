@@ -1,15 +1,15 @@
 import type { MetadataRoute } from 'next';
 
-const BASE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? 'https://guardiansofthespear.com';
+const baseUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
-      userAgent: 'Googlebot',
+      userAgent: '*',
       allow: '/',
       disallow: ['/api/', '/auth/', '/_next/'],
     },
-    sitemap: `${BASE_URL}/sitemap.xml`,
+    sitemap: `${baseUrl}/sitemap.xml`,
   };
 }
