@@ -1,7 +1,7 @@
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { useRouter } from 'next/navigation';
 import { asset_image_path } from '@/lib/asset-paths';
 import { fade_in_up, scale_in, viewport_config, stagger_container } from '@/lib/animations/config';
 
@@ -20,11 +20,6 @@ interface CharacterTeaserSectionProps {
 }
 
 export function CharacterTeaserSection({ characters }: CharacterTeaserSectionProps) {
-  const router = useRouter();
-
-  function handleCharacterClick(character: CharacterTeaser) {
-    router.push(`/story/${character.id}`);
-  }
 
   return (
     <section
@@ -55,13 +50,12 @@ export function CharacterTeaserSection({ characters }: CharacterTeaserSectionPro
           variants={stagger_container}
         >
           {characters.map((character) => (
+            <Link key={character.id} href={character.path}>
             <motion.article
-              key={character.id}
               variants={scale_in}
               className="relative overflow-hidden rounded-lg border-2 border-gots-accent/50 bg-gots-charred hover:border-gots-accent transition-colors cursor-pointer group"
               role="article"
               aria-label={`Character card for ${character.name}`}
-              onClick={() => handleCharacterClick(character)}
             >
               <div className="relative w-full h-96 overflow-hidden bg-gots-dark">
                   <img
@@ -98,6 +92,7 @@ export function CharacterTeaserSection({ characters }: CharacterTeaserSectionPro
 
               <div className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-gots-accent/30 group-hover:border-gots-accent transition-colors" />
             </motion.article>
+            </Link>
           ))}
         </motion.div>
       </div>

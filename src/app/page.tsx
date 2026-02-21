@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import { get_all_characters } from '@/lib/data/characters';
+import { get_all_locations } from '@/lib/data/locations';
 import {
   book_1,
   book_2,
@@ -11,6 +12,7 @@ import { BooksSection } from '@/components/sections/immersive/BooksSection';
 import { AtmosphereSection } from '@/components/sections/immersive/AtmosphereSection';
 import { GoDeeperSection } from '@/components/sections/immersive/GoDeeperSection';
 import { CharacterTeaserSection } from '@/components/sections/immersive/CharacterTeaserSection';
+import { LocationTeaserSection } from '@/components/sections/immersive/LocationTeaserSection';
 import { StoryThreadsSection } from '@/components/sections/immersive/StoryThreadsSection';
 import { SocialProofSection } from '@/components/sections/immersive/SocialProofSection';
 import { FooterSection } from '@/components/sections/immersive/FooterSection';
@@ -45,6 +47,31 @@ export default async function homepage(): Promise<ReactNode> {
     // Continue with empty array if characters fail to load
   }
 
+  let featured_locations: Array<{
+    id: string;
+    name: string;
+    region: string;
+    description: string;
+    significance?: string;
+    imageUrl?: string;
+    path: string;
+  }> = [];
+
+  try {
+    const all_locations = await get_all_locations();
+    featured_locations = all_locations.slice(0, 6).map((loc) => ({
+      id: loc.id,
+      name: loc.name,
+      region: loc.region,
+      description: loc.description,
+      significance: loc.significance,
+      imageUrl: loc.image,
+      path: `/locations/${loc.id}`,
+    }));
+  } catch (error) {
+    console.error('Error loading locations:', error);
+  }
+
   return (
     <main className="min-h-screen bg-gots-body">
       <HeroSection
@@ -63,6 +90,8 @@ export default async function homepage(): Promise<ReactNode> {
       <GoDeeperSection />
 
       <CharacterTeaserSection characters={featured_characters} />
+
+      <LocationTeaserSection locations={featured_locations} />
 
       <StoryThreadsSection />
 

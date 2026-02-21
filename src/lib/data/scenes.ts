@@ -19,17 +19,22 @@ export async function get_scenes_for_character(character_id: string) {
   const scene_ids = CHARACTER_SCENE_MAP[character_id] || [];
   if (scene_ids.length === 0) return [];
 
-  const scenes = await prisma.narrativeScene.findMany({
-    where: { id: { in: scene_ids }, status: 'published' },
-    orderBy: [{ partNumber: 'asc' }, { sceneNumber: 'asc' }],
-    include: {
-      sceneContents: {
-        where: { status: 'published' },
-        take: 1,
+  try {
+    const scenes = await prisma.narrativeScene.findMany({
+      where: { id: { in: scene_ids }, status: 'published' },
+      orderBy: [{ partNumber: 'asc' }, { sceneNumber: 'asc' }],
+      include: {
+        sceneContents: {
+          where: { status: 'published' },
+          take: 1,
+        },
       },
-    },
-  });
-  return scenes;
+    });
+    return scenes;
+  } catch {
+    // Database unavailable (e.g. PostgreSQL not running) — return empty so page can still render
+    return [];
+  }
 }
 
 export async function get_scene_by_id(scene_id: string) {
