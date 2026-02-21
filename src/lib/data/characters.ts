@@ -108,17 +108,25 @@ export async function get_characters_by_group(): Promise<Record<string, characte
   const groups: Record<string, character_profile[]> = {
     'Romans': [],
     'Followers': [],
+    'Sanhedrin': [],
     'Other': []
   };
   
   for (const character of characters) {
     // Try to get category from detailed data
     let category = 'Other';
+    const occupation = (character as { occupation?: string }).occupation || '';
     try {
       const detailed = await get_detailed_character_data(character.id);
-      if (detailed?.identification?.category) {
+      const detailed_role = detailed?.identification?.role || occupation;
+      // Check for Sanhedrin/Temple context first (occupation/role)
+      if (detailed_role.includes('High Priest') || detailed_role.includes('Temple') || detailed_role.includes('Sanhedrin')) {
+        category = 'Sanhedrin';
+      } else if (detailed?.identification?.category) {
         const full_category = detailed.identification.category;
-        if (full_category.startsWith('Romans')) {
+        if (full_category.includes('Sanhedrin')) {
+          category = 'Sanhedrin';
+        } else if (full_category.startsWith('Romans')) {
           category = 'Romans';
         } else if (full_category.startsWith('Followers')) {
           category = 'Followers';
@@ -126,7 +134,9 @@ export async function get_characters_by_group(): Promise<Record<string, characte
       }
     } catch (error) {
       // If no detailed data, try to infer from role or other fields
-      if (character.role === 'antagonist' && (character.origin?.includes('Rome') || character.origin?.includes('Roman'))) {
+      if (occupation.includes('High Priest') || occupation.includes('Temple') || occupation.includes('Sanhedrin')) {
+        category = 'Sanhedrin';
+      } else if (character.role === 'antagonist' && (character.origin?.includes('Rome') || character.origin?.includes('Roman'))) {
         category = 'Romans';
       } else if (character.role === 'protagonist' || character.role === 'supporting') {
         // Most protagonists/supporting are Followers, but check origin

@@ -74,6 +74,7 @@ export default async function characters_page(): Promise<ReactNode> {
   const group_descriptions: Record<string, string> = {
     'Romans': 'The forces of Rome—soldiers, commanders, and officials whose paths intersect with the divine.',
     'Followers': 'Those who follow the truth, building networks of protection and preserving witness.',
+    'Sanhedrin': 'The religious authority of Jerusalem—High Priest, Temple servants, and those who move between power and faith.',
     'Other': 'Other characters in the story.'
   };
 
@@ -91,8 +92,15 @@ export default async function characters_page(): Promise<ReactNode> {
       description: group_descriptions['Followers'],
       link: '/characters/groups/followers',
       image_path: '/images/Hero_images/Followers_1_.jpg'
+    },
+    {
+      name: 'Sanhedrin',
+      count: character_groups['Sanhedrin']?.length || 0,
+      description: group_descriptions['Sanhedrin'],
+      link: '/characters/groups/sanhedrin',
+      image_path: '/images/Hero_images/Sanhedrin.png'
     }
-  ].filter(group => group.count > 0);
+  ].filter(group => group.count > 0 || group.name === 'Sanhedrin');
 
   return (
     <main className="min-h-screen bg-gots-body">

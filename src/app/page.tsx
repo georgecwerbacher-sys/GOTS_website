@@ -75,12 +75,13 @@ export default async function homepage(): Promise<ReactNode> {
   return (
     <main className="min-h-screen bg-gots-body">
       <HeroSection
-        videoPath="/assets/video/headers/Home_Page/Home_Header"
+        videoPath="/assets/video/headers/followers/followers"
         posterPath="/images/Hero_images/Followers_1_.jpg"
         altText="Guardians of the Spear home page header video"
         title="Guardians of the Spear"
         subtitle="Across every age, men and women have died for one thing — your right to choose your own fate."
         description="Go deeper than the book — discover the people, the places, and the price they paid."
+        endWithPoster
       />
 
       <BooksSection book1={book_1} book2={book_2} />

@@ -11,6 +11,7 @@ interface HeroSectionProps {
   title: string;
   subtitle: string;
   description: string;
+  endWithPoster?: boolean;
 }
 
 export function HeroSection({
@@ -20,6 +21,7 @@ export function HeroSection({
   title,
   subtitle,
   description,
+  endWithPoster = false,
 }: HeroSectionProps) {
   return (
     <section
@@ -32,6 +34,7 @@ export function HeroSection({
           poster_path={posterPath}
           alt_text={altText}
           full_screen
+          end_with_poster={endWithPoster}
         />
       </div>
 

@@ -9,18 +9,23 @@ interface header_video_props {
   poster_path: string;
   alt_text?: string;
   full_screen?: boolean;
+  end_with_poster?: boolean;
 }
 
 function header_video_client({
   video_path,
   poster_path,
   alt_text = 'Header video',
-  full_screen = false
+  full_screen = false,
+  end_with_poster = false
 }: header_video_props) {
   const [video_loaded, set_video_loaded] = useState(false);
+  const [video_ended, set_video_ended] = useState(false);
   const [poster_error, set_poster_error] = useState(false);
 
   const height_class = full_screen ? 'min-h-screen' : 'h-[600px] min-h-[400px]';
+
+  const show_poster = !video_loaded || (end_with_poster && video_ended);
 
   return (
     <div className={`relative w-full ${height_class} overflow-hidden bg-gots-dark flex items-center justify-center`}>
@@ -33,22 +38,23 @@ function header_video_client({
         }`}
         aria-hidden={!poster_error}
       />
-      {/* Poster image: show first so hero image is always visible */}
+      {/* Poster image: show first, when video ends (if end_with_poster), or when video not loaded */}
       <img
         src={poster_path}
         alt={alt_text}
         className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 ${
-          poster_error ? 'opacity-0' : video_loaded ? 'opacity-0' : 'opacity-100'
+          poster_error ? 'opacity-0' : show_poster ? 'opacity-100' : 'opacity-0'
         }`}
         onError={() => set_poster_error(true)}
       />
-      {!poster_error && (
+      {!poster_error && (!end_with_poster || !video_ended) && (
         <video
           autoPlay
           muted
-          loop
+          loop={!end_with_poster}
           playsInline
           onLoadedData={() => set_video_loaded(true)}
+          onEnded={() => end_with_poster && set_video_ended(true)}
           onError={() => {}}
           poster={poster_path}
           className="absolute inset-0 w-full h-full object-contain"
