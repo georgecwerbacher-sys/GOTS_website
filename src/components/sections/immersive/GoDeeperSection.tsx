@@ -74,7 +74,7 @@ const PILLARS: Pillar[] = [
     hint: 'Every moment in order — including between the scenes.',
     tag: 'Chronicle',
     title: 'The Living Timeline',
-    body: 'Track every event across 33–34 CE. See how threads converge, who knew what and when, and what the book never had room to show.',
+    body: 'Track every event across 33–75 CE. See how threads converge, who knew what and when, and what the book never had room to show.',
     items: [
       'Nisan 14, 33 CE — The Crucifixion',
       'Nisan 17 — The Empty Tomb',

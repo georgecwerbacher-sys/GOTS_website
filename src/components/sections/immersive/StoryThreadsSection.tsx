@@ -26,27 +26,27 @@ const ACTS: Act[] = [
     id: 'desert',
     number: 'I',
     label: 'The Desert March',
-    headline: 'A Roman soldier carries a dead man into the wilderness — and cannot stop thinking about what he saw.',
-    body: 'Longinus Mercator has served Rome faithfully for twenty years. His eyes are failing. His faith in the empire is cracking. When ordered to escort the body of a crucified Jew named Jesus into the Judean desert, he expects a routine burial detail. Instead, the march becomes the first test of a loyalty he didn\'t know he had — when Jewish resisters ambush the procession and Longinus chooses, for reasons he can\'t explain, to show mercy rather than make an example.',
-    tension: 'Malchus, a servant who witnessed the arrest and the healing, watches Longinus and says nothing. But he sees everything.',
+    headline: 'Some roads do not lead to destinations. They lead to reckonings.',
+    body: 'In the scorched wilderness of ancient Judea, a Roman cohort marches toward a silence they cannot yet understand. What they find at the end of that road — a landscape of desecrated bodies, hollow eyes staring from a tower of the dead — is only the beginning. A soldier with a hidden affliction. A commander whose mercy is indistinguishable from cruelty. A spear thrown across an impossible distance. And a question that will follow one man long after the desert dust has settled: when obedience becomes the only god left, what becomes of the soul inside the soldier?',
+    tension: 'The Awakening begins here.',
     pov: 'Longinus',
   },
   {
     id: 'vanishing',
     number: 'II',
     label: 'The Breaking',
-    headline: 'The body vanishes. The spear begins to glow. Rome wants answers — and will torture them out of anyone who has them.',
-    body: 'At the burial site, the impossible happens. The body of Jesus of Nazareth disappears. No grave robbers. No tracks. No explanation Rome is willing to accept. What remains is the spear Longinus used at the crucifixion — a weapon that now behaves like no weapon he has ever held. The Arcani, Rome\'s coordinated intelligence apparatus, mobilize immediately: military pressure from Brutus, economic strangulation from Corvus, psychological warfare from Maximus, enforcement brutality from Horatius. They are not panicking. They are hunting.',
-    tension: 'Longinus drove that spear through flesh that should not have bled the way it did. He knows what he felt. He cannot unknow it.',
+    headline: 'Some men are broken by pain. Others reveal something in it that pain cannot touch.',
+    body: 'In the shadow of the Praetorium, Rome applies its most refined art — not the sword, but the slow, deliberate destruction of a man\'s dignity. A prisoner is scourged, crowned with thorns, and draped in a robe meant for mockery. But something in his silence unravels the men who inflict it. The whip falls. The crowd roars. And when Pontius Pilate lifts his dripping hands before the mob, washing them clean of a verdict he has already written, one question lingers in the dust: who, in this moment, is truly on trial?',
+    tension: '*The machinery of Rome does not hesitate. But some of its soldiers are beginning to.',
     pov: 'Longinus',
   },
   {
     id: 'cost',
     number: 'III',
     label: 'The Cost of Knowing',
-    headline: 'A follower is arrested. The scourging begins. Longinus must decide how much the truth is worth.',
-    body: 'The Arcani make their first move against the growing community of witnesses. A follower is taken, questioned, and beaten — not for information Rome already needs, but as a demonstration of what happens to those who refuse to recant what they saw. Longinus is no longer just a soldier with a crisis of conscience. He is now someone who knows where the spear is hidden, who the witnesses are, and what Rome will do to silence them. Malchus moves between Longinus and the community — bridge, guardian, risk.',
-    tension: 'The question is no longer whether Longinus believes. The question is whether belief is enough to die for.',
+    headline: 'The tomb is empty. The city is burning with whispers. And the most dangerous men in Jerusalem are not the ones who believed — they are the ones who did.',
+    body: 'When the body disappears, two ancient powers do what they have never done before: they agree. Rome and the Sanhedrin move in the same direction — not toward truth, but toward silence. Three soldiers who witnessed the impossible are offered a choice dressed as mercy: exile or death. But mercy has a shadow, and his name is Malchus — a servant sent to ensure compliance, a man who carries a secret of his own, a man the spear already chose before anyone gave him orders. Some witnesses can be exiled. Some cannot be contained.',
+    tension: 'The resurrection was only the beginning. What follows it will change everything.',
     pov: 'Malchus',
   },
   {
@@ -213,14 +213,14 @@ export function StoryThreadsSection() {
 
         {/* ── Sealed final act — teaser then buy CTA ── */}
         <motion.div
-          className="relative border border-red-900/40 bg-gradient-to-br from-[#1a0a0a]/80 to-gots-charred overflow-hidden"
+          className="relative border border-white/40 bg-gradient-to-br from-[#1a0a0a]/80 to-gots-charred overflow-hidden"
           initial="initial"
           whileInView="animate"
           viewport={viewport_config}
           variants={fade_in_up}
         >
-          {/* Red top bar */}
-          <div className="h-[2px] bg-gradient-to-r from-transparent via-red-800 to-transparent" />
+          {/* White top bar */}
+          <div className="h-[2px] bg-gradient-to-r from-transparent via-white to-transparent" />
 
           <div className="px-6 py-8 md:px-10">
             <div className="flex flex-col md:flex-row md:items-center gap-8">
@@ -228,11 +228,11 @@ export function StoryThreadsSection() {
               {/* Left — the tease */}
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 border border-red-900/50 flex items-center justify-center flex-shrink-0">
-                    <span className="font-cinzel text-xs font-bold text-red-700">V</span>
+                  <div className="w-10 h-10 border border-white flex items-center justify-center flex-shrink-0">
+                    <span className="font-cinzel text-xs font-bold text-white">V</span>
                   </div>
                   <div>
-                    <p className="font-cinzel text-[0.52rem] tracking-[0.3em] uppercase text-red-700/70">
+                    <p className="font-cinzel text-[0.52rem] tracking-[0.3em] uppercase text-white">
                       The Sacrifice · Acts V–XIII
                     </p>
                   </div>
@@ -263,23 +263,22 @@ export function StoryThreadsSection() {
                   ))}
                 </div>
 
-                <p className="font-cinzel text-[0.56rem] tracking-[0.25em] uppercase text-red-700/60 mt-4 flex items-center gap-2">
+                <p className="font-cinzel text-[0.56rem] tracking-[0.25em] uppercase text-white mt-4 flex items-center gap-2">
                   <span>🔒</span> Read the complete story
                 </p>
               </div>
 
-              {/* Right — buy CTA */}
+              {/* Right — pre-order CTA */}
               <div className="flex-shrink-0 flex flex-col items-center md:items-end gap-4 md:min-w-[200px]">
                 <div className="text-center md:text-right">
-                  <p className="font-cinzel text-[0.52rem] tracking-[0.3em] uppercase text-gots-accent/60 mb-1">
-                    Available Now
+                  <p className="font-cinzel text-[0.52rem] tracking-[0.3em] uppercase text-white mb-1">
+                    Pre-Order Book II
                   </p>
-                  <p className="font-cinzel text-2xl font-black text-gots-accent">$5.99</p>
-                  <p className="text-xs italic text-gots-medium-gray">Ebook · $14.99 Paperback</p>
+                  <p className="text-xs italic text-gots-medium-gray">Ebook · Paperback</p>
                 </div>
 
                 <a
-                  href="https://www.amazon.com/dp/B0GNWQZNQ3"
+                  href="https://www.amazon.com/dp/B0GNZ6XGFH"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-8 py-4 bg-gots-accent hover:bg-gots-accent-light
@@ -287,17 +286,6 @@ export function StoryThreadsSection() {
                              font-bold transition-all duration-300 whitespace-nowrap
                              hover:shadow-[0_0_30px_rgba(166,133,85,0.35)] hover:-translate-y-px"
                   onClick={(e) => e.stopPropagation()}
-                >
-                  Read Book I
-                </a>
-
-                <a
-                  href="https://www.amazon.com/dp/B0GNZ6XGFH"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-cinzel text-[0.58rem] tracking-[0.15em] uppercase
-                             text-gots-accent/60 hover:text-gots-accent transition-colors duration-200
-                             border border-gots-accent/20 hover:border-gots-accent/40 px-5 py-2"
                 >
                   Pre-Order Book II →
                 </a>

@@ -28,7 +28,7 @@ export const book_2 = {
 export const atmosphere_layers: AtmosphereLayer[] = [
   {
     id: 'era',
-    text: 'Year 33-34 CE. Roman occupation. Judea. A world where power demands obedience and mercy seems like weakness.',
+    text: 'Year 33-75 CE. Roman occupation. Judea. A world where power demands obedience and mercy seems like weakness.',
   },
   {
     id: 'tension',
