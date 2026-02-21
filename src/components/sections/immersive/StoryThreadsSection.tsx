@@ -53,9 +53,9 @@ const ACTS: Act[] = [
     id: 'light',
     number: 'IV',
     label: 'The Spear\'s Light',
-    headline: 'Those who stand near it are changed. Rome realizes it cannot control what it cannot understand.',
-    body: 'The spear\'s presence begins to do what no doctrine or argument could: it reveals. Those who encounter it cannot pretend anymore — not about Rome\'s brutality, not about their own compromises, not about what they witnessed at Golgotha. A community member dies. Then does not stay dead. Horatius, Rome\'s most efficient enforcer, witnesses something that shatters his certainty about the nature of the world. The Arcani escalate. They begin systematically targeting the spear\'s core guardians — not to capture it, but to erase the people who know what it means.',
-    tension: 'The executions are coming. Longinus knows it. Malchus knows it. The only question is who dies first — and whether their deaths will silence the story or seal it.',
+    headline: 'Broken people do not choose safe places. They choose places that understand them.',
+    body: 'Deep in the hills of Samaria, four hunted men arrive at a ruin that has become something no empire can fully name — a sanctuary built from survival, prayer, and the stubborn refusal to let the broken stay broken. A blind soldier who sees everything. A Temple servant whose restored ear hears what no one is meant to hear. Two soldiers who watched a dead man walk. Together they build something Rome never anticipated — not an army, not a rebellion, but a community of witnesses. And when a woman named Salome arrives asking a question no one has dared speak aloud, the sanctuary crosses a threshold it can never uncross. Survival was never the point. It was only the beginning.',
+    tension: 'They came to hide. They stayed to become something Rome would fear.',
     pov: 'Longinus & Malchus',
   },
 ];
