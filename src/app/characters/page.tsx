@@ -1,7 +1,19 @@
+import type { Metadata } from 'next';
 import { ReactNode } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { get_characters_by_group } from '@/lib/data/characters';
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
+
+export const metadata: Metadata = {
+  title: 'Characters',
+  description:
+    'Meet the characters of Guardians of the Spear — Roman soldiers, Jewish servants, high priests, and the community shaped by the events at Golgotha.',
+  alternates: {
+    canonical: `${siteUrl}/characters`,
+  },
+};
 
 interface character_group_card_props {
   group_name: string;

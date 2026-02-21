@@ -19,9 +19,27 @@ const cormorant = Cormorant_Garamond({
   display: 'swap',
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
+
 export const metadata: Metadata = {
-  title: 'Guardians of the Spear',
-  description: 'A historical fiction website',
+  title: {
+    default: 'Guardians of the Spear',
+    template: '%s | Guardians of the Spear',
+  },
+  description:
+    'A historical fiction novel set in first-century Jerusalem — follow Longinus, Malchus, and the Spear of Destiny across five decades of faith, war, and redemption.',
+  metadataBase: new URL(siteUrl),
+  openGraph: {
+    title: 'Guardians of the Spear',
+    description:
+      'A historical fiction novel set in first-century Jerusalem — follow Longinus, Malchus, and the Spear of Destiny across five decades of faith, war, and redemption.',
+    type: 'website',
+    siteName: 'Guardians of the Spear',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function root_layout({

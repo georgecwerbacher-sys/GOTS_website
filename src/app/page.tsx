@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { ReactNode } from 'react';
 import { get_all_characters } from '@/lib/data/characters';
 import { get_all_locations } from '@/lib/data/locations';
@@ -16,6 +17,26 @@ import { LocationTeaserSection } from '@/components/sections/immersive/LocationT
 import { StoryThreadsSection } from '@/components/sections/immersive/StoryThreadsSection';
 import { SocialProofSection } from '@/components/sections/immersive/SocialProofSection';
 import { FooterSection } from '@/components/sections/immersive/FooterSection';
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
+const homepageUrl = `${siteUrl}/`;
+
+export const metadata: Metadata = {
+  title: {
+    absolute: 'Guardians of the Spear',
+  },
+  description:
+    'An epic historical fiction novel set in first-century Jerusalem. Follow the Roman soldier Longinus and the servant Malchus as they become guardians of the Spear of Destiny.',
+  alternates: {
+    canonical: homepageUrl,
+  },
+  openGraph: {
+    url: homepageUrl,
+    title: 'Guardians of the Spear',
+    description:
+      'An epic historical fiction novel set in first-century Jerusalem. Follow the Roman soldier Longinus and the servant Malchus as they become guardians of the Spear of Destiny.',
+  },
+};
 
 // Force server rendering so Vercel serves the route correctly (avoids 404 on static export)
 export const dynamic = 'force-dynamic';
