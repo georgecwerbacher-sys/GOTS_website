@@ -73,6 +73,11 @@ export function FooterSection() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/timeline" className="text-gots-content hover:text-gots-accent transition-colors">
+                    Timeline
+                  </Link>
+                </li>
+                <li>
                   <Link href="/auth/login" className="text-gots-content hover:text-gots-accent transition-colors">
                     Login
                   </Link>
