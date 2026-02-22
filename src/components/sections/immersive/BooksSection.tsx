@@ -156,7 +156,7 @@ export function BooksSection({ book1, book2 }: BooksSectionProps) {
               href={book1.buyUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-4 bg-amber-700 hover:bg-amber-600 text-black font-semibold tracking-widest uppercase transition-colors duration-300"
+              className="inline-block px-8 py-4 bg-amber-700 hover:bg-amber-600 !text-black font-semibold tracking-widest uppercase transition-colors duration-300"
             >
               {book1.buttonText || 'Buy Book 1 on Kindle'}
             </a>

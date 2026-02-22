@@ -15,6 +15,7 @@ export function SiteHeader() {
           </Link>
           <div className="flex items-center gap-4">
             <Link href="/" className="text-gots-content hover:text-gots-accent transition-colors">Home</Link>
+            <Link href="/author" className="text-gots-content hover:text-gots-accent transition-colors">Author</Link>
             <Link href="/characters" className="text-gots-content hover:text-gots-accent transition-colors">Characters</Link>
             <Link href="/locations" className="text-gots-content hover:text-gots-accent transition-colors">Locations</Link>
             {!loading && (

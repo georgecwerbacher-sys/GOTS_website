@@ -5,9 +5,9 @@
     
     "identification": {
       "full_name": "Quintus Sanguinarius Horatius",
-      "alternative_names": ["Sanguinarius", "The Bloodhound", "The Pale Horse"],
-      "role": "Roman enforcement officer, interrogator, administrator of harsh measures; one of the Four Horsemen; dehumanized tool of Rome",
-      "category": "Romans / The Four Horsemen",
+      "alternative_names": ["Sanguinarius", "The Bloodhound"],
+      "role": "Roman enforcement officer, interrogator, administrator of harsh measures; one of the Four Arcani; dehumanized tool of Rome",
+      "category": "Romans / The Four Arcani",
       "story_status": "Active through Parts 1-3; final state unknown",
       "primary_narrative_function": "Dehumanized tool becoming progressively less human through systematic cruelty"
     },
@@ -87,7 +87,7 @@
       "core_motivations": [
         "Exercise absolute power through fear and cruelty",
         "Systematic elimination of resistance through terror",
-        "Coordinate with other Horsemen to destroy opposition",
+        "Coordinate with other Arcani to destroy opposition",
         "Maintain efficiency while losing humanity"
       ]
     },
@@ -122,7 +122,7 @@
     "thematic_significance": [
       "Dehumanization as cost of oppression",
       "Terror as systematic weapon",
-      "The Pale Horse: death, pestilence, terror, dehumanization",
+      "Death, pestilence, terror, dehumanization",
       "Can humanity survive such dehumanization?"
     ],
     

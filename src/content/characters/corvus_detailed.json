@@ -5,9 +5,9 @@
     
     "identification": {
       "full_name": "Lucius Claudius Corvus",
-      "alternative_names": ["The Raven", "Corvus", "The Black Horse"],
-      "role": "Roman officer, administrative specialist, intelligence coordinator; one of the Four Horsemen; economic predator",
-      "category": "Romans / The Four Horsemen",
+      "alternative_names": ["The Raven", "Corvus"],
+      "role": "Roman officer, administrative specialist, intelligence coordinator; one of the Four Arcani; economic predator",
+      "category": "Romans / The Four Arcani",
       "story_status": "Active through Parts 1-6+",
       "primary_narrative_function": "Economic predator exploiting desperation for profit while maintaining helpful facade"
     },
@@ -90,7 +90,7 @@
       "core_motivations": [
         "Maximize personal wealth through systematic economic exploitation",
         "Create monopolies on essential resources",
-        "Coordinate with other Horsemen to create economic collapse",
+        "Coordinate with other Arcani to create economic collapse",
         "Maintain sophisticated appearance while profiting from desperation"
       ]
     },
@@ -126,7 +126,7 @@
       "Economic predation as systematic weapon",
       "Pragmatism as mask for absolute amorality",
       "Scarcity as tool of control",
-      "The Black Horse: famine and economic collapse through manipulation"
+      "Famine and economic collapse through manipulation"
     ],
     
     "why_readers_care": "Corvus represents the insidious nature of economic exploitation. His character demonstrates how sophisticated, reasonable-sounding justifications can mask absolute amorality. Readers are drawn to his intelligence and apparent problem-solving, even as they sense something is wrong. His descent from helpful administrator to revealed economic predator shows how systems of exploitation can be built behind masks of pragmatism. Through Corvus, readers see how desperation can be weaponized for profit, and how apparent solutions can create dependency.",

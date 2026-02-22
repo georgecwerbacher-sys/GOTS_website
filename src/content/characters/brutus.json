@@ -2,20 +2,20 @@
   "character": {
     "id": "brutus",
     "name": "Marcus Aurelius Brutus",
-    "alternative_names": ["The Centurion Commander", "Brutus", "The White Horse"],
+    "alternative_names": ["The Centurion Commander", "Brutus"],
     "role": "antagonist",
-    "symbolic_representation": "The White Horse (War, Conquest, Deception)",
+    "symbolic_representation": "War, Conquest, Deception",
     "image": "/images/Characters/Romans/Marcus-Aurelius-Brutus.jpg",
     "brief_description": "A centurion commander whose perfect military mask conceals a predatory nature that systematically destroys resistance through calculated cruelty.",
-    "full_description": "Brutus is the Centurion Commander of the Tenth Century, chief enforcer of Rome's occupation authority. He appears as a model officer—pragmatic, controlled, and effective. Yet beneath this mask lies a predator who views cruelty as a strategic tool. He coordinates with other Horsemen to systematically eliminate resistance, using psychological manipulation and military precision. His relationship with Longinus is particularly complex: he initially respects him as a military peer, then sees him as an obstacle to conquest, and finally positions him for elimination while maintaining the appearance of protection.",
+    "full_description": "Brutus is the Centurion Commander of the Tenth Century, chief enforcer of Rome's occupation authority. He appears as a model officer—pragmatic, controlled, and effective. Yet beneath this mask lies a predator who views cruelty as a strategic tool. He coordinates with other Arcani to systematically eliminate resistance, using psychological manipulation and military precision. His relationship with Longinus is particularly complex: he initially respects him as a military peer, then sees him as an obstacle to conquest, and finally positions him for elimination while maintaining the appearance of protection.",
     "origin": "Italia (Roman mainland); military lineage",
     "occupation": "Centurion Commander of the Tenth Century",
     "introduction_chapter": 1,
     "key_chapters": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
     "opening_state": "Perfect military presentation; appears as model officer; controlled; respected commander",
-    "key_transformation": "Mask begins to crack; predatory nature becomes visible; coordination with other Horsemen revealed",
+    "key_transformation": "Mask begins to crack; predatory nature becomes visible; coordination with other Arcani revealed",
     "closing_state": "Predatory bearing apparent; control loosens into menace; military bearing replaced with hunter's posture",
     "arc_preview": "From respected commander maintaining perfect mask, through systematic psychological manipulation and coordination with other predators, to revealed predatory nature that destroys resistance through calculated cruelty",
-    "key_themes": ["Deception", "War", "Conquest", "Predation", "The White Horse"]
+    "key_themes": ["Deception", "War", "Conquest", "Predation"]
   }
 }

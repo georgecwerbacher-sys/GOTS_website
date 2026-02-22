@@ -58,6 +58,11 @@ export function FooterSection() {
                   </Link>
                 </li>
                 <li>
+                  <Link href="/author" className="text-gots-content hover:text-gots-accent transition-colors">
+                    Author
+                  </Link>
+                </li>
+                <li>
                   <Link href="/characters" className="text-gots-content hover:text-gots-accent transition-colors">
                     Characters
                   </Link>
