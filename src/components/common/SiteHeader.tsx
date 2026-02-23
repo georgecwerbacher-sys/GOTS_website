@@ -16,27 +16,18 @@ export function SiteHeader() {
           <div className="flex items-center gap-4">
             <Link href="/" className="text-gots-content hover:text-gots-accent transition-colors">Home</Link>
             <Link href="/author" className="text-gots-content hover:text-gots-accent transition-colors">Author</Link>
-            <Link href="/characters" className="text-gots-content hover:text-gots-accent transition-colors">Character profiles</Link>
+            <Link href="/characters" className="text-gots-content hover:text-gots-accent transition-colors">Characters</Link>
             <Link href="/locations" className="text-gots-content hover:text-gots-accent transition-colors">Locations</Link>
             <Link href="/timeline" className="text-gots-content hover:text-gots-accent transition-colors">Timeline</Link>
-            {!loading && (
-              isAuthenticated ? (
-                <>
-                  <Link href="/dashboard" className="px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light">
-                    Dashboard
-                  </Link>
-                  <button onClick={() => logout()} className="text-gots-medium-gray hover:text-gots-accent text-sm">
-                    Logout
-                  </button>
-                </>
-              ) : (
-                <>
-                  <Link href="/auth/login" className="text-gots-content hover:text-gots-accent">Login</Link>
-                  <Link href="/auth/register" className="px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light hover:!text-black">
-                    Sign Up
-                  </Link>
-                </>
-              )
+            {!loading && isAuthenticated && (
+              <>
+                <Link href="/dashboard" className="px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light">
+                  Dashboard
+                </Link>
+                <button onClick={() => logout()} className="text-gots-medium-gray hover:text-gots-accent text-sm">
+                  Logout
+                </button>
+              </>
             )}
           </div>
         </div>

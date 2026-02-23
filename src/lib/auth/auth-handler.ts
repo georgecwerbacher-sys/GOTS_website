@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { generateTokens } from './jwt';
-import { isValidEmail } from './password';
+import { isValidEmail, isPasswordStrong } from './password';
 
 /**
  * Set authentication cookies
@@ -119,7 +119,6 @@ export function validateRegistrationData(data: {
     errors.push('Password must be at least 8 characters');
   }
 
-  const { isPasswordStrong } = require('./password');
   const { isStrong, errors: passwordErrors } = isPasswordStrong(data.password);
   if (!isStrong) {
     errors.push(...passwordErrors);

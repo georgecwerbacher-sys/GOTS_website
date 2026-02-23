@@ -64,7 +64,7 @@ export function FooterSection() {
                 </li>
                 <li>
                   <Link href="/characters" className="text-gots-content hover:text-gots-accent transition-colors">
-                    Character profiles
+                    Characters
                   </Link>
                 </li>
                 <li>
@@ -75,16 +75,6 @@ export function FooterSection() {
                 <li>
                   <Link href="/timeline" className="text-gots-content hover:text-gots-accent transition-colors">
                     Timeline
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/auth/login" className="text-gots-content hover:text-gots-accent transition-colors">
-                    Login
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/auth/register" className="inline-block px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light hover:!text-black transition-colors">
-                    Sign Up
                   </Link>
                 </li>
               </ul>

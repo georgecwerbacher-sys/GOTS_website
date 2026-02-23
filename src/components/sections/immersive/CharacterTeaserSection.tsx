@@ -35,10 +35,16 @@ export function CharacterTeaserSection({ characters }: CharacterTeaserSectionPro
           variants={fade_in_up}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gots-accent mb-4">
-            Meet the Character profiles
+            Character Profiles by Group or Name
           </h2>
           <p className="text-lg text-gots-content max-w-2xl mx-auto">
-            Follow the journeys of those who discover grace in the darkest moments
+            Follow the journeys of those who discover grace in the darkest moments —{' '}
+            <Link href="/characters/groups/romans" className="text-gots-accent hover:text-gots-accent-light underline transition-colors">Romans</Link>
+            {', '}
+            <Link href="/characters/groups/followers" className="text-gots-accent hover:text-gots-accent-light underline transition-colors">Followers</Link>
+            {', '}
+            <Link href="/characters/groups/sanhedrin" className="text-gots-accent hover:text-gots-accent-light underline transition-colors">Sanhedrin</Link>
+            , and more
           </p>
         </motion.header>
 

@@ -1,5 +1,14 @@
 import { NextResponse } from 'next/server';
 
+/** GET /api/opt-in - Simple health check (fallback if /api/health 404s) */
+export async function GET() {
+  return NextResponse.json({
+    ok: true,
+    health: true,
+    timestamp: new Date().toISOString(),
+  });
+}
+
 export async function POST(request: Request) {
   try {
     const { email } = await request.json();

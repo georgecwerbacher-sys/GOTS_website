@@ -152,11 +152,28 @@ export async function POST(request: NextRequest) {
     return response;
   } catch (error) {
     console.error('Login error:', error);
+    const errStr = String(error);
+    const isTableMissing =
+      errStr.includes('does not exist') ||
+      errStr.includes('"members"') ||
+      (error && typeof error === 'object' && (error as { code?: string }).code === 'P1014');
+    const isDbConnection =
+      errStr.includes('P1001') ||
+      errStr.includes("Can't reach database") ||
+      errStr.includes('connect ECONNREFUSED');
+
+    let message = 'Something went wrong. Please try again.';
+    if (isTableMissing) {
+      message = 'Database setup incomplete. Please run: npx prisma db push';
+    } else if (isDbConnection) {
+      message = 'Database connection failed. Please ensure PostgreSQL is running.';
+    }
+
     return NextResponse.json(
       {
         success: false,
         error: {
-          message: 'Internal server error',
+          message,
           code: 'INTERNAL_ERROR',
         },
       },

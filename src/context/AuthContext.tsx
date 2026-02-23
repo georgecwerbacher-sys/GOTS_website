@@ -130,13 +130,23 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         credentials: 'include',
       });
 
-      const data = await response.json();
+      let data: { success?: boolean; data?: unknown; error?: { message?: string } };
+      try {
+        const text = await response.text();
+        data = text ? JSON.parse(text) : {};
+      } catch {
+        throw new Error(
+          response.ok
+            ? 'Invalid response from server'
+            : `Registration failed (${response.status}). Check server logs.`
+        );
+      }
 
       if (!response.ok) {
         throw new Error(data.error?.message || 'Registration failed');
       }
 
-      setUser(data.data);
+      setUser(data.data as User);
       router.push('/characters');
     } catch (err) {
       const message = err instanceof Error ? err.message : 'Registration failed';

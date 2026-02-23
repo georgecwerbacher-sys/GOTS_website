@@ -4,8 +4,6 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
-import { useAuth } from '@/context/AuthContext';
-import { SignUpModal } from '@/components/auth/SignUpModal';
 import { book_2 } from '@/lib/content/immersive-data';
 import {
   fade_in_up,
@@ -306,11 +304,6 @@ function PillarCard({
 // ── Main section ──────────────────────────────────────────────────────────
 export function GoDeeperSection() {
   const router = useRouter();
-  const { isAuthenticated } = useAuth();
-  const [signUpOpen, setSignUpOpen] = useState(false);
-  const [email, setEmail] = useState('');
-  const [optInStatus, setOptInStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-
   const [preorderOpen, setPreorderOpen] = useState(false);
 
   function handlePillarCta(pillar: Pillar) {
@@ -322,33 +315,8 @@ export function GoDeeperSection() {
       router.push('/timeline');
     } else if (pillar.id === 'chapters') {
       setPreorderOpen(true);
-    } else if (isAuthenticated) {
-      router.push(pillar.href);
     } else {
-      setSignUpOpen(true);
-    }
-  }
-
-  async function handleOptIn(e: React.FormEvent) {
-    e.preventDefault();
-    if (!email.trim() || !/\S+@\S+\.\S+/.test(email)) return;
-    setOptInStatus('loading');
-    try {
-      const res = await fetch('/api/opt-in', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email.trim() }),
-      });
-      if (res.ok) {
-        setOptInStatus('success');
-        setEmail('');
-        // After opt-in, open signup to let them finish creating account
-        setTimeout(() => setSignUpOpen(true), 1200);
-      } else {
-        setOptInStatus('error');
-      }
-    } catch {
-      setOptInStatus('error');
+      router.push(pillar.href);
     }
   }
 
@@ -464,7 +432,7 @@ export function GoDeeperSection() {
           </div>
 
           <p className="font-cinzel text-[0.58rem] tracking-[0.45em] uppercase text-gots-accent mb-4">
-            ✦ Free to Join ✦
+            ✦ Coming Soon ✦
           </p>
 
           <h3 className="font-cinzel text-3xl md:text-4xl font-black text-white leading-tight mb-4">
@@ -472,81 +440,13 @@ export function GoDeeperSection() {
             Go Deeper Than the Book.
           </h3>
 
-          <p className="text-base italic text-gots-medium-gray max-w-md mx-auto leading-relaxed mb-10">
-            Create your free account to unlock all five vaults — characters, maps,
-            the living timeline, the battle archive, and early Book&nbsp;II chapters.
+          <p className="text-base italic text-gots-medium-gray max-w-md mx-auto leading-relaxed">
+            Unlock all five vaults — characters, maps, the living timeline, the battle archive,
+            and early Book&nbsp;II chapters. Member access coming soon.
           </p>
 
-          {/* Email opt-in */}
-          {optInStatus === 'success' ? (
-            <div className="flex items-center justify-center gap-3 font-cinzel text-[0.65rem] tracking-[0.2em] uppercase
-                           text-gots-accent border border-gots-accent/25 bg-gots-accent/6
-                           px-6 py-4 max-w-md mx-auto">
-              <span>✦</span>
-              Welcome to the world of Guardians of the Spear
-              <span>✦</span>
-            </div>
-          ) : (
-            <form
-              onSubmit={handleOptIn}
-              className="flex flex-col sm:flex-row max-w-md mx-auto mb-6"
-              aria-label="Sign up form"
-            >
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email address"
-                required
-                disabled={optInStatus === 'loading'}
-                className="flex-1 px-5 py-4 bg-black/60 border border-gots-accent/25 sm:border-r-0
-                           text-gots-content placeholder:text-gots-medium-gray/60
-                           focus:border-gots-accent focus:outline-none
-                           font-cormorant text-base transition-colors"
-              />
-              <button
-                type="submit"
-                disabled={optInStatus === 'loading'}
-                className="px-8 py-4 bg-gots-accent hover:bg-gots-accent-light
-                           !text-gots-black font-cinzel text-[0.65rem] tracking-[0.2em] uppercase
-                           font-bold transition-all duration-300 whitespace-nowrap
-                           disabled:opacity-60 hover:shadow-[0_0_30px_rgba(166,133,85,0.3)]
-                           hover:-translate-y-px active:translate-y-0"
-              >
-                {optInStatus === 'loading' ? 'Joining…' : 'Join Free'}
-              </button>
-            </form>
-          )}
-
-          {optInStatus === 'error' && (
-            <p className="text-red-400 text-sm mb-4">Something went wrong. Please try again.</p>
-          )}
-
-          {/* Perks */}
-          <div className="flex flex-wrap justify-center gap-6 mb-6">
-            {['No payment required', 'Instant access', 'Early chapter drops', 'Cancel anytime'].map((perk) => (
-              <span key={perk} className="flex items-center gap-2 text-sm italic text-gots-medium-gray">
-                <span className="text-gots-accent text-[0.42rem]">◆</span>
-                {perk}
-              </span>
-            ))}
-          </div>
-
-          {/* Already a member */}
-          <p className="text-sm italic text-gots-medium-gray">
-            Already a member?{' '}
-            <button
-              className="text-gots-accent hover:text-gots-accent-light transition-colors
-                         bg-transparent border-none cursor-pointer font-cormorant italic text-sm"
-              onClick={() => router.push('/auth/login')}
-            >
-              Sign in to your account
-            </button>
-          </p>
         </motion.div>
       </div>
-
-      <SignUpModal isOpen={signUpOpen} onClose={() => setSignUpOpen(false)} />
 
       {/* Preorder modal for Early Book II Access */}
       {preorderOpen && (

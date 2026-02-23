@@ -27,14 +27,16 @@ export async function GET(request: NextRequest) {
     );
   } catch (error) {
     console.error('Get current user error:', error);
+    const err = error as Error & { code?: string };
+    const msg = (err?.message || String(error)).toLowerCase();
+    let message = 'Authentication check failed.';
+    if (msg.includes('does not exist') || err?.code === 'P1014') {
+      message = 'Database setup incomplete. Run migrations on your production database.';
+    } else if (err?.code === 'P1001' || msg.includes('connection')) {
+      message = 'Database connection failed. Check DATABASE_URL.';
+    }
     return NextResponse.json(
-      {
-        success: false,
-        error: {
-          message: 'Internal server error',
-          code: 'INTERNAL_ERROR',
-        },
-      },
+      { success: false, error: { message, code: 'INTERNAL_ERROR' } },
       { status: 500 }
     );
   }

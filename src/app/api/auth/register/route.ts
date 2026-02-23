@@ -1,4 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
+
+// Use Node.js runtime for Prisma (Edge can have DB connection issues)
+export const runtime = 'nodejs';
 import { prisma } from '@/lib/prisma';
 import { generateTokens } from '@/lib/auth/jwt';
 import { hashPassword } from '@/lib/auth/password';
@@ -9,10 +12,62 @@ import {
   usernameExists,
 } from '@/lib/auth/auth-handler';
 
+function getErrorMessage(error: unknown): string {
+  const err = error as Error & { code?: string; meta?: unknown };
+  const msg = err?.message || String(error);
+  const code = err?.code;
+  const str = msg.toLowerCase();
+
+  if (
+    code === 'P1014' ||
+    str.includes('does not exist') ||
+    str.includes('"members"') ||
+    str.includes('"refresh_tokens"')
+  ) {
+    return 'Database setup incomplete. Run migrations on your production database.';
+  }
+  if (
+    code === 'P1001' ||
+    str.includes("can't reach database") ||
+    str.includes('connection refused') ||
+    str.includes('etimedout') ||
+    str.includes('econnrefused')
+  ) {
+    return 'Database connection failed. Check DATABASE_URL and that your database is reachable.';
+  }
+  if (
+    code === 'P2002' ||
+    str.includes('unique constraint') ||
+    str.includes('already exists')
+  ) {
+    return 'Email or username already in use. Try logging in or use different credentials.';
+  }
+  if (
+    str.includes('pool') ||
+    str.includes('connection limit') ||
+    str.includes('too many clients')
+  ) {
+    return 'Database connection limit reached. Add ?connection_limit=1 to your DATABASE_URL for serverless.';
+  }
+  return 'Registration failed. Please try again or contact support.';
+}
+
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
-    const { email, username, displayName, password, confirmPassword } = body;
+    let body: Record<string, unknown>;
+    try {
+      body = await request.json();
+    } catch {
+      return NextResponse.json(
+        { success: false, error: { message: 'Invalid request body' } },
+        { status: 400 }
+      );
+    }
+    const email = body.email as string | undefined;
+    const username = body.username as string | undefined;
+    const displayName = body.displayName as string | undefined;
+    const password = body.password as string | undefined;
+    const confirmPassword = body.confirmPassword as string | undefined;
 
     // Validate passwords match
     if (password !== confirmPassword) {
@@ -142,13 +197,11 @@ export async function POST(request: NextRequest) {
     return response;
   } catch (error) {
     console.error('Registration error:', error);
+    const message = getErrorMessage(error);
     return NextResponse.json(
       {
         success: false,
-        error: {
-          message: 'Internal server error',
-          code: 'INTERNAL_ERROR',
-        },
+        error: { message, code: 'INTERNAL_ERROR' },
       },
       { status: 500 }
     );

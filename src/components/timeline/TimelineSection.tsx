@@ -336,22 +336,8 @@ export function TimelineSection() {
               Sign in to reveal spoilers
             </h2>
             <p className={styles.modalDesc} style={{ marginBottom: 20, fontSize: '0.9rem' }}>
-              Create a free account or log in to unlock timeline details.
+              Account features are temporarily unavailable. Please check back soon.
             </p>
-            <div style={{ display: 'flex', gap: 12 }}>
-              <Link
-                href="/auth/login"
-                className="inline-block flex-1 text-center px-4 py-2 rounded font-semibold border border-gots-accent text-gots-accent hover:bg-gots-accent/20 transition-colors"
-              >
-                Login
-              </Link>
-              <Link
-                href="/auth/register"
-                className="inline-block flex-1 text-center px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light transition-colors"
-              >
-                Register
-              </Link>
-            </div>
           </div>
         </div>
       )}
