@@ -54,10 +54,19 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(successResponse, { status: 200 });
   } catch (error) {
     console.error('Forgot password error:', error);
+    const errStr = String(error);
+    const isTableMissing =
+      errStr.includes('does not exist') ||
+      errStr.includes('password_reset_tokens') ||
+      (error && typeof error === 'object' && (error as { code?: string }).code === 'P1014');
     return NextResponse.json(
       {
         success: false,
-        error: { message: 'Something went wrong. Please try again.' },
+        error: {
+          message: isTableMissing
+            ? 'Database setup incomplete. Please run: npx prisma db push'
+            : 'Something went wrong. Please try again.',
+        },
       },
       { status: 500 }
     );

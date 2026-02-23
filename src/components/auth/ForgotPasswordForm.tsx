@@ -38,7 +38,14 @@ export default function ForgotPasswordForm() {
         body: JSON.stringify({ email: email.trim() }),
       });
 
-      const data = await res.json();
+      let data: { success?: boolean; message?: string; error?: { message?: string } };
+      try {
+        data = await res.json();
+      } catch {
+        setStatus('error');
+        setMessage('Invalid response from server. Please try again.');
+        return;
+      }
 
       if (data.success) {
         setStatus('success');
@@ -47,9 +54,9 @@ export default function ForgotPasswordForm() {
         setStatus('error');
         setMessage(data.error?.message || 'Something went wrong. Please try again.');
       }
-    } catch {
+    } catch (err) {
       setStatus('error');
-      setMessage('Something went wrong. Please try again.');
+      setMessage(err instanceof TypeError ? 'Network error. Please check your connection.' : 'Something went wrong. Please try again.');
     }
   }
 

@@ -57,7 +57,14 @@ export default function ResetPasswordForm({ token }: { token: string }) {
         }),
       });
 
-      const data = await res.json();
+      let data: { success?: boolean; message?: string; error?: { message?: string } };
+      try {
+        data = await res.json();
+      } catch {
+        setStatus('error');
+        setMessage('Invalid response from server. Please try again.');
+        return;
+      }
 
       if (data.success) {
         setStatus('success');
@@ -67,9 +74,9 @@ export default function ResetPasswordForm({ token }: { token: string }) {
         setStatus('error');
         setMessage(data.error?.message || 'Invalid or expired reset link. Please request a new one.');
       }
-    } catch {
+    } catch (err) {
       setStatus('error');
-      setMessage('Something went wrong. Please try again.');
+      setMessage(err instanceof TypeError ? 'Network error. Please check your connection.' : 'Something went wrong. Please try again.');
     }
   }
 
