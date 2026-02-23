@@ -4,12 +4,17 @@ import Image from 'next/image';
 import {
   get_character_data,
   get_detailed_character_data,
+  CHARACTER_IDS,
 } from '@/lib/data/characters';
 import { asset_image_path } from '@/lib/asset-paths';
 import { CharacterRelationshipLink } from '@/components/characters/CharacterRelationshipLink';
 
 interface page_props {
   params: Promise<{ id: string }>;
+}
+
+export function generateStaticParams() {
+  return CHARACTER_IDS.map((id) => ({ id }));
 }
 
 function SectionBlock({

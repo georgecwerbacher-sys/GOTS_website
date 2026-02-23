@@ -31,6 +31,9 @@ const character_data_map: Record<string, any> = {
   durus: durus_data,
 };
 
+// Character IDs that have static data (used for generateStaticParams)
+export const CHARACTER_IDS = Object.keys(character_data_map);
+
 // Get all characters for homepage
 export async function get_all_characters(): Promise<character_profile[]> {
   const character_ids = [
