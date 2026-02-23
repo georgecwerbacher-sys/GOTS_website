@@ -81,8 +81,8 @@ export async function get_all_characters(): Promise<character_profile[]> {
 // Get single character
 export async function get_character_data(character_id: string): Promise<character_profile | null> {
   try {
-    const response = await import(`@/content/characters/${character_id}.json`);
-    return response.default.character;
+    const response = character_data_map[character_id] ?? await import(`@/content/characters/${character_id}.json`);
+    return (response?.default || response)?.character ?? null;
   } catch (error) {
     console.error(`Error loading character ${character_id}:`, error);
     return null;
