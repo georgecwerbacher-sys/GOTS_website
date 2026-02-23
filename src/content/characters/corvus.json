@@ -2,20 +2,43 @@
   "character": {
     "id": "corvus",
     "name": "Lucius Claudius Corvus",
-    "alternative_names": ["The Raven", "Corvus", "Arcani Member"],
+    "alternative_names": [
+      "The Raven",
+      "Corvus",
+      "Arcani Member",
+      "The Strategist",
+      "Corvinus"
+    ],
     "role": "antagonist",
-    "symbolic_representation": "Famine, Economic Collapse, Scarcity",
+    "symbolic_representation": "Strategic architect; identity suppression; intellect without conscience",
     "image": "/images/Characters/Romans/Lucius-Claudius-Corvus.jpg",
-    "brief_description": "A sophisticated Roman officer whose apparent pragmatism masks systematic economic predation, exploiting desperation for profit while maintaining a helpful facade.",
-    "full_description": "Corvus is a Roman administrative specialist and intelligence coordinator who appears as a pragmatic problem-solver managing occupation complexities. His sophisticated, diplomatic presentation makes him seem reasonable and helpful. Yet this is a mask—beneath it lies an economic predator who views every human need as a profit opportunity. He systematically establishes monopolies on essential resources, exploits desperation, and coordinates with other Arcani to create economic collapse that he profits from. His sophistication is his weapon: readers trust his reasoning until they realize every solution creates dependency and profit.",
-    "origin": "Italy or provincial Roman; mixed background possible",
-    "occupation": "Roman officer, administrative specialist, intelligence coordinator",
+    "brief_description": "Brutus's second-in-command and strategic architect \u2014 a Romanized Gaul whose calculated ambition and intellectual mastery drive Rome's operations in Jerusalem.",
+    "full_description": "The Raven is a strategic architect of Rome's operations in Jerusalem. Born in Lugdunum to a Gallic warrior who allied with Rome, Corvus grew up between two identities, belonging fully to neither. He chose Rome with full awareness. As Brutus's second-in-command for five years, he is the intellect behind Brutus's authority \u2014 and both know it. His ambition to surpass Brutus is carefully managed; his suppressed Gallic heritage surfaces only in dangerous moments. The crucifixion is a strategic operation executed with precision. What follows will dismantle the framework he has built his entire identity inside.",
+    "origin": "Lugdunum (modern Lyon); Gallic heritage, Romanized",
+    "occupation": "Centurion, second-in-command to Brutus",
     "introduction_chapter": 1,
-    "key_chapters": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "key_chapters": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
     "opening_state": "Well-groomed, comfortable appearance; appears as helpful problem-solver; already predatory",
     "key_transformation": "Visibly wealthier; monopolies established; mask maintained; predatory nature revealed",
     "closing_state": "Wealth evident in every detail; comfort with chaos as profit opportunity; economic predator fully revealed",
     "arc_preview": "From apparent pragmatic administrator solving problems, through systematic economic exploitation and coordination with other Arcani, to revealed economic predator profiting from desperation and collapse",
-    "key_themes": ["Economic Predation", "Pragmatism as Mask", "Scarcity as Weapon", "Manipulation through Deprivation"]
+    "key_themes": [
+      "Economic Predation",
+      "Pragmatism as Mask",
+      "Scarcity as Weapon",
+      "Manipulation through Deprivation"
+    ],
+    "header_image": "/images/Hero_images/corvus_header.png"
   }
 }

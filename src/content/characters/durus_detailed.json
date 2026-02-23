@@ -1,0 +1,103 @@
+{
+  "character": {
+    "id": "durus",
+    "image": "/images/Characters/Romans/Aulus_Petronius_Dorus.jpg",
+    "identification": {
+      "full_name": "Aulus Petronius Durus",
+      "alternative_names": ["Durus"],
+      "role": "Redeemed soldier; protector of Hannah and Menahem; guardian-in-training",
+      "category": "Romans / Followers (transitional)",
+      "story_status": "Book 2 forward — central to Part 1 and beyond",
+      "time_period_active": "~36 CE — Book 2 forward",
+      "primary_narrative_function": "The Roman who crossed over; living proof that the spear's call reaches even those who served its enemies"
+    },
+    "physical_description": {
+      "age": "~30 years old",
+      "build": "Solidly built — proportioned for endurance rather than brute force. Broad shoulders, lean midsection. The build of a man who has marched and fought for a decade. Nothing wasted.",
+      "distinctive_features": {
+        "scars": "Latticework of scars across both forearms. Hands calloused from gladius grip.",
+        "posture": "Soldier's posture that survives even after the uniform is buried: spine straight, weight balanced, eyes moving to exits without conscious thought. Sun-darkened skin. Jaw sets hard when thinking through something difficult."
+      },
+      "typical_dress": "At story entry — rough undertunic, all Roman identification stripped and buried in the desert. As he settles: coarse linen tunic, leather belt, worn sandals. He keeps his gladius — the one thing he did not bury.",
+      "bearing": "Commands quiet attention without seeking it. Others unconsciously arrange themselves in relation to where he stands. Does not perform authority — it simply inhabits him.",
+      "voice": "Low, measured, deliberate. Few words. Does not fill silence. Does not hedge. Speaks in declarative statements. When something costs him emotionally, his voice does not break — it goes very quiet."
+    },
+    "background_history": {
+      "family_background": "Roman provincial family — practical people who saw the military as a career path, not a calling. Father was a former soldier. Durus entered service accordingly.",
+      "defining_childhood": "Age twelve — witnessed Rome seize a local family's land for a garrison. First understanding that the machinery he was preparing to join operated without reference to what was right. He filed the knowledge somewhere he could not act on it and kept walking toward enlistment.",
+      "education_training": "Standard Roman military training. Exceptional in discipline, tactical assessment, and endurance. Leadership potential consistently identified — consistently unrealized, because commanders read his moral hesitation as limitation rather than quality.",
+      "key_life_events": "Ten years of service accumulating moral weight. The massacre at Mount Gerizim — the moment the body refused what the mind had been overriding for a decade. Five days of desert. The community at Qumran. Margaret's words. The children.",
+      "turning_points": "Mount Gerizim — the arm that would not fall. The hinge point of his entire life. Everything before it was the approach. Everything after is the consequence.",
+      "current_circumstances": "The calling — a pull northwest he trusted because dying with a clear conscience was better than the alternative. His former life is gone — the uniform buried, Rome wants him dead. What replaces it depends entirely on whether transformation is real, whether these people will have him, and whether he can be what Hannah and Menahem need."
+    },
+    "relationships": {
+      "primary": [
+        {"name": "Hannah (age 4)", "dynamic": "The child he nearly killed. She requires something concrete and daily from him. Her trust, when it comes, will cost him more than he expects."},
+        {"name": "Menahem (age 3)", "dynamic": "Quieter than his sister. Watches from behind Hannah. Durus recognizes in Menahem's watchfulness the same instinct he has himself — the assessment before commitment. He respects it without yet knowing how to reach it."},
+        {"name": "Margaret", "dynamic": "The woman who placed her body between his blade and the children. She named what he is supposed to become before he knew the words for it. He owes her a debt she has not asked him to repay.", "character_id": "margaret"}
+      ],
+      "secondary": [
+        {"name": "Malchus", "dynamic": "Durus recognizes authority when he encounters it — not Roman authority, but the other kind. He does not yet have language for what Malchus carries. Soldier's instinct tells him to pay attention.", "character_id": "malchus"},
+        {"name": "The community at Qumran", "dynamic": "They know what he is. Some will never fully trust him. He understands this as fair. He does not ask for trust — he shows up, does the work, and lets time do what persuasion cannot."}
+      ],
+      "how_they_connect": "Slowly. Through demonstrated reliability rather than words. Seeks usefulness — and through usefulness, belonging.",
+      "loyalty": "Total, once given. Roman conditioning now pointed toward people who deserve it."
+    },
+    "motivations": {
+      "what_drives_them": "The weight of what he has done, converted from paralysis into purpose. He cannot undo Mount Gerizim. He can decide what he does next.",
+      "what_they_want_most": "To be the man Margaret named. To have his life mean something other than what it has meant.",
+      "what_they_actually_need": "To understand that transformation is not earned through sufficient suffering or service — it is received. He is trying to work his way to redemption. He has not yet understood that it comes the other direction.",
+      "short_term_goals": "Earn enough trust to stay. Learn the community's rhythms. Begin the work with Hannah and Menahem.",
+      "long_term_ambitions": "To become genuinely the guardian Margaret described. Not as performance but as transformation."
+    },
+    "story_arc": {
+      "entry_state": "Five days out of the desert. Nothing left. Standing at the edge of the community with the knowledge of what he did and nowhere else to go.",
+      "what_they_believe": "That he does not deserve what is being offered. That redemption is a debt to be paid, not a gift to be received.",
+      "main_problem": "Learning to receive what cannot be earned. Learning to be a father to children whose parents he may have killed. Learning that transformation is not a transaction.",
+      "character_journey": {
+        "act_one": "Mount Gerizim. The arm that would not fall. Everything that follows flows from that moment.",
+        "act_two": "The daily work of becoming what Margaret named. The children's wariness slowly becoming trust. Guilt running underneath. The Roman in him surfacing at wrong moments.",
+        "act_three": "A moment that tests whether the transformation is real or whether, under pressure, the Roman returns. What is he, actually, when everything is on the line?",
+        "act_four": "He is the man Margaret named. Not because he earned it — because he showed up, every day, and let the transformation happen to him."
+      },
+      "key_scenes": [
+        "Chapter 5 — The Desert: Establishes everything. The choosing. The calling. The man who shows up at the community's edge.",
+        "Chapter 6 — The Arrival: Margaret names what he is to become. He receives it without the words to respond.",
+        "[Future] — First Trust: The moment Hannah or Menahem moves toward him rather than away. This will break something open in him.",
+        "[Future] — The Test: Roman reflexes and new identity collide under pressure. What he chooses defines him."
+      ]
+    },
+    "internal_conflicts": {
+      "central_paradox": "A man of discipline learning that the most important things cannot be achieved through discipline alone. Every instinct Rome gave him is built for transaction — effort yields result, discipline yields control. Redemption refuses this logic entirely.",
+      "why_it_matters": "His entire arc is the collision between these two systems. He cannot work his way to what he needs. He has to receive it.",
+      "how_it_resolves": "He arrives trying to pay a debt. He leaves understanding he was given a gift."
+    },
+    "skills_knowledge": {
+      "primary_skills": "Combat — gladius, hand-to-hand, tactical assessment. Tracking. Survival in hostile terrain. Reading threat. Leadership under pressure.",
+      "secondary_skills": "Basic field medicine. Construction and fortification. Teaching — the instructor's instinct, the ability to break a skill into learnable components.",
+      "limitations": "Theological and spiritual frameworks entirely new territory. The communal, relational dimensions of the community — emotional textures of belonging — require learning he has not yet done.",
+      "official_power": "None. He arrives with nothing.",
+      "informal_power": "His presence and competence. The community may not trust him yet, but they recognize what he is capable of."
+    },
+    "historical_context": {
+      "relevant_events": "Roman military operations in Samaria, 36 CE. The massacre at Mount Gerizim — historically documented as Pontius Pilate's suppression of a Samaritan religious gathering. Desertion as capital offense under Roman military law.",
+      "period_knowledge": "Roman military doctrine and hierarchy. Latin as primary language with working Aramaic from field service. Standard Roman views of non-Roman peoples — quietly revised over a decade.",
+      "cultural_protocols": "A deserter has no standing anywhere. He exists outside every social structure that defined him. This is its own kind of freedom and its own kind of terror.",
+      "religious_framework": "Effectively none at story entry. Rome's gods are institutional. What he has is the experience of Mount Gerizim and five days of desert guidance he cannot explain and does not try to."
+    },
+    "story_integration": {
+      "first_appearance": "Chapter 5 — The Desert (POV character throughout)",
+      "key_chapters": "Chapter 5 (desert journey), Chapter 6 (arrival, Margaret's naming), all subsequent chapters involving the children's protection and training",
+      "plot_function": "Physical protector of the community's most vulnerable. The Roman who crossed over. Living proof that the spear's call reaches even those who served its enemies.",
+      "theme_connection": "Redemption as transformation rather than transaction. The conscience Rome tried to bury and could not. What it means to be chosen before you are worthy."
+    },
+    "why_readers_care": "Durus represents the possibility of transformation — not as performance but as receiving. His arc demonstrates that conscience cannot be buried forever; the body that refused at Mount Gerizim knew something the mind had been overriding for a decade. Readers watch a man of discipline learn that the most important things cannot be achieved through discipline alone. Through Durus, readers see redemption as gift rather than transaction, and what it means to become the man someone named before you had the words for it.",
+    "character_questions_for_readers": [
+      "Can redemption be received rather than earned?",
+      "What does it mean to be chosen before you are worthy?",
+      "Can the body know truth before the mind has language for it?",
+      "What happens when discipline meets grace?",
+      "Can a Roman become a guardian?"
+    ]
+  }
+}

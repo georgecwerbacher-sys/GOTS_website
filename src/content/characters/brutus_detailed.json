@@ -2,138 +2,97 @@
   "character": {
     "id": "brutus",
     "image": "/images/Characters/Romans/Marcus-Aurelius-Brutus.jpg",
-    
     "identification": {
       "full_name": "Marcus Aurelius Brutus",
-      "alternative_names": ["The Centurion Commander", "Brutus", "Arcani Leader"],
-      "role": "Centurion Commander of the Tenth Century; chief enforcer of Rome's occupation authority; one of the Four Arcani",
-      "category": "Romans / The Four Arcani",
-      "story_status": "Primary antagonist through Parts 1-3",
-      "primary_narrative_function": "Systematic destroyer of resistance through calculated cruelty and psychological manipulation"
+      "alternative_names": ["The Centurion Commander", "Brutus", "Arcani Leader", "The Iron Commander", "Severus"],
+      "role": "Primary antagonist; centurion commander; Arcani Leader",
+      "category": "Romans / The Arcani",
+      "story_status": "Books 1–3 (living antagonist); Books 4+ (cursed)",
+      "time_period_active": "~30–40 CE (living); frozen at ~38 CE (cursed); active through final scene",
+      "primary_narrative_function": "Institutional Rome's complicity made human — and then made monstrous"
     },
-    
     "physical_description": {
-      "age": "40-55 years old (Parts 1-3)",
-      "build": "Tall (~5'11\"), athletic, muscular; decades of military training evident",
+      "age": "~35–38 years old",
+      "build": "Tall (~6'2\"), athletic and muscular — scarred from decades of combat, no excess weight. Built for efficiency, not display.",
       "distinctive_features": {
-        "eyes": "Intense dark eyes that assess constantly; intelligence visible but accompanied by cold calculation",
-        "scars": "Left arm: campaign wound; Right shoulder: recent battle mark; Left wrist: faded legion tattoo; Face: broken nose healed asymmetrically",
-        "hair": "Dark brown with significant gray; military cut maintained with precision",
-        "bearing": "Perfectly upright; shoulders back; military bearing so ingrained it appears effortless"
+        "eyes": "Pale grey eyes — nearly colorless — that assess and calculate simultaneously",
+        "scars": "Deep scar running from left temple to jaw (old sword wound). Network of combat scars on hands and forearms.",
+        "face": "Thin-lipped mouth that rarely moves. Nose broken twice and never properly set."
       },
-      "visual_signature": "Perfect military presentation; controlled; appears as model officer; predatory bearing becomes apparent as mask cracks"
+      "typical_dress": "Red centurion's cloak. Bronze helmet with transverse crest on duty. Leather cuirass showing military decorations. Roman military sandals. Silver signet ring bearing century insignia.",
+      "bearing": "Rigidly upright, shoulders squared, permanently at parade rest. Footsteps are deliberate and identical in force. Enters rooms with the weight of Rome behind him. The air around him seems to cool.",
+      "voice": "Controlled, deliberate, measured. Pauses before speaking as if calculating. Never rushes. Rarely shouts — doesn't need to. Strips emotion from language entirely. Uses military imperative constantly."
     },
-    
-    "personality": {
-      "primary_traits": [
-        {
-          "trait": "Command Authority",
-          "description": "Natural leader; soldiers follow instinctively; presence commands respect"
-        },
-        {
-          "trait": "Strategic Thinking",
-          "description": "Plans campaigns with precision; understands complex situations rapidly"
-        },
-        {
-          "trait": "Ruthlessness",
-          "description": "Never paralyzed by doubt; acts decisively; brutality deployed strategically"
-        },
-        {
-          "trait": "Psychological Control",
-          "description": "Masters ability to manipulate others through misdirection; the mask is perfect"
-        },
-        {
-          "trait": "Coordination",
-          "description": "Able to coordinate with other predators toward unified goal"
-        }
+    "background_history": {
+      "family_background": "Born in Campania, near Naples. Lower-middle military stock. Father was a career soldier — centurion in Hispania — whose sole parenting method was military discipline.",
+      "defining_childhood": "Witnessed his father's promotion to centurion at age ten — this became Brutus' entire model for ambition. Father died when Brutus was sixteen; left him the military as inheritance.",
+      "education_training": "Military academy from age fourteen. Standard Roman officer curriculum — tactics, logistics, engineering, law. Excelled in tactical studies.",
+      "key_life_events": "Age 18–25: served as optio in Hispania and Gaul. Age 25–30: promoted to centurion; served in Gaul and Britannia. Age 30–35: transferred to Judea; quickly established authority. The crucifixion of Christ is simply another execution — until it isn't.",
+      "turning_points": "The crucifixion of Christ (Book 1). To Brutus, it is merely another order. He is wrong. The curse begins immediately after.",
+      "current_circumstances": "Commands Roman forces in Jerusalem. Managing occupation and suppressing Jewish resistance. Maintaining order."
+    },
+    "relationships": {
+      "primary": [
+        {"name": "Corvus", "dynamic": "Trusted second-in-command for five years. Entirely professional — Corvus is the only person Brutus trusts, and even that trust is functional, not emotional.", "character_id": "corvus"},
+        {"name": "Malchus", "dynamic": "Begins as competent subordinate Brutus respects professionally. After the crucifixion, Brutus notices something wrong in Malchus' response — interprets it as weakness. Gradually becomes the central threat.", "character_id": "malchus"},
+        {"name": "Rome (institution)", "dynamic": "Not a relationship — an identity. Rome is Brutus' family, his god, his moral framework, and his purpose."}
       ],
-      
-      "strengths": [
-        {
-          "strength": "Natural Leadership",
-          "shows_in": "Soldiers follow instinctively; presence commands respect; effective commander"
-        },
-        {
-          "strength": "Strategic Thinking",
-          "shows_in": "Plans campaigns with precision; understands complex situations; tactical excellence"
-        },
-        {
-          "strength": "Perfect Mask",
-          "shows_in": "Controls how others perceive him; appears as model officer; deception is flawless"
-        }
+      "secondary": [
+        {"name": "Maximus", "dynamic": "Unit leader under Corvus. Brutus mentors through discipline only — tactical instruction is the highest form of approval.", "character_id": "maximus"},
+        {"name": "Horatius", "dynamic": "Soldier in Maximus' unit. Functional and largely invisible to Brutus — receives direct orders, nothing more.", "character_id": "horatius"}
       ],
-      
-      "flaws_and_vulnerabilities": [
-        {
-          "flaw": "Dependence on Mask",
-          "manifestation": "Revelation of true nature could destabilize his position"
-        },
-        {
-          "flaw": "Cannot Use Military Logic Against Faith",
-          "manifestation": "Faith-motivated opponents prove more resilient than expected"
-        },
-        {
-          "flaw": "Ultimate Service to Rome",
-          "manifestation": "If Rome falls, his base of power collapses"
-        }
-      ],
-      
-      "core_motivations": [
-        "Systematic elimination of resistance through calculated cruelty",
-        "Coordination with other Arcani to destroy opposition",
-        "Maintenance of perfect mask while revealing predatory nature",
-        "Positioning Longinus for elimination while appearing protective"
+      "how_they_connect": "They don't — not in any personal sense. All relationships are hierarchical and transactional. Brutus connects upward through obedience and downward through command.",
+      "loyalty": "Total — to Rome. Absolute. It is not loyalty so much as identity."
+    },
+    "motivations": {
+      "what_drives_them": "Absolute fidelity to Rome's military power, expressed through mastery of violence and control of subordinates. This is not ideology — it is psychology.",
+      "what_they_want_most": "Perfect execution of Rome's will. Advancement to Tribune before forty-five. To be indispensable.",
+      "what_they_actually_need": "What he needs is the thing he cannot comprehend — judgment. The curse is not arbitrary. It is proportional.",
+      "short_term_goals": "Execute assigned orders with precision. Maintain absolute control of subordinates. Manage the crucifixion detail without incident.",
+      "long_term_ambitions": "Tribune before forty-five. Indispensable to Rome's Judean command."
+    },
+    "story_arc": {
+      "entry_state": "Confident military commander at peak authority. Respectable rank. Superiors trust him. Subordinates fear him. About to execute an order that will change everything.",
+      "what_they_believe": "Precisely what he is — an instrument of Roman power. No illusions. No internal doubt.",
+      "main_problem": "He does not yet know he has one. The crucifixion of Christ is just another order. What follows will dismantle everything.",
+      "character_journey": {
+        "act_one": "The crucifixion. Executed with precision. Malchus' visible distress is noted — filed as weakness. First subtle wrongness begins.",
+        "act_two": "The curse activates gradually. Military certainty fractures at the edges. Violence becomes compulsive rather than strategic.",
+        "act_three": "Death and curse activation. The transformation completes. Rome becomes irrelevant. Hierarchy becomes meaningless.",
+        "act_four": "Supernatural antagonist driven toward apocalypse. Encounters the spear. Ultimate confrontation."
+      },
+      "key_scenes": [
+        "Book 1 — The Crucifixion: Commands the detail with professional efficiency. Christ's death is an order executed. The curse begins.",
+        "Book 1 End: Unease undeniable. Military certainty fracturing. Suspicious of Malchus.",
+        "Book 2: Agony intensifies. Violence becomes compulsive.",
+        "Book 3 End: Death. Curse activation complete."
       ]
     },
-    
-    "relationships": [
-      {
-        "character_id": "cassius-longinus-mercator",
-        "character_name": "Cassius Longinus Mercator",
-        "relationship_type": "Mentor/Target",
-        "dynamic": "Initially respects as military peer; then sees as obstacle; finally positions for elimination while maintaining appearance of protection"
-      },
-      {
-        "character_id": "lucius-claudius-corvus",
-        "character_name": "Lucius Claudius Corvus",
-        "relationship_type": "Coordinated Predator",
-        "dynamic": "Professional respect; mutual recognition of ruthlessness; coordinated strategy"
-      },
-      {
-        "character_id": "gaius-ursus-maximus",
-        "character_name": "Gaius Ursus Maximus",
-        "relationship_type": "Coordinated Predator",
-        "dynamic": "Brutus directs; Maximus executes; clear hierarchy with strategic coordination"
-      },
-      {
-        "character_id": "quintus-sanguinarius-horatius",
-        "character_name": "Quintus Sanguinarius Horatius",
-        "relationship_type": "Coordinated Predator",
-        "dynamic": "Brutus directs; Horatius executes; clear hierarchy with enforcement coordination"
-      }
-    ],
-    
-    "story_arc": {
-      "opening_state": "Perfect military presentation; appears as model officer; controlled; respected commander",
-      "transformation": "Mask begins to crack; predatory nature becomes visible; coordination with other Arcani revealed",
-      "closing_state": "Predatory bearing apparent; control loosens into menace; military bearing replaced with hunter's posture"
+    "internal_conflicts": {
+      "central_paradox": "A man who built his entire identity on order and discipline is judged by a power that operates entirely outside order and discipline. His tools are useless. His framework cannot process what is happening to him.",
+      "why_it_matters": "The curse is not random. It is specifically designed to invert everything Brutus is. His discipline becomes the vehicle for his torment, not his escape from it.",
+      "how_it_resolves": "It does not. He is consumed."
     },
-    
-    "thematic_significance": [
-      "Deception as strategic weapon",
-      "War and conquest through systematic destruction",
-      "Predation masked as pragmatism",
-      "Conquest through deception"
-    ],
-    
-    "why_readers_care": "Brutus represents the insidious nature of evil—not obvious villainy but calculated predation hidden behind a perfect mask. His character demonstrates how those we trust can be our greatest enemies. His relationship with Longinus is particularly devastating: he appears as mentor and protector while systematically positioning Longinus for destruction. Through Brutus, readers see how deception can be more effective than obvious cruelty, and how trust can be weaponized.",
-    
-    "character_questions_for_readers": [
-      "How do we recognize evil when it wears a perfect mask?",
-      "Can trust be weaponized against us?",
-      "What happens when those we admire are actually predators?",
-      "How does systematic deception destroy resistance?",
-      "Can military precision mask calculated cruelty?"
-    ]
+    "skills_knowledge": {
+      "primary_skills": "Combat mastery — sword, spear, hand-to-hand. Tactical planning and logistics. Command authority. Siege engineering. Threat assessment.",
+      "secondary_skills": "Roman military law. Basic Hebrew (tactical, learned in Judea). Logistics and supply chain management.",
+      "limitations": "Cannot adapt to situations requiring empathy, nuance, or moral reasoning. Theological and spiritual frameworks are incomprehensible to him.",
+      "official_power": "Centurion commander. Direct authority over his cohort. Respected by Judean command superiors.",
+      "informal_power": "Fear. Reputation. The certainty he projects is itself a form of power."
+    },
+    "historical_context": {
+      "relevant_events": "Roman occupation of Judea, 30–40 CE. Routine crucifixions as Roman execution method. Suppression of Samaritan and Jewish unrest.",
+      "period_knowledge": "Roman military doctrine and tactics. Latin (fluent), Greek (functional), basic Hebrew (tactical). Roman pagan religious observance — institutional, not devotional.",
+      "cultural_protocols": "Absolute military hierarchy. Centurion's vine staff as authority symbol. Crucifixion as standard Roman deterrence.",
+      "religious_framework": "Roman pagan observance — Jupiter and Mars. More ritual obligation than genuine faith. Religious conviction in others reads as weakness."
+    },
+    "story_integration": {
+      "first_appearance": "Book 1, Scene 1 — active from the beginning through the final scene",
+      "key_chapters": "The crucifixion (Book 1); first signs of the curse (Book 1 end); collapse of command authority (Book 2); death and transformation (Book 3 end)",
+      "plot_function": "Primary antagonist in Books 1–3. Institutional Rome's complicity made human — and then made monstrous. The cursed First Horseman driving toward apocalypse in Books 4+.",
+      "theme_connection": "Institutional evil — how systems of authority corrupt individuals and abstract personal responsibility. Judgment as personal and specific. The cost of a life built entirely on command and devoid of conscience."
+    },
+    "why_readers_care": "Brutus represents the insidious nature of evil—not obvious villainy but calculated predation hidden behind a perfect mask. His character demonstrates how those we trust can be our greatest enemies. His relationship with Longinus is particularly devastating: he appears as mentor and protector while systematically positioning Longinus for destruction.",
+    "character_questions_for_readers": ["How do we recognize evil when it wears a perfect mask?", "Can trust be weaponized against us?", "What happens when those we admire are actually predators?", "How does systematic deception destroy resistance?", "Can military precision mask calculated cruelty?"]
   }
 }

@@ -1,0 +1,22 @@
+{
+  "character": {
+    "id": "durus",
+    "name": "Aulus Petronius Durus",
+    "alternative_names": ["Durus"],
+    "role": "supporting",
+    "symbolic_representation": "Redemption, The Roman Who Crossed Over, Guardian-in-Training",
+    "image": "/images/Characters/Romans/Aulus_Petronius_Dorus.jpg",
+    "brief_description": "A Roman centurion who refused the order at Mount Gerizim — the arm that would not fall. Deserted, buried his uniform, and walked five days into the desert toward a calling he could not name. Now protector of Hannah and Menahem, becoming the man Margaret named.",
+    "full_description": "Durus is a former Roman centurion — ten years of service, a good soldier by Rome's definition, a troubled one by his own. At Mount Gerizim, his body refused what his mind had been overriding for a decade. He deserted, buried his identification in the desert, and walked five days toward a pull northwest he trusted because dying with a clear conscience was better than the alternative. He arrived at the community's edge with nothing. Margaret placed her body between his blade and the children he had nearly killed. She named what he is supposed to become before he knew the words for it. He is learning that redemption is not earned through sufficient suffering or service — it is received. He shows up every day, does the work, and lets time do what persuasion cannot.",
+    "origin": "Roman provincial family",
+    "occupation": "Former Roman centurion; deserter; protector of Hannah and Menahem; guardian-in-training",
+    "introduction_chapter": 5,
+    "key_chapters": [5, 6],
+    "opening_state": "Five days out of the desert; nothing left; standing at the edge of the community with the knowledge of what he did and nowhere else to go",
+    "key_transformation": "Mount Gerizim — the arm that would not fall; desertion; Margaret's naming; learning to receive what cannot be earned",
+    "closing_state": "The man Margaret named — not because he earned it, but because he showed up every day and let the transformation happen to him",
+    "arc_preview": "From Roman centurion at Mount Gerizim whose body refused the order, through five days of desert and arrival at the community's edge, to daily work of becoming guardian to the children he nearly killed",
+    "key_themes": ["Redemption", "Conscience", "Transformation", "Protection", "Receiving Grace"],
+    "header_image": "/images/Hero_images/durus_header.png"
+  }
+}

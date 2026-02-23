@@ -2,12 +2,12 @@
   "character": {
     "id": "maximus",
     "name": "Gaius Ursus Maximus",
-    "alternative_names": ["Max", "Varro", "The Bruiser", "Arcani Member"],
+    "alternative_names": ["Max", "The Bruiser", "Arcani Member"],
     "role": "antagonist",
     "symbolic_representation": "The Red Horse (War, Bloodshed, Violence)",
     "image": "/images/Characters/Romans/Gaius-Ursus-Maximus.png",
-    "brief_description": "An aggressive military officer whose physical dominance and action-focused nature lead him into a curse that transforms him into an instrument of endless violence.",
-    "full_description": "Maximus is a military officer known for exceptional physical strength and combat mastery. He leads through presence and dominance, preferring direct action over strategic planning. During the crucifixion, he commands the execution detail with brutal efficiency, categorizing weakness with contempt. However, his participation in Christ's death triggers a supernatural curse that freezes him at age 30 and transforms him into an instrument of endless violence. His restlessness becomes compulsive, his aggression becomes autonomous, and he becomes trapped in a cycle of violence that serves purposes beyond his understanding.",
+    "brief_description": "Military officer and unit leader under Corvus. The most physically imposing of the four — heavily muscular, aggressive, built for combat. Restless in garrison work; seeks the fight that will define his reputation. The curse transforms him into the Third Horseman.",
+    "full_description": "Maximus is a military officer known for exceptional physical strength and combat mastery. Born in Rome, raised in military garrison towns after his father's death at eleven — strength became the only reliable currency. He leads through presence and dominance, preferring direct action over strategic planning. Under Corvus' command, he seeks approval more obviously than from Brutus; the relationship has a quality of mentorship — Corvus teaching strategy, Maximus implementing with enthusiasm. During the crucifixion, he executes with physical efficiency, categorizing Malchus' discomfort as weakness. His participation triggers a supernatural curse that freezes him at age 30 and transforms him into the Third Horseman — ungoverned aggression without strategic direction. The body that was his tool becomes his prison.",
     "origin": "Rome (born in Rome, Italy proper)",
     "occupation": "Military officer, leader of a unit under Corvus",
     "introduction_chapter": 1,
@@ -16,6 +16,7 @@
     "key_transformation": "Cursed during crucifixion; frozen at age 30; transformed into instrument of endless violence",
     "closing_state": "Trapped in curse; compulsive violence; autonomous aggression; serves purposes beyond understanding",
     "arc_preview": "From confident officer commanding execution detail, through supernatural curse triggered by participation in crucifixion, to trapped instrument of endless violence serving purposes beyond his control",
-    "key_themes": ["Violence", "Curse", "Physical Dominance", "The Red Horse", "Compulsive Aggression"]
+    "key_themes": ["Violence", "Curse", "Physical Dominance", "The Red Horse", "Compulsive Aggression"],
+    "header_image": "/images/Hero_images/Maximus.png"
   }
 }

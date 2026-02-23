@@ -2,20 +2,21 @@
   "character": {
     "id": "horatius",
     "name": "Quintus Sanguinarius Horatius",
-    "alternative_names": ["Sanguinarius", "The Bloodhound", "Arcani Member"],
+    "alternative_names": ["Sanguinarius", "The Bloodhound", "The Interrogator", "Arcani Member"],
     "role": "antagonist",
     "symbolic_representation": "Death, Pestilence, Terror, Dehumanization",
     "image": "/images/Characters/Romans/Quintus-Sanguinarius-Horatius.jpg",
-    "brief_description": "A brutal enforcement officer whose efficiency in cruelty masks progressive dehumanization, becoming Rome's tool while losing his own humanity.",
-    "full_description": "Horatius is a Roman enforcement officer and interrogator known for absolute obedience and effectiveness in harsh measures. He appears as a necessary enforcer doing Rome's dirty work, but beneath this appearance lies a man becoming progressively dehumanized. Every cruelty he inflicts costs him a piece of humanity. Every order he follows without question hardens him further. His arc isn't about revelation of hidden nature—it's about transformation into something inhuman. By Part 3, he must choose between complete dehumanization or reclaiming his humanity, but either outcome is devastating.",
-    "origin": "Unknown (possibly lower-class Roman or provincial)",
-    "occupation": "Roman enforcement officer, interrogator, administrator of harsh measures",
+    "brief_description": "Senior Arcani operative and interrogator with 25 years of intelligence tradecraft. Invaluable and dangerous — the best interrogator in the Arcani, bone-deep weary, carrying weight of decades of violence and secrets.",
+    "full_description": "Horatius is a senior intelligence officer in the Arcani — Roman secret service operating in the shadows of political power. Known as \"The Bloodhound\" and \"The Interrogator,\" he has spent 25 years doing what others wouldn't: interrogation, extraction, making problems disappear. He appears unremarkable — plain dress, deliberate movement, the quality of someone who has been watching before anyone knew he arrived. The work has become escape from introspection. The conscience he believes he buried long ago is not dead; it has been working in silence. His reckoning — whether redemption through sacrifice or descent into cynicism — is coming due.",
+    "origin": "Unknown (military is the only family he references)",
+    "occupation": "Senior Arcani operative; interrogator; intelligence officer",
     "introduction_chapter": 1,
     "key_chapters": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    "opening_state": "Controlled brutality; effective enforcement; feared; already dehumanized",
-    "key_transformation": "Psychological strain visible; compartmentalization breaking; awareness of dehumanization growing",
-    "closing_state": "Either broken and no longer functional, re-hardened more brutally, or defected/turned toward followers",
-    "arc_preview": "From efficient brutal tool coordinating with other Arcani, through escalating brutality and psychological breakdown, to final choice between complete dehumanization or reclaiming humanity",
-    "key_themes": ["Dehumanization", "Terror as Weapon", "Cost of Oppression", "Psychological Breakdown"]
+    "opening_state": "Senior operative at end of long career; invaluable and dangerous; bone-deep weary; still the best interrogator in the Arcani",
+    "key_transformation": "The question he will not ask asking itself; conscience surfacing; reckoning forced",
+    "closing_state": "Either redemption through sacrifice — or descent into the cynicism that was always the easier path",
+    "arc_preview": "From indispensable operative working as escape from introspection, through accumulated weight pressing against his framework, to moment that forces the accounting he has been avoiding",
+    "key_themes": ["Conscience That Waits", "Cost of Service", "Moral Compromise", "Redemption or Descent"],
+    "header_image": "/images/Hero_images/Horatius_hero.png"
   }
 }

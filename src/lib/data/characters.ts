@@ -12,6 +12,7 @@ import aquilus_data from '@/content/characters/aquilus.json';
 import cestius_gallus_data from '@/content/characters/cestius_gallus.json';
 import victor_data from '@/content/characters/victor.json';
 import malchus_data from '@/content/characters/malchus.json';
+import durus_data from '@/content/characters/durus.json';
 // Import other characters as needed
 
 // Character data map for quick lookup
@@ -27,6 +28,7 @@ const character_data_map: Record<string, any> = {
   cestius_gallus: cestius_gallus_data,
   victor: victor_data,
   malchus: malchus_data,
+  durus: durus_data,
 };
 
 // Get all characters for homepage
@@ -40,6 +42,7 @@ export async function get_all_characters(): Promise<character_profile[]> {
     'hannah',
     'horatius',
     'maximus',
+    'durus',
     'salome',
     'aquilus',
     'cestius_gallus',

@@ -2,141 +2,97 @@
   "character": {
     "id": "corvus",
     "image": "/images/Characters/Romans/Lucius-Claudius-Corvus.jpg",
-    
     "identification": {
       "full_name": "Lucius Claudius Corvus",
-      "alternative_names": ["The Raven", "Corvus", "Arcani Member"],
-      "role": "Roman officer, administrative specialist, intelligence coordinator; one of the Four Arcani; economic predator",
-      "category": "Romans / The Four Arcani",
-      "story_status": "Active through Parts 1-6+",
-      "primary_narrative_function": "Economic predator exploiting desperation for profit while maintaining helpful facade"
+      "alternative_names": ["The Raven", "Corvus", "Arcani Member", "The Strategist", "Corvinus"],
+      "role": "Second-in-command to Brutus; strategic architect of Rome's operations; secondary antagonist",
+      "category": "Romans / The Arcani",
+      "story_status": "Books 1–3 (living antagonist); Books 4+ (cursed)",
+      "time_period_active": "~30–40 CE (living); frozen at ~35 CE (cursed); active through final scene",
+      "primary_narrative_function": "Strategic architect of Rome's operations. The calculating mind behind Brutus' authority."
     },
-    
     "physical_description": {
-      "age": "35-55 years old (Parts 1-3)",
-      "build": "Average to slightly above; unremarkable by design; soft; maintained through administrative work",
+      "age": "~32–35 years old",
+      "build": "Lean and athletic — less muscular than Brutus but stronger in appearance through posture and movement. Proportioned for endurance and calculated grace, not brute force.",
       "distinctive_features": {
-        "eyes": "Constantly calculating; assess situations for advantage",
-        "face": "Appears approachable and reasonable; smile suggests genuine warmth (false)",
-        "bearing": "Designed not to stand out; makes himself appear less threatening than he is",
-        "hair": "Dark; well-maintained but not ostentatiously so",
-        "posture": "Deceptively casual; can shift to command authority when needed"
+        "eyes": "Dark eyes — nearly black — penetrating and calculating",
+        "scars": "Long scar along right ribcage (old sword wound). Nick along jawline (knife fight).",
+        "face": "Sharp cheekbones suggesting high Gallic ancestry. Raven symbol tattooed on left shoulder in black ink — personal, not standard military issue."
       },
-      "visual_signature": "Well-groomed, comfortable appearance; seems to fit into any situation; wealth becomes evident as profits mount"
+      "typical_dress": "Red centurion's cloak worn with more ease than Brutus. Bronze helmet. Leather cuirass. Hidden secondary blade (dagger) always present alongside standard sword. Silver raven brooch — personal symbol.",
+      "bearing": "Upright but fluid — more graceful than rigid. Moves with calculated purpose. Enters rooms with assessment rather than assertion. Less obviously commanding than Brutus, more quietly dangerous.",
+      "voice": "Slightly faster than Brutus. More ornate, more complex — uses subordinate clauses, rhetorical questions, historical precedent. Occasionally reveals slight Gallic lilt in pronunciation."
     },
-    
-    "personality": {
-      "primary_traits": [
-        {
-          "trait": "Moral Flexibility",
-          "description": "No conscience constraining options; can do anything; willing to exploit anyone"
-        },
-        {
-          "trait": "Emotional Intelligence",
-          "description": "Brilliant at reading people and situations; understands motivations; manipulates effectively"
-        },
-        {
-          "trait": "Strategic Economic Thinking",
-          "description": "Understands complex systems and profit potential; creates monopolies; exploits scarcity"
-        },
-        {
-          "trait": "Persuasiveness",
-          "description": "Can convince almost anyone to do what benefits him; negotiations always favor him"
-        },
-        {
-          "trait": "Sophisticated Mask",
-          "description": "Appears as pragmatic problem-solver; sophisticated, diplomatic presentation; readers trust his reasoning"
-        }
+    "background_history": {
+      "family_background": "Born in Lugdunum (modern Lyon). Father was a Gallic warrior who allied with Rome — adopted Roman name, became Romanized. Corvus grew up between two identities, belonging fully to neither.",
+      "defining_childhood": "Father's transition from Gallic warrior to Roman ally became Corvus' foundational model — adaptation grants status. Mother died when he was approximately eight. Early independence forced by circumstance.",
+      "education_training": "Educated in both Gallic and Roman traditions. Tutored in Latin, Greek, and military science. Recognized as officer material early. Rapid advancement from age sixteen onward.",
+      "key_life_events": "Age 18–24: military service in Gaul and Britannia; built reputation for strategic excellence. Age 24–28: promoted to centurion; served in multiple provinces. Age 28–32: transferred to Judea; became Brutus' second-in-command. The crucifixion is simply another order executed with strategic precision — until the curse begins.",
+      "turning_points": "Meeting Brutus (found hierarchy worthy of his loyalty). The crucifixion (first sign that something is wrong with the world he has built himself inside).",
+      "current_circumstances": "Commands Rome's strategic operations in Jerusalem as Brutus' second. Plans what Brutus executes."
+    },
+    "relationships": {
+      "primary": [
+        {"name": "Brutus", "dynamic": "Superior officer for five years. Entirely professional — Corvus is the intellect behind Brutus' authority, and both know it. Trusts Brutus will not yet recognize his ambition as a threat. After cursing, separation from Brutus is catastrophic.", "character_id": "brutus"},
+        {"name": "Malchus", "dynamic": "Noticed early as intelligent — respects this. Professional collegiality shifts to suspicion as Malchus' response to the crucifixion marks him as different. Eventually becomes the central opposition.", "character_id": "malchus"},
+        {"name": "Rome (institution)", "dynamic": "Loyalty is genuine but conditional — Rome provides the framework for advancement. If Rome ordered Corvus to betray Brutus, he would likely comply."}
       ],
-      
-      "strengths": [
-        {
-          "strength": "Emotional Intelligence",
-          "shows_in": "Understands motivations; manipulates effectively; builds networks through apparent sympathy"
-        },
-        {
-          "strength": "Strategic Economic Thinking",
-          "shows_in": "Creates monopolies; exploits scarcity; positions for maximum advantage"
-        },
-        {
-          "strength": "Persuasiveness",
-          "shows_in": "Negotiations always favor him; others believe they're getting fair deals"
-        },
-        {
-          "strength": "Sophisticated Mask",
-          "shows_in": "Readers trust his reasoning until they realize every solution creates dependency and profit"
-        }
+      "secondary": [
+        {"name": "Maximus", "dynamic": "Unit leader under Corvus' command. Pedagogical relationship — Corvus teaches Maximus strategic thinking; Maximus implements with enthusiasm.", "character_id": "maximus"},
+        {"name": "Horatius", "dynamic": "Soldier under Maximus. Largely invisible to Corvus — functional unit, receives direct orders, nothing more.", "character_id": "horatius"}
       ],
-      
-      "flaws_and_vulnerabilities": [
-        {
-          "flaw": "No Real Loyalty",
-          "manifestation": "Cannot build genuine partnerships; always calculating; everyone is potential profit source; fundamentally alone"
-        },
-        {
-          "flaw": "Underestimated Enemies",
-          "manifestation": "Assumes everyone is as compromised as he is; may underestimate followers' resilience; doesn't understand spiritual motivation"
-        },
-        {
-          "flaw": "System Dependency",
-          "manifestation": "Without occupation creating chaos, has limited opportunity; needs conflict to profit; vulnerable to peace"
-        },
-        {
-          "flaw": "Vulnerability to Ideological Opposition",
-          "manifestation": "Spiritual motivation he doesn't understand may overcome economic pressure"
-        }
-      ],
-      
-      "core_motivations": [
-        "Maximize personal wealth through systematic economic exploitation",
-        "Create monopolies on essential resources",
-        "Coordinate with other Arcani to create economic collapse",
-        "Maintain sophisticated appearance while profiting from desperation"
+      "how_they_connect": "Through intellectual respect. Corvus connects with those he finds intelligent or strategically useful. Contempt for the mediocre is consistent and barely concealed.",
+      "loyalty": "Total to Rome — conditionally. Total to Brutus — until Rome provides reason otherwise. Total to self-advancement — always."
+    },
+    "motivations": {
+      "what_drives_them": "Advancement through strategic excellence. The proof that a Romanized Gaul can surpass those born to Roman identity. Rome is the system he has chosen — he must make it reward that choice.",
+      "what_they_want_most": "A position of command equal to or exceeding Brutus. Complete integration into Roman identity. The erasure of the Gallic heritage he cannot quite bury.",
+      "what_they_actually_need": "What he cannot comprehend — to understand that his superior intelligence makes him more, not less, culpable. The curse does not care about his strategic reasoning.",
+      "short_term_goals": "Execute the crucifixion detail with strategic excellence. Position himself as indispensable. Monitor Brutus' increasing instability as potential advancement opportunity.",
+      "long_term_ambitions": "Tribune. Command in a larger province. Complete absorption into Roman identity."
+    },
+    "story_arc": {
+      "entry_state": "Confident second-in-command at the height of his capability. Strategic mind in full operation. Watching Brutus closely. Watching Malchus with interest.",
+      "what_they_believe": "That he is the superior strategic mind in Jerusalem — perhaps in Judea. That Rome will eventually recognize this. That his Gallic birth is an obstacle he has overcome.",
+      "main_problem": "He does not yet know he has one beyond Brutus' rank above him. The crucifixion is a strategic operation. What follows will dismantle the framework he has built his entire identity inside.",
+      "character_journey": {
+        "act_one": "The crucifixion. Executed with strategic precision. Malchus' response noted and catalogued. Brutus' unease observed — assessed as potential opportunity. First internal wrongness begins.",
+        "act_two": "The curse activates. Strategic clarity begins to fracture. The agony cannot be reasoned away. Gallic instincts surface with increasing frequency.",
+        "act_three": "Death and curse activation. Rome becomes irrelevant. Strategy becomes compulsion. The perfectly calculated operative becomes a damned beast driven toward destruction.",
+        "act_four": "Second of the Arcani — more organized than Brutus, more calculating in approach to apocalypse. Encounters the spear. His strategic mind, now inverted, is the most dangerous of the four."
+      },
+      "key_scenes": [
+        "Book 1 — The Crucifixion: Plans and executes with strategic precision. Notes Malchus. Notes Brutus' unease. Curse begins.",
+        "Book 1 End: Something is wrong. Strategic frameworks cannot contain the wrongness.",
+        "Book 2: Agony intensifies. Gallic instincts surface dangerously. Ambition becomes secondary to survival.",
+        "Book 3 End: Death. Curse activation complete. Second Horseman emerges."
       ]
     },
-    
-    "relationships": [
-      {
-        "character_id": "marcus-aurelius-brutus",
-        "character_name": "Marcus Aurelius Brutus",
-        "relationship_type": "Coordinated Predator",
-        "dynamic": "Brutus's military pressure creates Corvus's profit opportunities; professional respect; mutual recognition of ruthlessness"
-      },
-      {
-        "character_id": "gaius-ursus-maximus",
-        "character_name": "Gaius Ursus Maximus",
-        "relationship_type": "Coordinated Predator",
-        "dynamic": "Maximus's chaos creates Corvus's profit opportunities; strategic coordination"
-      },
-      {
-        "character_id": "quintus-sanguinarius-horatius",
-        "character_name": "Quintus Sanguinarius Horatius",
-        "relationship_type": "Coordinated Predator",
-        "dynamic": "Horatius eliminates economic competitors; Corvus secures monopoly; maximum profit"
-      }
-    ],
-    
-    "story_arc": {
-      "opening_state": "Well-groomed, comfortable appearance; appears as helpful problem-solver; already predatory",
-      "transformation": "Visibly wealthier; monopolies established; mask maintained; predatory nature revealed",
-      "closing_state": "Wealth evident in every detail; comfort with chaos as profit opportunity; economic predator fully revealed"
+    "internal_conflicts": {
+      "central_paradox": "A man who constructed his entire identity through strategic choice — choosing Rome, choosing to bury Gaul, choosing advancement — is judged by a power that operates entirely outside strategic logic. His tools are useless. His superiority is the measure of his guilt.",
+      "why_it_matters": "He chose Rome with full awareness. Brutus was born into it; Corvus chose it. The curse treats this deliberate, strategic participation as more culpable, not less.",
+      "how_it_resolves": "It does not. The strategy cannot find a solution. He is consumed."
     },
-    
-    "thematic_significance": [
-      "Economic predation as systematic weapon",
-      "Pragmatism as mask for absolute amorality",
-      "Scarcity as tool of control",
-      "Famine and economic collapse through manipulation"
-    ],
-    
-    "why_readers_care": "Corvus represents the insidious nature of economic exploitation. His character demonstrates how sophisticated, reasonable-sounding justifications can mask absolute amorality. Readers are drawn to his intelligence and apparent problem-solving, even as they sense something is wrong. His descent from helpful administrator to revealed economic predator shows how systems of exploitation can be built behind masks of pragmatism. Through Corvus, readers see how desperation can be weaponized for profit, and how apparent solutions can create dependency.",
-    
-    "character_questions_for_readers": [
-      "Can pragmatism mask absolute amorality?",
-      "How do we recognize when help is actually exploitation?",
-      "What is the difference between problem-solving and creating dependency?",
-      "How does scarcity become a tool of control?",
-      "Can intelligence and sophistication be used for pure exploitation?"
-    ]
+    "skills_knowledge": {
+      "primary_skills": "Strategic planning and tactical analysis. Political and social maneuvering. Combat mastery. Command of complex operations.",
+      "secondary_skills": "Diplomacy. Multiple languages (Latin, Greek, suppressed Gallic). Weapons mastery including concealed blade.",
+      "limitations": "Cannot overcome curse through strategy — it operates outside logical frameworks. Suppressed Gallic heritage creates dangerous instability under extreme pressure.",
+      "official_power": "Centurion, second-in-command to Brutus. Respected by superiors as the strategic mind of the most efficient command unit in Jerusalem.",
+      "informal_power": "Intellectual reputation. The understanding — shared but unspoken — that the strategy comes from Corvus."
+    },
+    "historical_context": {
+      "relevant_events": "Roman occupation of Judea, 30–40 CE. Romanization of Gallic peoples — historically documented and widespread. Roman military hierarchy under Pontius Pilate. Crucifixion as standard Roman execution.",
+      "period_knowledge": "Latin (fluent), Greek (competent), Gallic (native, suppressed). Roman military doctrine. Political mechanics of Roman provincial command.",
+      "cultural_protocols": "Romanized Gauls occupied a real and specific social position — accepted but never fully trusted, required to prove Roman identity constantly.",
+      "religious_framework": "Roman pagan — Mars and Jupiter, pragmatic observance. Religion as institutional tool, not genuine devotion. Some residual Gallic druidic knowledge, deeply suppressed."
+    },
+    "story_integration": {
+      "first_appearance": "Book 1, Scene 1 — active from the beginning through the final scene",
+      "key_chapters": "The crucifixion (Book 1); observation of Brutus' destabilization (Book 1 end); his own curse manifesting (Book 2); death and transformation (Book 3 end)",
+      "plot_function": "Strategic architect of Rome's operations. The calculating mind behind Brutus' authority. After cursing, the most organized and therefore most dangerous of the four — his strategic capacity now inverted toward apocalypse.",
+      "theme_connection": "The danger of intellect without conscience. Identity suppression and its cost. Deliberate choice as the measure of culpability — he chose Rome with full awareness, making his participation more, not less, damning."
+    },
+    "why_readers_care": "Corvus represents the danger of intellect without conscience. His character demonstrates how strategic brilliance can be deployed toward evil with full awareness. Readers are drawn to his intelligence and competence, even as they sense the ambition beneath. His descent from calculated second-in-command to cursed operative shows how identity suppression and deliberate choice carry their own judgment.",
+    "character_questions_for_readers": ["Can intellect without conscience be more dangerous than brute force?", "What is the cost of suppressing one's identity for advancement?", "Does deliberate choice make participation more culpable?", "Can strategy overcome judgment?", "What happens when the tools that built success become useless?"]
   }
 }
