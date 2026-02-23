@@ -26,6 +26,8 @@ function character_card(character: character_profile): ReactNode {
     );
   }
 
+  const isZoomed = character.id === 'aquilus' || character.id === 'victor';
+
   return (
     <Link href={`/characters/${character.id}`} key={character.id}>
       <div className="relative bg-gots-charred hover:bg-gots-charred/80 rounded-lg overflow-hidden transition-all border border-gots-accent/20 hover:border-gots-accent/40 cursor-pointer group h-96">
@@ -33,7 +35,9 @@ function character_card(character: character_profile): ReactNode {
           src={image_src}
           alt={character.name}
           fill
-          className="object-contain object-center transition-transform duration-300 group-hover:scale-105"
+          className={`transition-transform duration-300 group-hover:scale-105 ${
+            isZoomed ? 'object-cover object-[50%_-30%] scale-[1.35]' : 'object-contain object-center'
+          }`}
           unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-b from-gots-charred/80 via-transparent to-gots-charred flex flex-col justify-between p-8">
@@ -56,11 +60,24 @@ export default async function romans_group_page(): Promise<ReactNode> {
 
   return (
     <main className="min-h-screen bg-gots-body">
-      <header className="bg-gradient-to-b from-gots-charred to-gots-dark py-16 px-6 text-center border-b-2 border-dashed border-gots-accent">
-        <h1 className="text-5xl md:text-6xl font-bold text-gots-accent mb-4">Romans</h1>
-        <p className="text-xl text-white max-w-2xl mx-auto">
-          The forces of Rome—soldiers, commanders, and officials whose paths intersect with the divine.
-        </p>
+      <header className="relative border-b-2 border-dashed border-gots-accent overflow-hidden min-h-[280px] md:min-h-[360px]">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/Hero_images/Romans_header.png"
+            alt=""
+            fill
+            className="object-cover object-[center_25%]"
+            priority
+            unoptimized
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-gots-charred via-gots-charred/60 to-transparent" />
+        <div className="relative z-10 flex flex-col justify-end min-h-[280px] md:min-h-[360px] px-6 py-12 text-center">
+          <h1 className="text-5xl md:text-6xl font-bold text-gots-accent mb-4 drop-shadow-lg">Romans</h1>
+          <p className="text-xl text-white max-w-2xl mx-auto drop-shadow-sm">
+            The forces of Rome—soldiers, commanders, and officials whose paths intersect with the divine.
+          </p>
+        </div>
       </header>
 
       <section className="max-w-7xl mx-auto px-6 py-12">

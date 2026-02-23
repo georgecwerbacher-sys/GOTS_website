@@ -69,6 +69,20 @@ export async function POST(request: NextRequest) {
     const password = body.password as string | undefined;
     const confirmPassword = body.confirmPassword as string | undefined;
 
+    // Require all fields
+    if (!email || !username || !password) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: {
+            message: 'Email, username, and password are required',
+            code: 'MISSING_FIELDS',
+          },
+        },
+        { status: 400 }
+      );
+    }
+
     // Validate passwords match
     if (password !== confirmPassword) {
       return NextResponse.json(
