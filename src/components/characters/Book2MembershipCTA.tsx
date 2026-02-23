@@ -30,13 +30,17 @@ export function Book2MembershipCTA({ variant = 'overlay', characterName }: Book2
     );
   }
 
-  // card variant: for Romans group character card
+  // card variant: for Romans group character card — name at top of box
   return (
-    <div className="absolute inset-0 flex flex-col items-center justify-center p-8 bg-gots-charred/60 backdrop-blur-sm">
+    <div className="absolute inset-0 flex flex-col items-center p-8 bg-gots-charred/60 backdrop-blur-sm">
       {characterName ? (
-        <h3 className="text-3xl font-bold text-gots-accent mb-4">{characterName}</h3>
+        <h3 className="text-3xl font-bold text-gots-accent mb-4 w-full text-center">
+          {characterName}
+        </h3>
       ) : null}
-      {ctaBox}
+      <div className="flex-1 flex items-center justify-center">
+        {ctaBox}
+      </div>
     </div>
   );
 }
