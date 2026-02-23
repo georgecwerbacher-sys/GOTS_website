@@ -4,10 +4,12 @@ import Image from 'next/image';
 import {
   get_location_by_id,
   get_location_extended_profile,
+  BOOK_2_ONLY_LOCATION_IDS,
   type location_extended_profile,
 } from '@/lib/data/locations';
 import { asset_image_path } from '@/lib/asset-paths';
 import { CharacterLinkModal } from '@/components/locations/CharacterLinkModal';
+import { Book2MembershipCTA } from '@/components/characters/Book2MembershipCTA';
 
 interface page_props {
   params: Promise<{ id: string }>;
@@ -254,6 +256,7 @@ export default async function location_detail_page({ params }: page_props) {
   if (!location) notFound();
 
   const heroImage = extendedProfile?.image ?? location.image;
+  const isBook2Only = BOOK_2_ONLY_LOCATION_IDS.includes(id);
 
   return (
     <main className="min-h-screen bg-gots-body">
@@ -281,17 +284,40 @@ export default async function location_detail_page({ params }: page_props) {
         </div>
       </header>
 
-      <section className="max-w-4xl mx-auto px-6 py-12">
-        {extendedProfile ? (
-          render_extended_profile(extendedProfile)
+      <section className={`max-w-4xl mx-auto px-6 py-12 relative ${isBook2Only ? 'min-h-[400px]' : ''}`}>
+        {isBook2Only ? (
+          <>
+            <div className="blur-md select-none pointer-events-none">
+              {extendedProfile ? (
+                render_extended_profile(extendedProfile)
+              ) : (
+                <>
+                  <p className="text-gots-medium-gray text-lg mb-6">{location.description}</p>
+                  {location.significance && (
+                    <div className="bg-gots-charred rounded-lg p-6 border border-gots-accent/20">
+                      <h2 className="text-xl font-bold text-gots-accent mb-3">Story Significance</h2>
+                      <p className="text-gots-content">{location.significance}</p>
+                    </div>
+                  )}
+                </>
+              )}
+            </div>
+            <Book2MembershipCTA variant="overlay" />
+          </>
         ) : (
           <>
-            <p className="text-gots-medium-gray text-lg mb-6">{location.description}</p>
-            {location.significance && (
-              <div className="bg-gots-charred rounded-lg p-6 border border-gots-accent/20">
-                <h2 className="text-xl font-bold text-gots-accent mb-3">Story Significance</h2>
-                <p className="text-gots-content">{location.significance}</p>
-              </div>
+            {extendedProfile ? (
+              render_extended_profile(extendedProfile)
+            ) : (
+              <>
+                <p className="text-gots-medium-gray text-lg mb-6">{location.description}</p>
+                {location.significance && (
+                  <div className="bg-gots-charred rounded-lg p-6 border border-gots-accent/20">
+                    <h2 className="text-xl font-bold text-gots-accent mb-3">Story Significance</h2>
+                    <p className="text-gots-content">{location.significance}</p>
+                  </div>
+                )}
+              </>
             )}
           </>
         )}

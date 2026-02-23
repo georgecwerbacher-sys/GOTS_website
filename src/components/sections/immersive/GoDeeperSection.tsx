@@ -1,10 +1,12 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/context/AuthContext';
 import { SignUpModal } from '@/components/auth/SignUpModal';
+import { book_2 } from '@/lib/content/immersive-data';
 import {
   fade_in_up,
   stagger_container,
@@ -36,9 +38,9 @@ const PILLARS: Pillar[] = [
   {
     id: 'characters',
     glyph: '👤',
-    label: 'Characters & Dossiers',
+    label: 'Character profiles & Groups',
     hint: 'The Romans. The Followers. The ones in between.',
-    tag: 'Dossiers',
+    tag: 'Groups',
     title: 'Full Character Histories',
     body: 'Go beyond what the page shows. Discover allegiances, secret histories, and what happens to each character beyond the final chapter.',
     items: [
@@ -47,7 +49,7 @@ const PILLARS: Pillar[] = [
       'Margaret of Samaria',
       '+ 12 more profiles',
     ],
-    cta: 'Explore all characters',
+    cta: 'Explore all character profiles',
     href: '/characters',
   },
   {
@@ -82,7 +84,7 @@ const PILLARS: Pillar[] = [
       'Sivan — The Copper Trap',
     ],
     cta: 'Explore the timeline',
-    href: '/story',
+    href: '/timeline',
   },
   {
     id: 'battles',
@@ -124,25 +126,16 @@ const PILLARS: Pillar[] = [
 function PillarCard({
   pillar,
   onCtaClick,
+  onChaptersCardClick,
 }: {
   pillar: Pillar;
   onCtaClick: (pillar: Pillar) => void;
+  onChaptersCardClick?: () => void;
 }) {
   const [hovered, setHovered] = useState(false);
 
-  return (
-    <div
-      className="relative overflow-hidden cursor-pointer min-h-[280px] flex flex-col
-                 bg-gots-charred border border-gots-accent/10
-                 transition-colors duration-300 hover:bg-[#2a2318]"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      onClick={() => setHovered((v) => !v)}
-      role="button"
-      tabIndex={0}
-      onKeyDown={(e) => e.key === 'Enter' && setHovered((v) => !v)}
-      aria-label={`Explore ${pillar.label}`}
-    >
+  const cardContent = (
+    <>
       {/* Crimson sweep bar */}
       <div
         className="h-[3px] bg-red-900 origin-left transition-transform duration-500"
@@ -230,6 +223,82 @@ function PillarCard({
           <span>→</span>
         </button>
       </div>
+    </>
+  );
+
+  const cardClassName = "relative overflow-hidden cursor-pointer min-h-[280px] flex flex-col bg-gots-charred border border-gots-accent/10 transition-colors duration-300 hover:bg-[#2a2318]";
+
+  if (pillar.id === 'characters') {
+    return (
+      <Link
+        href="/characters"
+        className={cardClassName}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        aria-label="Explore Character profiles"
+      >
+        {cardContent}
+      </Link>
+    );
+  }
+
+  if (pillar.id === 'maps') {
+    return (
+      <Link
+        href="/locations"
+        className={cardClassName}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        aria-label="Navigate 1st-Century Judaea"
+      >
+        {cardContent}
+      </Link>
+    );
+  }
+
+  if (pillar.id === 'timeline') {
+    return (
+      <Link
+        href="/timeline"
+        className={cardClassName}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        aria-label="The Living Timeline"
+      >
+        {cardContent}
+      </Link>
+    );
+  }
+
+  if (pillar.id === 'chapters' && onChaptersCardClick) {
+    return (
+      <div
+        className={cardClassName}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        onClick={onChaptersCardClick}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => e.key === 'Enter' && onChaptersCardClick()}
+        aria-label="Early Book II Access — Pre-order"
+      >
+        {cardContent}
+      </div>
+    );
+  }
+
+  return (
+    <div
+      className={cardClassName}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      onClick={() => setHovered((v) => !v)}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => e.key === 'Enter' && setHovered((v) => !v)}
+      aria-label={`Explore ${pillar.label}`}
+    >
+      {cardContent}
     </div>
   );
 }
@@ -242,8 +311,18 @@ export function GoDeeperSection() {
   const [email, setEmail] = useState('');
   const [optInStatus, setOptInStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
+  const [preorderOpen, setPreorderOpen] = useState(false);
+
   function handlePillarCta(pillar: Pillar) {
-    if (isAuthenticated) {
+    if (pillar.id === 'characters') {
+      router.push('/characters');
+    } else if (pillar.id === 'maps') {
+      router.push('/locations');
+    } else if (pillar.id === 'timeline') {
+      router.push('/timeline');
+    } else if (pillar.id === 'chapters') {
+      setPreorderOpen(true);
+    } else if (isAuthenticated) {
       router.push(pillar.href);
     } else {
       setSignUpOpen(true);
@@ -341,7 +420,11 @@ export function GoDeeperSection() {
         >
           {PILLARS.map((pillar) => (
             <motion.div key={pillar.id} variants={scale_in}>
-              <PillarCard pillar={pillar} onCtaClick={handlePillarCta} />
+              <PillarCard
+                pillar={pillar}
+                onCtaClick={handlePillarCta}
+                onChaptersCardClick={pillar.id === 'chapters' ? () => setPreorderOpen(true) : undefined}
+              />
             </motion.div>
           ))}
         </motion.div>
@@ -463,8 +546,59 @@ export function GoDeeperSection() {
         </motion.div>
       </div>
 
-      {/* Existing SignUpModal — no changes needed */}
       <SignUpModal isOpen={signUpOpen} onClose={() => setSignUpOpen(false)} />
+
+      {/* Preorder modal for Early Book II Access */}
+      {preorderOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="preorder-modal-title"
+        >
+          <div
+            className="absolute inset-0 bg-black/70 backdrop-blur-sm"
+            onClick={() => setPreorderOpen(false)}
+            aria-hidden="true"
+          />
+          <div className="relative w-full max-w-md max-h-[90vh] overflow-y-auto bg-gots-charred border border-gots-accent/30 rounded-xl shadow-2xl p-8">
+            <button
+              type="button"
+              onClick={() => setPreorderOpen(false)}
+              className="absolute top-4 right-4 text-gots-medium-gray hover:text-gots-accent p-1 rounded transition-colors"
+              aria-label="Close preorder modal"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <p className="font-cinzel text-[0.5rem] tracking-[0.4em] uppercase text-gots-accent mb-3">
+              Exclusive · Book II
+            </p>
+            <h2 id="preorder-modal-title" className="font-cinzel text-2xl font-bold text-white mb-2">
+              {book_2.title}
+            </h2>
+            <p className="text-gots-medium-gray italic mb-6 leading-relaxed">
+              {book_2.description}
+            </p>
+            {book_2.releaseDate && (
+              <p className="text-sm text-gots-accent/80 mb-6">
+                Release: {book_2.releaseDate}
+              </p>
+            )}
+            <a
+              href={book_2.buyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block w-full text-center px-8 py-4 bg-gots-accent hover:bg-gots-accent-light
+                         !text-black font-cinzel text-[0.65rem] tracking-[0.2em] uppercase font-bold
+                         transition-all duration-300 hover:shadow-[0_0_30px_rgba(166,133,85,0.3)]"
+            >
+              {book_2.buttonText}
+            </a>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

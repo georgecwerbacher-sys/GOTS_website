@@ -1,8 +1,9 @@
 import { ReactNode } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { get_locations_by_region } from '@/lib/data/locations';
+import { get_locations_by_region, BOOK_2_ONLY_LOCATION_IDS } from '@/lib/data/locations';
 import { asset_image_path } from '@/lib/asset-paths';
+import { Book2MembershipCTA } from '@/components/characters/Book2MembershipCTA';
 
 function location_card(location: {
   id: string;
@@ -12,6 +13,23 @@ function location_card(location: {
   significance?: string;
   image?: string;
 }): ReactNode {
+  const isBook2Only = BOOK_2_ONLY_LOCATION_IDS.includes(location.id);
+
+  if (isBook2Only && location.image) {
+    return (
+      <div key={location.id} className="relative h-64 md:h-80 rounded-lg overflow-hidden border border-gots-accent/20">
+        <Image
+          src={asset_image_path(location.image)}
+          alt={location.name}
+          fill
+          className="object-cover blur-md scale-110"
+          unoptimized
+        />
+        <Book2MembershipCTA variant="card" characterName={location.name} />
+      </div>
+    );
+  }
+
   if (location.image) {
     return (
       <Link href={`/locations/${location.id}`} key={location.id}>
@@ -38,6 +56,21 @@ function location_card(location: {
           </div>
         </div>
       </Link>
+    );
+  }
+
+  if (isBook2Only) {
+    return (
+      <div key={location.id} className="relative h-64 md:h-80 rounded-lg overflow-hidden border border-gots-accent/20">
+        <div className="absolute inset-0 p-6 bg-gots-charred/80 blur-md">
+          <p className="text-xs font-semibold text-gots-accent/80 uppercase tracking-wider mb-2">
+            {location.region}
+          </p>
+          <h3 className="text-xl font-bold text-gots-accent/80 mb-2">{location.name}</h3>
+          <p className="text-gots-content/80 text-sm line-clamp-2">{location.description}</p>
+        </div>
+        <Book2MembershipCTA variant="overlay" />
+      </div>
     );
   }
 

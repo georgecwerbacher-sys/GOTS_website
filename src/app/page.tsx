@@ -61,7 +61,7 @@ export default async function homepage(): Promise<ReactNode> {
       quote: (c as { key_themes?: string[] }).key_themes?.[0] || c.brief_description?.slice(0, 80),
       description: c.brief_description,
       imageUrl: c.image,
-      path: `/characters/${c.id}`,
+      path: c.id === 'durus' ? '/characters' : `/characters/${c.id}`,
     }));
   } catch (error) {
     console.error('Error loading characters:', error);

@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useEffect } from 'react';
 import Link from 'next/link';
+import { useAuth } from '@/context/AuthContext';
 import styles from './TimelineSection.module.css';
 
 interface TimelineNode {
@@ -208,12 +209,26 @@ function TimelineNodeCard({
 }
 
 export function TimelineSection() {
+  const { isAuthenticated, loading: authLoading } = useAuth();
   const [modalNode, setModalNode] = useState<TimelineNode | null>(null);
   const [revealedParts, setRevealedParts] = useState<Set<number>>(new Set());
+  const [showLoginPrompt, setShowLoginPrompt] = useState(false);
 
   const revealPart = useCallback((index: number) => {
     setRevealedParts((prev) => new Set(prev).add(index));
   }, []);
+
+  const handleRevealRequest = useCallback(
+    (index: number) => {
+      if (authLoading) return;
+      if (isAuthenticated) {
+        revealPart(index);
+      } else {
+        setShowLoginPrompt(true);
+      }
+    },
+    [isAuthenticated, authLoading, revealPart]
+  );
 
   const openModal = useCallback((node: TimelineNode) => {
     setModalNode(node);
@@ -275,7 +290,7 @@ export function TimelineSection() {
             node={node}
             side={i % 2 === 0 ? 'right' : 'left'}
             isRevealed={revealedParts.has(i)}
-            onReveal={node.spoilerProtected ? () => revealPart(i) : undefined}
+            onReveal={node.spoilerProtected ? () => handleRevealRequest(i) : undefined}
             onOpenModal={openModal}
           />
         ))}
@@ -295,6 +310,51 @@ export function TimelineSection() {
           />
         ))}
       </div>
+
+      {showLoginPrompt && (
+        <div
+          className={`${styles.modalBackdrop} ${styles.open}`}
+          onClick={(e) => e.target === e.currentTarget && setShowLoginPrompt(false)}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="login-prompt-title"
+        >
+          <div
+            className={styles.modal}
+            style={{ maxWidth: 360 }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              className={styles.modalClose}
+              onClick={() => setShowLoginPrompt(false)}
+              aria-label="Close"
+            >
+              ✕
+            </button>
+            <h2 id="login-prompt-title" className={styles.modalTitle} style={{ fontSize: '1.1rem', marginBottom: 12 }}>
+              Sign in to reveal spoilers
+            </h2>
+            <p className={styles.modalDesc} style={{ marginBottom: 20, fontSize: '0.9rem' }}>
+              Create a free account or log in to unlock timeline details.
+            </p>
+            <div style={{ display: 'flex', gap: 12 }}>
+              <Link
+                href="/auth/login"
+                className="inline-block flex-1 text-center px-4 py-2 rounded font-semibold border border-gots-accent text-gots-accent hover:bg-gots-accent/20 transition-colors"
+              >
+                Login
+              </Link>
+              <Link
+                href="/auth/register"
+                className="inline-block flex-1 text-center px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light transition-colors"
+              >
+                Register
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
 
       {modalNode && (
         <div

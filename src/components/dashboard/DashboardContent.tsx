@@ -19,7 +19,7 @@ export function DashboardContent() {
           <Link href="/characters" className="block p-6 bg-gots-charred rounded-lg border border-gots-accent/20 hover:border-gots-accent/40">
             <h2 className="text-xl font-bold text-gots-accent mb-2">Continue Reading</h2>
             <p className="text-gots-content mb-4">Choose a character and follow their journey through the story.</p>
-            <span className="text-gots-accent font-semibold">View Characters →</span>
+            <span className="text-gots-accent font-semibold">View Character profiles →</span>
           </Link>
           <Link href="/" className="block p-6 bg-gots-charred rounded-lg border border-gots-accent/20 hover:border-gots-accent/40">
             <h2 className="text-xl font-bold text-gots-accent mb-2">Explore the Story</h2>

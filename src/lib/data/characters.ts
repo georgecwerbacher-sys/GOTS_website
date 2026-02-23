@@ -34,6 +34,9 @@ const character_data_map: Record<string, any> = {
 // Character IDs that have static data (used for generateStaticParams)
 export const CHARACTER_IDS = Object.keys(character_data_map);
 
+// Character IDs that appear only in Book 2 (grayed out, require membership)
+export const BOOK_2_ONLY_IDS = ['durus', 'cestius_gallus'];
+
 // Get all characters for homepage
 export async function get_all_characters(): Promise<character_profile[]> {
   const character_ids = [

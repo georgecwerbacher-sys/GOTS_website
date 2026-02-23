@@ -35,7 +35,7 @@ export function CharacterTeaserSection({ characters }: CharacterTeaserSectionPro
           variants={fade_in_up}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gots-accent mb-4">
-            Meet the Characters
+            Meet the Character profiles
           </h2>
           <p className="text-lg text-gots-content max-w-2xl mx-auto">
             Follow the journeys of those who discover grace in the darkest moments

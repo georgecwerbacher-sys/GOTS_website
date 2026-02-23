@@ -64,7 +64,7 @@ export function FooterSection() {
                 </li>
                 <li>
                   <Link href="/characters" className="text-gots-content hover:text-gots-accent transition-colors">
-                    Characters
+                    Character profiles
                   </Link>
                 </li>
                 <li>

@@ -71,7 +71,7 @@ export const story_threads: StoryThread[] = [
 export const cta_paths: CallToActionPath[] = [
   {
     id: 'characters',
-    label: 'Characters',
+    label: 'Character profiles',
     href: '/characters',
     description: 'Explore the Romans and Followers',
     icon: '👤',

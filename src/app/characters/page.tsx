@@ -7,7 +7,7 @@ import { get_characters_by_group } from '@/lib/data/characters';
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
 
 export const metadata: Metadata = {
-  title: 'Characters',
+  title: 'Character profiles',
   description:
     'Meet the characters of Guardians of the Spear — Roman soldiers, Jewish servants, high priests, and the community shaped by the events at Golgotha.',
   alternates: {
@@ -117,7 +117,7 @@ export default async function characters_page(): Promise<ReactNode> {
   return (
     <main className="min-h-screen bg-gots-body">
       <header className="bg-gradient-to-b from-gots-charred to-gots-dark py-16 px-6 text-center border-b-2 border-dashed border-gots-accent">
-        <h1 className="text-5xl md:text-6xl font-bold text-gots-accent mb-4">All Characters</h1>
+        <h1 className="text-5xl md:text-6xl font-bold text-gots-accent mb-4">All Character profiles</h1>
         <p className="text-xl text-white max-w-2xl mx-auto">
           Explore the diverse perspectives that weave the tapestry of the Guardians of the Spear.
         </p>

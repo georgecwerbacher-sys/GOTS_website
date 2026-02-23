@@ -107,6 +107,9 @@ const LOCATIONS: location_profile[] = [
   },
 ];
 
+// Location IDs that appear only in Book 2 (blurred, require membership)
+export const BOOK_2_ONLY_LOCATION_IDS = ['beth-horon', 'masada'];
+
 export async function get_all_locations(): Promise<location_profile[]> {
   return LOCATIONS;
 }

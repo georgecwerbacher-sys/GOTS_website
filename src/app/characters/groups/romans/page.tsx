@@ -1,13 +1,31 @@
 import { ReactNode } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { get_characters_by_group } from '@/lib/data/characters';
+import { get_characters_by_group, BOOK_2_ONLY_IDS } from '@/lib/data/characters';
 import { asset_image_path } from '@/lib/asset-paths';
 import type { character_profile } from '@/lib/types/character';
+import { Book2MembershipCTA } from '@/components/characters/Book2MembershipCTA';
 
 function character_card(character: character_profile): ReactNode {
   const image_src = asset_image_path(character.image || '/images/characters/placeholder.png');
   const description = character.brief_description || character.full_description || 'No description available.';
+  const isBook2Only = BOOK_2_ONLY_IDS.includes(character.id);
+
+  if (isBook2Only) {
+    return (
+      <div key={character.id} className="relative rounded-lg overflow-hidden border border-gots-accent/20 h-96">
+        <Image
+          src={image_src}
+          alt={character.name}
+          fill
+          className="object-contain object-center blur-md scale-110"
+          unoptimized
+        />
+        <Book2MembershipCTA variant="card" characterName={character.name} />
+      </div>
+    );
+  }
+
   return (
     <Link href={`/characters/${character.id}`} key={character.id}>
       <div className="relative bg-gots-charred hover:bg-gots-charred/80 rounded-lg overflow-hidden transition-all border border-gots-accent/20 hover:border-gots-accent/40 cursor-pointer group h-96">
@@ -53,7 +71,7 @@ export default async function romans_group_page(): Promise<ReactNode> {
 
       <div className="mt-12 pt-8 border-t border-dashed border-gots-accent/30 text-center space-x-4">
         <Link href="/characters" className="inline-block px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light hover:!text-black">
-          ← All Characters
+          ← All Character profiles
         </Link>
         <Link href="/" className="inline-block px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light hover:!text-black">
           ← Back to Home
