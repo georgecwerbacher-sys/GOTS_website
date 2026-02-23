@@ -88,7 +88,7 @@ export default async function romans_group_page(): Promise<ReactNode> {
 
       <div className="mt-12 pt-8 border-t border-dashed border-gots-accent/30 text-center space-x-4">
         <Link href="/characters" className="inline-block px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light hover:!text-black">
-          ← All Character profiles
+          ← All Character Profiles
         </Link>
         <Link href="/" className="inline-block px-4 py-2 rounded font-semibold bg-gots-accent !text-black hover:bg-gots-accent-light hover:!text-black">
           ← Back to Home

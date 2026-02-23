@@ -36,7 +36,7 @@ const PILLARS: Pillar[] = [
   {
     id: 'characters',
     glyph: '👤',
-    label: 'Character profiles & Groups',
+    label: 'Character Profiles & Groups',
     hint: 'The Romans. The Followers. The ones in between.',
     tag: 'Groups',
     title: 'Full Character Histories',
@@ -47,7 +47,7 @@ const PILLARS: Pillar[] = [
       'Margaret of Samaria',
       '+ 12 more profiles',
     ],
-    cta: 'Explore all character profiles',
+    cta: 'Explore all character Profiles',
     href: '/characters',
   },
   {
@@ -233,7 +233,7 @@ function PillarCard({
         className={cardClassName}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        aria-label="Explore Character profiles"
+        aria-label="Explore Character Profiles"
       >
         {cardContent}
       </Link>
@@ -305,6 +305,7 @@ function PillarCard({
 export function GoDeeperSection() {
   const router = useRouter();
   const [preorderOpen, setPreorderOpen] = useState(false);
+  const [ctaVideoEnded, setCtaVideoEnded] = useState(false);
 
   function handlePillarCta(pillar: Pillar) {
     if (pillar.id === 'characters') {
@@ -420,30 +421,46 @@ export function GoDeeperSection() {
             />
           ))}
 
-          {/* Wax seal */}
-          <div
-            className="inline-flex items-center justify-center w-12 h-12 rounded-full
-                       bg-gradient-radial from-red-700 to-red-900
-                       border border-red-800/60 mb-6 text-lg mx-auto"
-            style={{ boxShadow: '0 0 20px rgba(153,27,27,0.3), 0 0 40px rgba(153,27,27,0.1)' }}
-            aria-hidden="true"
-          >
-            ⚔
-          </div>
+          {!ctaVideoEnded ? (
+            <div className="relative w-full min-h-[280px] md:min-h-[360px] rounded-lg overflow-hidden bg-black">
+              <video
+                src="/assets/video/headers/First-healing%20at%20the%20cross.mp4"
+                autoPlay
+                muted
+                playsInline
+                onEnded={() => setCtaVideoEnded(true)}
+                className="absolute inset-0 w-full h-full object-cover"
+                aria-label="First healing at the cross"
+              />
+            </div>
+          ) : (
+            <>
+              {/* Wax seal */}
+              <div
+                className="inline-flex items-center justify-center w-12 h-12 rounded-full
+                           bg-gradient-radial from-red-700 to-red-900
+                           border border-red-800/60 mb-6 text-lg mx-auto"
+                style={{ boxShadow: '0 0 20px rgba(153,27,27,0.3), 0 0 40px rgba(153,27,27,0.1)' }}
+                aria-hidden="true"
+              >
+                ⚔
+              </div>
 
-          <p className="font-cinzel text-[0.58rem] tracking-[0.45em] uppercase text-gots-accent mb-4">
-            ✦ Coming Soon ✦
-          </p>
+              <p className="font-cinzel text-[0.58rem] tracking-[0.45em] uppercase text-gots-accent mb-4">
+                ✦ Coming Soon ✦
+              </p>
 
-          <h3 className="font-cinzel text-3xl md:text-4xl font-black text-white leading-tight mb-4">
-            Enter the World.<br />
-            Go Deeper Than the Book.
-          </h3>
+              <h3 className="font-cinzel text-3xl md:text-4xl font-black text-white leading-tight mb-4">
+                Enter the World.<br />
+                Go Deeper Than the Book.
+              </h3>
 
-          <p className="text-base italic text-gots-medium-gray max-w-md mx-auto leading-relaxed">
-            Unlock all five vaults — characters, maps, the living timeline, the battle archive,
-            and early Book&nbsp;II chapters. Member access coming soon.
-          </p>
+              <p className="text-base italic text-gots-medium-gray max-w-md mx-auto leading-relaxed">
+                Unlock all five vaults — characters, maps, the living timeline, the battle archive,
+                and early Book&nbsp;II chapters. Member access coming soon.
+              </p>
+            </>
+          )}
 
         </motion.div>
       </div>

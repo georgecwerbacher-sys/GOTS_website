@@ -96,14 +96,19 @@ export default async function homepage(): Promise<ReactNode> {
   return (
     <main className="min-h-screen bg-gots-body">
       <HeroSection
-        videoPath="/assets/video/headers/followers/followers"
+        videoPath="/assets/video/headers/timeline_header"
         posterPath="/images/Hero_images/Followers_1_.jpg"
         altText="Guardians of the Spear home page header video"
         title="Guardians of the Spear"
         subtitle="Across every age, men and women have died for one thing — your right to choose your own fate."
         description="Go deeper than the book — discover the people, the places, and the price they paid."
-        endWithPoster
       />
+
+      <section className="py-12 px-6 text-center bg-gots-body">
+        <p className="text-lg md:text-xl text-gots-content max-w-3xl mx-auto leading-relaxed italic">
+          The story doesn&apos;t end on the last page. Step into Ancient Judea — walk its streets, know its people, feel the weight of what happened there.
+        </p>
+      </section>
 
       <BooksSection book1={book_1} book2={book_2} />
 

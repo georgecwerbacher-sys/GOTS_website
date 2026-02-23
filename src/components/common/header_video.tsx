@@ -10,6 +10,7 @@ interface header_video_props {
   alt_text?: string;
   full_screen?: boolean;
   end_with_poster?: boolean;
+  object_fit?: 'contain' | 'cover';
 }
 
 function header_video_client({
@@ -17,7 +18,8 @@ function header_video_client({
   poster_path,
   alt_text = 'Header video',
   full_screen = false,
-  end_with_poster = false
+  end_with_poster = false,
+  object_fit = 'contain'
 }: header_video_props) {
   const [video_loaded, set_video_loaded] = useState(false);
   const [video_ended, set_video_ended] = useState(false);
@@ -39,10 +41,10 @@ function header_video_client({
         aria-hidden={!poster_error}
       />
       {/* Poster image: show first, when video ends (if end_with_poster), or when video not loaded */}
-      <img
+        <img
         src={poster_path}
         alt={alt_text}
-        className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-500 ${
+        className={`absolute inset-0 w-full h-full ${object_fit === 'cover' ? 'object-cover' : 'object-contain'} transition-opacity duration-500 ${
           poster_error ? 'opacity-0' : show_poster ? 'opacity-100' : 'opacity-0'
         }`}
         onError={() => set_poster_error(true)}
@@ -57,11 +59,11 @@ function header_video_client({
           onEnded={() => end_with_poster && set_video_ended(true)}
           onError={() => {}}
           poster={poster_path}
-          className="absolute inset-0 w-full h-full object-contain"
+          className={`absolute inset-0 w-full h-full ${object_fit === 'cover' ? 'object-cover' : 'object-contain'}`}
           aria-label={alt_text}
         >
-          <source src={`${video_path}.webm`} type="video/webm" />
           <source src={`${video_path}.mp4`} type="video/mp4" />
+          <source src={`${video_path}.webm`} type="video/webm" />
         </video>
       )}
       <div className="absolute inset-0 bg-black/20" />

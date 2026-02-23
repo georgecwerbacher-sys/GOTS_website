@@ -587,7 +587,7 @@ export default async function character_detail_page({ params }: page_props) {
           href="/characters"
           className="inline-block px-4 py-2 rounded font-semibold transition-colors bg-gots-accent !text-black hover:bg-gots-accent-light hover:!text-black"
         >
-          ← All Character profiles
+          ← All Character Profiles
         </Link>
         <Link
           href="/"

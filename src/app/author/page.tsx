@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
 
@@ -16,13 +17,26 @@ export const metadata: Metadata = {
 export default function author_page(): ReactNode {
   return (
     <main className="min-h-screen bg-gots-body">
-      <header className="bg-gradient-to-b from-gots-charred to-gots-dark py-16 px-6 text-center border-b-2 border-dashed border-gots-accent">
-        <h1 className="text-5xl md:text-6xl font-bold text-gots-accent mb-4">
-          George Charles Werbacher
-        </h1>
-        <p className="text-xl text-white max-w-2xl mx-auto italic">
-          doesn&apos;t write history — he resurrects it.
-        </p>
+      <header className="relative border-b-2 border-dashed border-gots-accent overflow-hidden min-h-[280px] md:min-h-[360px]">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/Hero_images/author_header.png"
+            alt=""
+            fill
+            className="object-cover object-[center_25%]"
+            priority
+            unoptimized
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-gots-charred via-gots-charred/60 to-transparent" />
+        <div className="relative z-10 flex flex-col justify-end min-h-[280px] md:min-h-[360px] px-6 py-12 text-center">
+          <h1 className="text-5xl md:text-6xl font-bold text-gots-accent mb-4 drop-shadow-lg">
+            George Charles Werbacher
+          </h1>
+          <p className="text-xl text-white max-w-2xl mx-auto italic drop-shadow-sm">
+            doesn&apos;t write history — he resurrects it.
+          </p>
+        </div>
       </header>
 
       <section className="max-w-3xl mx-auto px-6 py-12">

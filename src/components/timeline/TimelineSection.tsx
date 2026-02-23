@@ -2,7 +2,7 @@
 
 import { useState, useCallback, useEffect } from 'react';
 import Link from 'next/link';
-import { useAuth } from '@/context/AuthContext';
+import Image from 'next/image';
 import styles from './TimelineSection.module.css';
 
 interface TimelineNode {
@@ -209,10 +209,8 @@ function TimelineNodeCard({
 }
 
 export function TimelineSection() {
-  const { isAuthenticated, loading: authLoading } = useAuth();
   const [modalNode, setModalNode] = useState<TimelineNode | null>(null);
   const [revealedParts, setRevealedParts] = useState<Set<number>>(new Set());
-  const [showLoginPrompt, setShowLoginPrompt] = useState(false);
 
   const revealPart = useCallback((index: number) => {
     setRevealedParts((prev) => new Set(prev).add(index));
@@ -220,14 +218,9 @@ export function TimelineSection() {
 
   const handleRevealRequest = useCallback(
     (index: number) => {
-      if (authLoading) return;
-      if (isAuthenticated) {
-        revealPart(index);
-      } else {
-        setShowLoginPrompt(true);
-      }
+      revealPart(index);
     },
-    [isAuthenticated, authLoading, revealPart]
+    [revealPart]
   );
 
   const openModal = useCallback((node: TimelineNode) => {
@@ -254,16 +247,29 @@ export function TimelineSection() {
 
   return (
     <main className="min-h-screen bg-gots-body">
-      <header className="text-center py-16 px-6 border-b border-gots-accent/30 bg-gradient-to-b from-gots-charred to-gots-dark">
-        <p className="font-cinzel text-[0.75rem] tracking-[0.35em] uppercase text-gots-accent mb-4">
-          A Historical Novel
-        </p>
-        <h1 className="font-cinzel text-4xl md:text-5xl font-bold text-gots-accent-light mb-4">
-          Guardians of the Spear
-        </h1>
-        <p className="text-gots-medium-gray text-base italic tracking-wide">
-          The chronicle of those marked by the light
-        </p>
+      <header className="relative border-b border-gots-accent/30 overflow-hidden min-h-[280px] md:min-h-[360px]">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/Hero_images/timeline_header_2.png"
+            alt=""
+            fill
+            className="object-cover object-[center_25%]"
+            priority
+            unoptimized
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-gots-charred via-gots-charred/60 to-transparent z-10" />
+        <div className="absolute inset-0 z-20 flex flex-col justify-end min-h-[280px] md:min-h-[360px] px-6 py-12 text-center items-center">
+          <p className="font-cinzel text-[0.75rem] tracking-[0.35em] uppercase text-gots-accent mb-4 drop-shadow-lg">
+            A Historical Novel
+          </p>
+          <h1 className="font-cinzel text-4xl md:text-5xl font-bold text-gots-accent-light mb-4 drop-shadow-lg">
+            Guardians of the Spear
+          </h1>
+          <p className="text-gots-medium-gray text-base italic tracking-wide drop-shadow-sm">
+            The chronicle of those marked by the light
+          </p>
+        </div>
       </header>
 
       <div className="flex justify-center gap-10 py-6 px-4 font-cinzel text-[0.75rem] tracking-[0.2em] uppercase">
@@ -310,37 +316,6 @@ export function TimelineSection() {
           />
         ))}
       </div>
-
-      {showLoginPrompt && (
-        <div
-          className={`${styles.modalBackdrop} ${styles.open}`}
-          onClick={(e) => e.target === e.currentTarget && setShowLoginPrompt(false)}
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="login-prompt-title"
-        >
-          <div
-            className={styles.modal}
-            style={{ maxWidth: 360 }}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              type="button"
-              className={styles.modalClose}
-              onClick={() => setShowLoginPrompt(false)}
-              aria-label="Close"
-            >
-              ✕
-            </button>
-            <h2 id="login-prompt-title" className={styles.modalTitle} style={{ fontSize: '1.1rem', marginBottom: 12 }}>
-              Sign in to reveal spoilers
-            </h2>
-            <p className={styles.modalDesc} style={{ marginBottom: 20, fontSize: '0.9rem' }}>
-              Account features are temporarily unavailable. Please check back soon.
-            </p>
-          </div>
-        </div>
-      )}
 
       {modalNode && (
         <div
