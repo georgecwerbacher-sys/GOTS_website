@@ -77,6 +77,7 @@ const HIDDEN_ACT_TEASER = [
 
 export function StoryThreadsSection() {
   const [expanded, setExpanded] = useState<string | null>(null);
+  const [finalActVideoEnded, setFinalActVideoEnded] = useState(false);
 
   return (
     <section
@@ -222,59 +223,85 @@ export function StoryThreadsSection() {
 
         {/* ── Sealed final act — teaser then buy CTA ── */}
         <motion.div
-          className="relative border border-white/40 bg-gradient-to-br from-[#1a0a0a]/80 to-gots-charred overflow-hidden"
+          className="relative border border-white/40 overflow-hidden"
           initial="initial"
           whileInView="animate"
           viewport={viewport_config}
           variants={fade_in_up}
         >
-          {/* White top bar */}
-          <div className="h-[2px] bg-gradient-to-r from-transparent via-white to-transparent" />
+          {/* Background image at half opacity — fills whole box when video ended */}
+          {finalActVideoEnded && (
+            <div
+              className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-50"
+              style={{ backgroundImage: 'url(/images/fall%20of%20temple_1.png)' }}
+              aria-hidden="true"
+            />
+          )}
+          <div className="absolute inset-0 z-[1] bg-gradient-to-br from-[#1a0a0a]/50 to-gots-charred/70 pointer-events-none" aria-hidden="true" />
 
-          <div className="px-6 py-8 md:px-10">
+          {/* White top bar */}
+          <div className="relative z-10 h-[2px] bg-gradient-to-r from-transparent via-white to-transparent" />
+
+          <div className="relative z-10 px-6 py-8 md:px-10">
             <div className="flex flex-col md:flex-row md:items-center gap-8">
 
-              {/* Left — the tease */}
+              {/* Left — video first, then the tease */}
               <div className="flex-1">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 border border-white flex items-center justify-center flex-shrink-0">
-                    <span className="font-cinzel text-xs font-bold text-white">V</span>
+                {!finalActVideoEnded ? (
+                  <div className="relative w-full min-h-[200px] md:min-h-[280px] rounded-lg overflow-hidden bg-black mb-6">
+                    <video
+                      src="/video/fall%20of%20Jerusalem.mp4"
+                      autoPlay
+                      muted
+                      playsInline
+                      onEnded={() => setFinalActVideoEnded(true)}
+                      className="absolute inset-0 w-full h-full object-cover"
+                      aria-label="Fall of Jerusalem"
+                    />
                   </div>
-                  <div>
-                    <p className="font-cinzel text-[0.52rem] tracking-[0.3em] uppercase text-white">
-                      The Sacrifice · Acts V–XIII
-                    </p>
-                  </div>
-                </div>
+                ) : (
+                  <>
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 border border-white flex items-center justify-center flex-shrink-0">
+                        <span className="font-cinzel text-xs font-bold text-white">V</span>
+                      </div>
+                      <div>
+                        <p className="font-cinzel text-[0.52rem] tracking-[0.3em] uppercase text-white">
+                          The Sacrifice · Acts V–XIII
+                        </p>
+                      </div>
+                    </div>
 
-                <div className="space-y-4 max-w-xl">
-                  {HIDDEN_ACT_TEASER.map((para, i) => (
-                    <p key={i} className="text-base md:text-lg italic text-gots-medium-gray leading-relaxed">
-                      {para}
-                    </p>
-                  ))}
-                </div>
+                    <div className="space-y-4 max-w-xl">
+                      {HIDDEN_ACT_TEASER.map((para, i) => (
+                        <p key={i} className="text-base md:text-lg italic text-gots-medium-gray leading-relaxed">
+                          {para}
+                        </p>
+                      ))}
+                    </div>
 
-                {/* Blurred "locked" content hint */}
-                <div className="space-y-2 select-none pointer-events-none" aria-hidden="true">
-                  {[
-                    'The executions are methodical. Brutus is precise about it.',
-                    'Malchus watches each one and does not look away.',
-                    'What Rome creates is not silence. It is something Rome will spend Book II trying to undo.',
-                  ].map((line, i) => (
-                    <p
-                      key={i}
-                      className="text-sm text-gots-content/40 leading-relaxed"
-                      style={{ filter: 'blur(4px)', userSelect: 'none' }}
-                    >
-                      {line}
-                    </p>
-                  ))}
-                </div>
+                    {/* Blurred "locked" content hint */}
+                    <div className="space-y-2 select-none pointer-events-none" aria-hidden="true">
+                      {[
+                        'The executions are methodical. Brutus is precise about it.',
+                        'Malchus watches each one and does not look away.',
+                        'What Rome creates is not silence. It is something Rome will spend Book II trying to undo.',
+                      ].map((line, i) => (
+                        <p
+                          key={i}
+                          className="text-sm text-gots-content/40 leading-relaxed"
+                          style={{ filter: 'blur(4px)', userSelect: 'none' }}
+                        >
+                          {line}
+                        </p>
+                      ))}
+                    </div>
 
-                <p className="font-cinzel text-[0.56rem] tracking-[0.25em] uppercase text-white mt-4 flex items-center gap-2">
-                  <span>🔒</span> Read the complete story
-                </p>
+                    <p className="font-cinzel text-[0.56rem] tracking-[0.25em] uppercase text-white mt-4 flex items-center gap-2">
+                      <span>🔒</span> Read the complete story
+                    </p>
+                  </>
+                )}
               </div>
 
               {/* Right — pre-order CTA */}
